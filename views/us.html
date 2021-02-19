@@ -22,20 +22,29 @@
 <body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
 
     <header>
-        <nav class="fixed w-full navbar bg-white md:px-24 px-6 py-4 lg:flex items-center justify-between transition-all duration-700">
+        <nav class="fixed w-full lg:h-auto h-full navbar bg-white lg:px-24 md:px-16 px-6 py-4 lg:flex flex-grow flex-wrap items-center justify-between transition-all duration-700">
             <div class="flex-shrink-0">
                 <a href="index.html" class="flex items-center  mt-0">
                     <img src="../public/images/icon.png" class="w-12" alt="">
                     <span class="text-2xl text-gray-800">Devscast</span>
                 </a>
             </div>
+            
+            <div class="block lg:hidden -mr-6">
+                <button id="sbOpen" type="button" id="navbar-open" class="hamburger-open flex lg:hidden">
+                    <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+                <button id="sbDismiss" type="button" id="navbar-close" class="hamburger-close flex hidden">
+                    <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+                </button>
+            </div>
 
-            <div class="text-md lg:flex items-center hidden gap-7">
-                <a href="work.html" class="text-gray-700  hover:text-green-500 rounded-full">Portfolio</a>
-                <a href="contents.html" class="text-gray-700">Nos contenus</a>
-                <a href="us.html" class="text-green-500">Nous</a>
-                <a href="blog.html" class="text-gray-700">Blog</a>
-                <a href="contact.html" class="py-2 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
+            <div class="md:text-xl text-md lg:flex items-center lg:gap-7 gap-24 bg-white lg:shadow-none shadow-lg lg:p-0 p-16 rounded-3xl lg:my-0 my-16">
+                <a href="work.html" class="lg:inline block lg:my-0 my-8 text-gray-700  hover:text-green-500">Portfolio</a>
+                <a href="contents.html" class="lg:inline block lg:my-0 my-8 text-gray-700 hover:text-green-500">Nos contenus</a>
+                <a href="us.html" class="lg:inline block lg:my-0 my-8 text-green-500 hover:text-green-500">Nous</a>
+                <a href="blog.html" class="lg:inline block lg:my-0 my-8 text-gray-700 hover:text-green-500">Blog</a>
+                <a href="contact.html" class="w-max lg:inline block lg:my-0 my-8 py-2 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
                 
                 <div class="w-10">
                     <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
