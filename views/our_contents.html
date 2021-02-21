@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+
+    <header>
+        <nav class="fixed lg:bg-white bg-white
+                    w-full lg:h-auto h-auto lg:px-24 md:px-16 px-6 py-4 
+                    flex flex-wrap lg:items-center items-start justify-between 
+                    transition-all duration-700 ease-in-out" id="navbar">
+
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-700">Devscast</span>
+                </a>
+            </div>
+            
+            <div class="block lg:hidden mt-2">
+                <button type="button" id="navbar-open" class="hamburger-open flex lg:hidden transition-all">
+                    <svg class="fill-current text-gray-600 w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+                <button type="button" id="navbar-close" class="hidden hamburger-close flex hidden">
+                    <svg class="fill-current text-gray-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+                </button>
+            </div>
+
+            <div class="w-full lg:hidden hidden justify-center z-50 -mt-10 transition-all duration-700" id="navuser">
+                <div class="flex gap-6">
+                    <a href="" class="bg-indigo-50 py-3 px-6 rounded-md text-indigo-500 font-semibold">Se connecter</a>
+                    <a href="" class="bg-indigo-500 py-3 px-6 rounded-md text-white font-semibold">S'inscrire</a>
+                </div>
+                
+                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+            </div>
+
+            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
+                <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-green-500  hover:text-green-500">Portfolio</a>
+                <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nous</a>
+                <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Blog</a>
+                <a href="contact.html" class="text-md w-max lg:inline block lg:my-0 md:mt-8 mt-6 lg:py-2 py-3 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
+                
+                <div class="w-10 lg:block hidden">
+                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                </div>
+            </div>
+
+            <div class="lg:hidden hidden -mt-72 transition-all duration-700 ease-in-out" id="navfooter">
+                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
+            </div>
+        </nav>
+    </header>
+
+    <footer class="hidden">
+        <div class="bg-gray-50 lg:px-24 px-6 py-16">
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+
+            <p class="text-center">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+
+</body>
+</html>
