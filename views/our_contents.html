@@ -22,7 +22,7 @@
 <body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
 
     <header>
-        <nav class="fixed lg:bg-white bg-white
+        <nav class="fixed
                     w-full lg:h-auto h-auto lg:px-24 md:px-16 px-6 py-4 
                     flex flex-wrap lg:items-center items-start justify-between 
                     transition-all duration-700 ease-in-out" id="navbar">
@@ -54,8 +54,8 @@
             </div>
 
             <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
-                <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-green-500  hover:text-green-500">Portfolio</a>
-                <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-gray-700  hover:text-green-500">Portfolio</a>
+                <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 text-green-500 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
                 <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nous</a>
                 <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Blog</a>
                 <a href="contact.html" class="text-md w-max lg:inline block lg:my-0 md:mt-8 mt-6 lg:py-2 py-3 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
@@ -70,6 +70,38 @@
             </div>
         </nav>
     </header>
+
+    <section id="hero" class="bg-gray-50 mb-72">
+        <div class="lg:px-24 md:px-16 px-6 md:py-32 py-20 pt-32 md:pt-48">
+            <h1 class="md:text-5xl text-4xl text-gray-900">Doloremque repudiandae.</h1>
+            <p class="mt-6 text-gray-600">Rem doloremque beatae eaque! Aliquam praesentium ipsam omnis pariatur doloribus animi ipsum!</p>
+        </div>
+        <div class="w-10/12 m-auto absolute left-0 right-0" style="z-index:20;">
+            <form action="" class="flex items-center">
+                <div class="absolute ml-8">
+                    <svg class="fill-current text-gray-500 pointer-events-none  w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                    </svg>
+                </div>
+                <div class="absolute right-0 mr-3">
+                    <select name="" id="" class="outline-none border-l-2 p-2 pl-6">
+                        <option value="">Formations</option>
+                        <option value="">Code</option>
+                        <option value="">Astuces</option>
+                        <option value="">Templates</option>
+                    </select>
+
+                    <button type="submit" class="md:inline hidden ml-8 bg-indigo-500 py-3 px-6 rounded-md text-white hover:bg-indigo-600">Rechercher</button>
+                </div>
+
+                <input autocomplete="additional-name" type="search" class="py-6 pl-20 shadow-xl w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="De quel contenu avez-vous besoin ?" name="" id="">
+                
+            </form>
+        </div>
+        <div class="w-full mt-10" style="height:60vh; background:url('../public/images/content\ bg.jpg'); background-size: cover;">
+
+        </div>
+    </section>
 
     <footer class="hidden">
         <div class="bg-gray-50 lg:px-24 px-6 py-16">
