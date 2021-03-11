@@ -1,12 +1,16 @@
 window.addEventListener('scroll', function(){
-    if (window.pageYOffset > 600) {
+    if (window.pageYOffset > 250) {
         document.querySelector('#navbar').classList.remove('py-4')
         document.querySelector('#navbar').classList.add('shadow-sm', 'py-2')
+        document.querySelector('.dots').classList.add('fixed', 'left-0', 'top-48');
+        document.querySelector('body').classList.add('bg-gray-800');
     }
 
     else  {
         document.querySelector('#navbar').classList.remove('shadow-sm', 'py-2')
         document.querySelector('#navbar').classList.add('py-4')
+        document.querySelector('.dots').classList.remove('fixed', 'left-0', 'top-48');
+        document.querySelector('body').classList.remove('bg-gray-800');
     }
 });
 
