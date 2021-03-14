@@ -1,0 +1,233 @@
+[33mcommit a9d1ee4553e428ee22384d4c3c3742850cc35eae[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 11:42:44 2021 +0200
+
+    fix (navbar) : change hamburger style
+
+[33mcommit e6969a1183bc394fa49638d558096dad286e8986[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 11:33:19 2021 +0200
+
+    fix (videos) : reoganize section
+
+[33mcommit c85de08f181eb662d6705c8ac41403aa5d261b84[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 10:48:28 2021 +0200
+
+    feat (podcasts) : create section
+
+[33mcommit b3cb30b7fb4f925e7324bd44f7e52c582c439e5e[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 07:48:04 2021 +0200
+
+    fix (contents) : rebuild cards
+
+[33mcommit 144b277eab2a8d36e23f8cf79e646a3ba9395420[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 06:52:11 2021 +0200
+
+    fix (search) : optimize for mobile
+
+[33mcommit c14c38a5d04ec2132e2e5da951a7b672c922c8c9[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 06:19:46 2021 +0200
+
+    fix (hero-section) : rebuild
+
+[33mcommit 37191314bb929ad7e7435edbd05e218e8b255046[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Sun Mar 14 05:46:37 2021 +0200
+
+    feat (contents) : create mosaic grid
+
+[33mcommit 6482b381c2e7d1ab54d24c38838ac104762c935c[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Mar 11 09:09:17 2021 +0200
+
+    fix (contents) : redesign
+
+[33mcommit f74a66731b5a101f7ef79b91cf1c69f835fd93cc[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 16:12:25 2021 +0200
+
+    fix (contents) : rename page
+
+[33mcommit 0c397851ebe6be043d2c552b540a65378cf1f1c3[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 16:05:26 2021 +0200
+
+    fix (contents) : optimize categories sections white spaces and typography
+
+[33mcommit aa07efd7ab1f722262e22c5e7fdae619b7ccf79d[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 15:57:59 2021 +0200
+
+    fix (contents) : optimize most viewed section white spaces and typography
+
+[33mcommit 82a6354f1c7ab605ec816447a85f15d6a13f2f64[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 15:49:44 2021 +0200
+
+    fix (footer) : display section
+
+[33mcommit 2540ccb4c4f8651f613e7875043c7d5e4418da13[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 15:47:01 2021 +0200
+
+    feat (contents) : create categories sections
+
+[33mcommit 0e54eb69055a8d8d417de04a1f7df79180b4b568[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Thu Feb 25 14:20:15 2021 +0200
+
+    feat (contents) : create most viewed section
+
+[33mcommit 113ad2cc60be1b8ea67a0163aca17e13e418e2fc[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Wed Feb 24 14:32:41 2021 +0200
+
+    fix (navbar) : change z-index
+
+[33mcommit e8100b8016d5bbac78c607de25f8220ae0a16911[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Mon Feb 22 03:01:39 2021 +0200
+
+    feat (hero-section) : create the section
+
+[33mcommit fd3a662e89edd83dd0dbf8f031c40b4e10811d3e[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Mon Feb 22 00:11:05 2021 +0200
+
+     feat (our contents) : initialize page
+
+[33mcommit 102e314a1a8a419492f0b338ad9ce4159666bb37[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Mon Feb 22 00:08:57 2021 +0200
+
+    feat (work) : create project template
+
+[33mcommit 563f4401e73fbeb55c066f7f0f28b30540d465f9[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:42:50 2021 +0200
+
+    update (navbar) : optimize for work page
+
+[33mcommit f39b7a30d4f2d11f4f72232dce2b88b88fb7a81d[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:38:22 2021 +0200
+
+    feat (work) : init page
+
+[33mcommit b0699643c480dfd5c958e63809bed2266d52b7b8[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:34:24 2021 +0200
+
+    update (head) : change title
+
+[33mcommit 04911563eee6cbee427e9469886aa39180d2f496[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:32:14 2021 +0200
+
+    fix (services-section) : change corners style
+
+[33mcommit ead07ab01c4e2024bf416d246c1c28302cfa1736[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:27:15 2021 +0200
+
+    fix (hero-section) : update heading
+
+[33mcommit a5a290d15b07fae28bead895c5bf52acb1d2929e[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 20:25:30 2021 +0200
+
+    fix (navbar) : optimize for responsive
+
+[33mcommit 188b0f7501549e0e6d704e990cb16dd150ec3cde[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:32:36 2021 +0200
+
+    fix (hero-section) : optimize padding
+
+[33mcommit 74743625d4e54604fe8f9521eb996d267ea69079[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:28:17 2021 +0200
+
+    fix (work-section) : optimize for mobile
+
+[33mcommit c295388f147f9fa6b150ed946dd9a83de271ade1[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:27:22 2021 +0200
+
+    fix (work-section) : optimize for mobile
+
+[33mcommit f552257751700c21d18da8befadac7ef64b1c149[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:15:46 2021 +0200
+
+    fix (call-to-action) : optimize for mobile
+
+[33mcommit 2437b98619c5ae6ec4724456a5c7b13899b55525[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:09:33 2021 +0200
+
+    fix (hero-section) : optimize white spaces
+
+[33mcommit 7c9432bf116014e7d222a627cc9ce9b50b902ad4[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:05:33 2021 +0200
+
+    fix (services-section) : optimize white spaces
+
+[33mcommit 36ac15ab928c34a2a29f08a0285b262a362226a7[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:03:04 2021 +0200
+
+    fix (clients-section) : optimize white spaces
+
+[33mcommit 390fab1fad622ce88f1ac1a0acd57c9180741551[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 03:01:21 2021 +0200
+
+    fix (work-section) : optimize for mobile
+
+[33mcommit 8f97993fee28469ae60ae19ab35e120bfc9a5ea9[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 02:54:43 2021 +0200
+
+    fix (strategy-section) : optimize for mobile
+
+[33mcommit 49c7963af04ab71eca92afcf9d3682ee4b61bbbb[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 02:48:03 2021 +0200
+
+    fix (clients-section) : optimize for mobile
+
+[33mcommit 025c3b029fcdb7843aab621a752c84d762cc5f95[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 02:43:06 2021 +0200
+
+    fix (clients-section) : optimize for mobile
+
+[33mcommit 1b5e38134c09cbea50308bbbcbbea3d052d0b071[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 02:38:54 2021 +0200
+
+    fix (navbar) : optimize for mobile
+
+[33mcommit 6d6cc3eecf322a60a96cbf3ce691651275973746[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 01:56:03 2021 +0200
+
+    fix (hero-section) : optimize for mobile & tablet
+
+[33mcommit fddff95a3e5fdd7e862d9265e14d38cc03a67c86[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 01:45:29 2021 +0200
+
+    fix (footer) : remove footer padding
+
+[33mcommit 4cdc9b69ccdfedf4f3acfd182e4ad52a3f5cb86f[m
+Author: MéschacIrung <meschacirung@gmail.com>
+Date:   Fri Feb 19 01:41:19 2021 +0200
+
+    feat : project init

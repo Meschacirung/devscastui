@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+
+    <link rel="stylesheet" href="../public/css/splide/splide.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden bg-gray-900" style="font-family:'Rubik', sans-serif;">
+
+    <header>
+        <nav class="fixed w-full z-50 py-4 lg:px-16 md:px-8 px-3 flex justify-center
+                    bg-gradient-to-b from-gray-900 to-transparent" id="navbar">
+
+            <div class="rounded-xl w-full bg-gray-800 bg-opacity-95 z-50
+                        lg:h-auto h-auto px-6 py-2
+                        flex flex-wrap lg:items-center items-start justify-between 
+                        transition-all duration-700 ease-in-out">
+
+                        <div class="flex-shrink-0">
+                            <a href="index.html" class="flex items-center  mt-0">
+                                <img src="../public/images/icon.png" class="w-12" alt="">
+                                <span class="text-2xl text-white">Devscast</span>
+                            </a>
+                        </div>
+                        
+                        <div class="block lg:hidden mt-3">
+                            <button type="button" id="navbar-open" class="hamburger-open flex lg:hidden transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" width="27" height="18" viewBox="0 0 27 18">
+                                    <g id="menu" transform="translate(-362 -381)">
+                                      <path id="Rectangle_9" data-name="Rectangle 9" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 397)"/>
+                                      <path id="Rectangle_8" data-name="Rectangle 8" d="M1,0H20a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(369 389)"/>
+                                      <path id="Rectangle_7" data-name="Rectangle 7" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 381)"/>
+                                    </g>
+                                </svg>
+                                  
+                                  
+                            </button>
+                            <button type="button" id="navbar-close" class="hidden hamburger-close flex hidden">
+                                <svg class="fill-current text-gray-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+                            </button>
+                        </div>
+            
+                        <div class="w-full lg:hidden hidden justify-center z-50 -mt-10 transition-all duration-700" id="navuser">
+                            <div class="flex gap-6">
+                                <a href="" class="bg-indigo-50 py-3 px-6 rounded-md text-indigo-500 font-semibold">Se connecter</a>
+                                <a href="" class="bg-indigo-500 py-3 px-6 rounded-md text-white font-semibold">S'inscrire</a>
+                            </div>
+                            
+                            <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+                        </div>
+            
+                        <div class="lg:text-md lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
+                            <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-gray-300  hover:text-green-500">Portfolio</a>
+                            <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 text-green-500 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                            <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-300 hover:text-green-500">Nous</a>
+                            <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-300 hover:text-green-500">Blog</a>
+                            <a href="contact.html" class="w-max lg:inline block lg:my-0 md:mt-8 mt-6 py-3 px-6 rounded-md bg-gray-700 hover:bg-green-600 text-white">Prendre contact</a>
+                            
+                            <div class="w-8 lg:block hidden">
+                                <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                            </div>
+                        </div>
+            
+                        <div class="lg:hidden hidden -mt-72 transition-all duration-700 ease-in-out" id="navfooter">
+                            <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
+                        </div>
+
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <section class="md:pt-32 lg:pb-20 md:pb-16 pb-8 pt-24">
+
+        <div class="">
+
+            <div class="lg:flex gap-8">  
+                
+                <div class="lg:w-9/12  lg:pl-16 md:pl-8 lg:pr-0 md:pr-8 pr-3 pl-3">
+                    <div class="sticky top-24 flex">
+
+                        <div class="relative flex items-center">
+                            <video controls src="../public/videos/specify-dsp-destination-vscode.2700c3b.mp4" class="shadow-3xl focus:outline-none rounded-l-2xl" ></video>
+                            
+                            <div class="absolute right-0">
+                                
+                                <div class="relative">
+                                    <div class="relative flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="74.6" viewBox="0 0 23 74.6">
+                                            <g id="shape" transform="translate(-435 -377.2)">
+                                              <path id="Rectangle_10" data-name="Rectangle 10" d="M20,0h3a0,0,0,0,1,0,0V40a0,0,0,0,1,0,0H20A20,20,0,0,1,0,20v0A20,20,0,0,1,20,0Z" transform="translate(435 395)" fill="#1b1f42"/>
+                                              <path id="Soustraction_4" data-name="Soustraction 4" d="M29,21H19V19.106A17.985,17.985,0,0,0,29,3.27L29,21ZM29,2.736h0A18.234,18.234,0,0,0,28.751,0H29V2.735Z" transform="translate(429 377.2)" fill="#1b1f42"/>
+                                              <path id="Soustraction_3" data-name="Soustraction 3" d="M35,34h-.11c.062-.571.1-1.153.108-1.731L35,34Zm0-2.269h0A17.984,17.984,0,0,0,25,15.893V13H35v18.73Z" transform="translate(423 417.8)" fill="#1b1f42"/>
+                                            </g>
+                                        </svg>
+
+                                        <div class="absolute left-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-white" viewBox="0 0 21.621 19.243">
+                                                <g id="Icon_feather-chevrons-right" data-name="Icon feather-chevrons-right" transform="translate(-6.879 -8.379)">
+                                                  <path id="Tracé_16" data-name="Tracé 16" d="M9,25.5,16.5,18,9,10.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                </g>
+                                            </svg>
+                                              
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+                                  
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex flex-wrap items-end w-24  px-2 py-3 rounded-r-2xl bg-indigo-950">
+                            
+                            <style>
+                                .bg-indigo-950{
+                                    background: #1b1f42;
+                                }
+
+                                .border-indigo-950{
+                                    border-color: #1b1f42;
+                                }
+
+                                .text-950{
+                                    color: #1b1f42;
+                                    fill: #1b1f42;
+                                }
+                            </style>
+
+                            <div class="absolute top-4 grid gap-1">
+                                <div class="text-center">
+                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-300" viewBox="0 0 36.001 31.501">
+                                            <path id="Icon_awesome-heart" data-name="Icon awesome-heart" d="M32.505,4.4a9.615,9.615,0,0,0-13.12.956L18,6.785,16.615,5.358A9.615,9.615,0,0,0,3.495,4.4,10.1,10.1,0,0,0,2.8,19.02L16.4,33.068a2.2,2.2,0,0,0,3.185,0L33.195,19.02A10.09,10.09,0,0,0,32.505,4.4Z" transform="translate(0.001 -2.248)"/>
+                                        </svg>
+                                    </div>
+
+                                    <p class="text-sm text-indigo-500">567</p>
+
+                                </div>
+                                
+                                <div class="text-center">
+                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-200" viewBox="0 0 36.001 31.501">
+                                            <path id="Icon_awesome-share" data-name="Icon awesome-share" d="M35.416,13.348,23.04,2.661a1.689,1.689,0,0,0-2.79,1.277V9.567C8.956,9.7,0,11.96,0,22.664c0,4.32,2.783,8.6,5.859,10.837a1.253,1.253,0,0,0,1.974-1.31c-3.188-10.2,1.512-12.9,12.416-13.06v6.182a1.689,1.689,0,0,0,2.79,1.277L35.416,15.9A1.688,1.688,0,0,0,35.416,13.348Z" transform="translate(0 -2.25)"/>
+                                        </svg>
+                                    </div>
+
+                                    <p class="text-sm text-indigo-500">567</p>
+
+                                </div>
+
+                                <div class="text-center">
+                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-200 ml-1" viewBox="0 0 36.001 31.501">
+                                            <path id="Icon_awesome-save" data-name="Icon awesome-save" d="M30.511,9.136l-5.9-5.9a3.375,3.375,0,0,0-2.386-.989H3.375A3.375,3.375,0,0,0,0,5.625v24.75A3.375,3.375,0,0,0,3.375,33.75h24.75A3.375,3.375,0,0,0,31.5,30.375V11.523a3.375,3.375,0,0,0-.989-2.386ZM15.75,29.25a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,15.75,29.25ZM22.5,7.838v7.068a.844.844,0,0,1-.844.844H5.344a.844.844,0,0,1-.844-.844V7.594a.844.844,0,0,1,.844-.844H21.412a.843.843,0,0,1,.6.247l.245.245a.843.843,0,0,1,.247.6Z" transform="translate(0 -2.25)"/>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap justify-center">
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+                                </div>
+
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+                                </div>
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+                                </div>
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+                                </div>
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="p-6 md:rounded-3xl rounded-lg md:mt-8 mt-4 border border-gray-700">
+                        <h1 class="md:text-3xl text-2xl text-white">Basic principles of UI Design</h1>
+                        <p class="text-gray-200 mt-6 md:block hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illum aspernatur reprehenderit dicta assumenda laborum qui unde libero ab optio ex magnam tenetur id, labore praesentium facere vero, velit quidem?</p>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="lg:w-3/12 lg:mt-0 mt-8">
+
+                    <div class="lg:pr-16 md:pr-8 md:pl-8 pr-6 pl-6 rounded-lg z-50
+                                flex justify-between items-center">
+                        <h2 class="md:text-2xl text-xl text-gray-200">UI Design series</h2>
+
+                        <p class="text-gray-200">3/12</p>
+                    </div>
+                    
+
+                    <div class="splide md:mt-8 mt-4" id="series">
+
+                        <div class="splide__track md:pr-16 pr-6">
+                            <div class="splide__list lg:gap-5 gap-4">
+                                <div class="splide__slide p-2 lg:rounded-xl rounded-3xl hover:bg-gray-800
+                                    transition-all duration-300">
+                                
+                                    <div class="lg:flex gap-2 items-center relative">
+                
+                                        <div class="lg:w-4/12 flex justify-center">
+                                            <img src="../public/images/projects/3.png" alt="" 
+                                                class="lg:rounded-xl lg:w-auto lg:h-24 h-32 w-32 rounded-full  object-cover">
+                                        </div>
+                
+                                        <div class="lg:w-8/12 lg:mt-0">
+                                            <div class="lg:flex flex-wrap lg:p-0 p-3">
+                                                <h4 class="text-md text-gray-200 lg:text-left text-center leading-snug">Basic principles of UI Design</h4>
+                                                    
+                                                <div class="">
+                                                    
+                                                    <div class="text-sm text-green-500 lg:mt-2 mt-4 
+                                                                flex md:flex-wrap lg:justify-start justify-center  
+                                                                items-center gap-3">
+                                                        
+                                                        UI Design 
+                                                        <span class="text-gray-400">EP 02</span>
+                
+                                                        <div class="absolute lg:left-2 lg:top-16 top-3 right-3 px-2 w-max 
+                                                                    text-white bg-green-500 rounded-full">16:12</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="splide__slide p-2 lg:rounded-xl rounded-3xl hover:bg-gray-800
+                                    transition-all duration-300">
+                                
+                                    <div class="lg:flex gap-2 items-center relative">
+                
+                                        <div class="lg:w-4/12 flex justify-center">
+                                            <img src="../public/images/projects/2.png" alt="" 
+                                                class="lg:rounded-xl lg:w-auto lg:h-24 h-32 w-32 rounded-full  object-cover">
+                                        </div>
+                
+                                        <div class="lg:w-8/12 lg:mt-0">
+                                            <div class="lg:flex flex-wrap lg:p-0 p-3">
+                                                <h4 class="text-md text-gray-200 lg:text-left text-center leading-snug">Basic principles of UI Design</h4>
+                                                    
+                                                <div class="">
+                                                    
+                                                    <div class="text-sm text-green-500 lg:mt-2 mt-4 
+                                                                flex md:flex-wrap lg:justify-start justify-center  
+                                                                items-center gap-3">
+                                                        
+                                                        UI Design 
+                                                        <span class="text-gray-400">EP 02</span>
+                
+                                                        <div class="absolute lg:left-2 lg:top-16 top-3 right-3 px-2 w-max 
+                                                                    text-white bg-green-500 rounded-full">16:12</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="splide__slide p-2 lg:rounded-xl rounded-3xl bg-gray-800 hover:bg-blue-900
+                                            transition-all duration-300">
+                                
+                                    <div class="lg:flex gap-2 items-center relative">
+                
+                                        <div class="lg:w-4/12 flex justify-center">
+                                            <img src="../public/images/projects/2d54228cc89058785835ec0206db7ccb.jpg" alt="" 
+                                                class="lg:rounded-xl lg:w-auto lg:h-24 h-32 w-32 rounded-full  object-cover">
+                                        </div>
+                
+                                        <div class="lg:w-8/12 lg:mt-0">
+                                            <div class="lg:flex flex-wrap lg:p-0 p-3">
+                                                <h4 class="text-md text-gray-200 lg:text-left text-center leading-snug">Basic principles of UI Design</h4>
+                                                    
+                                                <div class="">
+                                                    
+                                                    <div class="text-sm text-green-500 lg:mt-2 mt-4 
+                                                                flex md:flex-wrap lg:justify-start justify-center  
+                                                                items-center gap-3">
+                                                        
+                                                        UI Design 
+                                                        <span class="text-gray-400">EP 02</span>
+                
+                                                        <div class="absolute lg:left-2 lg:top-16 top-3 right-3 px-2 w-max 
+                                                                    text-white bg-green-500 rounded-full">16:12</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="splide__slide p-2 lg:rounded-xl rounded-3xl hover:bg-gray-800
+                                    transition-all duration-300">
+                                
+                                    <div class="lg:flex gap-2 items-center relative">
+                
+                                        <div class="lg:w-4/12 flex justify-center">
+                                            <img src="../public/images/projects/bootstrap5.png" alt="" 
+                                                class="lg:rounded-xl lg:w-auto lg:h-24 h-32 w-32 rounded-full  object-cover">
+                                        </div>
+                
+                                        <div class="lg:w-8/12 lg:mt-0">
+                                            <div class="lg:flex flex-wrap lg:p-0 p-3">
+                                                <h4 class="text-md text-gray-200 lg:text-left text-center leading-snug">Basic principles of UI Design</h4>
+                                                    
+                                                <div class="">
+                                                    
+                                                    <div class="text-sm text-green-500 lg:mt-2 mt-4 
+                                                                flex md:flex-wrap lg:justify-start justify-center  
+                                                                items-center gap-3">
+                                                        
+                                                        UI Design 
+                                                        <span class="text-gray-400">EP 02</span>
+                
+                                                        <div class="absolute lg:left-2 lg:top-16 top-3 right-3 px-2 w-max 
+                                                                    text-white bg-green-500 rounded-full">16:12</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="splide__slide p-2 lg:rounded-xl rounded-3xl hover:bg-gray-800
+                                    transition-all duration-300">
+                                
+                                    <div class="lg:flex gap-2 items-center relative">
+                
+                                        <div class="lg:w-4/12 flex justify-center">
+                                            <img src="../public/images/projects/v5-new-logo.png" alt="" 
+                                                class="lg:rounded-xl lg:w-auto lg:h-24 h-32 w-32 rounded-full  object-cover">
+                                        </div>
+                
+                                        <div class="lg:w-8/12 lg:mt-0">
+                                            <div class="lg:flex flex-wrap lg:p-0 p-3">
+                                                <h4 class="text-md text-gray-200 lg:text-left text-center leading-snug">Basic principles of UI Design</h4>
+                                                    
+                                                <div class="">
+                                                    
+                                                    <div class="text-sm text-green-500 lg:mt-2 mt-4 
+                                                                flex md:flex-wrap lg:justify-start justify-center  
+                                                                items-center gap-3">
+                                                        
+                                                        UI Design 
+                                                        <span class="text-gray-400">EP 02</span>
+                
+                                                        <div class="absolute lg:left-2 lg:top-16 top-3 right-3 px-2 w-max 
+                                                                    text-white bg-green-500 rounded-full">16:12</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </section>
+
+    <section class="mb-32">
+
+        <div class="md:px-16 px-6">
+
+            <div class="md:mb-12 mb-6">
+                <h2 class="md:text-3xl text-xl font-semibold text-gray-200">Sur le même sujet</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 justify-center">
+                
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/2d54228cc89058785835ec0206db7ccb.jpg" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/v5-new-logo.png" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/3.png" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/2d54228cc89058785835ec0206db7ccb.jpg" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/v5-new-logo.png" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+                <a href="video.html" class="rounded-xl hover:bg-gray-800 rounded-b-3xl">
+                            
+                    <div class="relative">
+                        
+                        <div class="absolute h-8 w-8 top-3 right-3 bg-gray-300 bg-opacity-20  
+                                    rounded-full flex justify-center items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-200" viewBox="0 0 40.5 27">
+                                <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M23.639,4.5H3.361A3.361,3.361,0,0,0,0,7.861V28.139A3.361,3.361,0,0,0,3.361,31.5H23.639A3.361,3.361,0,0,0,27,28.139V7.861A3.361,3.361,0,0,0,23.639,4.5ZM36.956,7.151,29.25,12.466V23.534l7.706,5.309A2.255,2.255,0,0,0,40.5,27.028V8.965A2.255,2.255,0,0,0,36.956,7.151Z" transform="translate(0 -4.5)"/>
+                            </svg>
+                                    
+                        </div>
+
+                        <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
+                            <div class="flex items-center gap-1">
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
+                                </div>
+
+                                <div>
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                    <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+
+                                </div>
+
+                                <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+
+                                <div class="text-sm text-gray-200 ml-2">
+                                    Débutant
+                                </div>
+                            </div>
+
+                            <div class="py-2 w-max px-4 rounded-full bg-yellow-300 -mb-8">
+                                <h3 class="text-md font-semibold text-yellow-900">7.5 $</h3>
+                            </div>
+                        </div>
+
+                        <img src="../public/images/projects/3.png" class="h-48 w-full object-cover rounded-t-2xl rounded-bl-3xl" alt="">
+                    
+                    </div>
+                    
+                    <div class="px-4 py-6 -mt-6 border border-gray-800 rounded-b-3xl">
+                        <h2 class="text-xl mt-4 text-gray-400">Les classes utilitaires avec Taillwindcss</h2>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="fixed w-full h-20 bottom-0 z-50 
+                bg-gradient-to-b from-transparent to-gray-900">
+
+    </div>
+
+    <footer class="md:px-16 mt-32 relative" style="z-index:60;">
+
+        <div class="bg-gray-800 md:rounded-t-3xl lg:px-24 px-6 py-16">
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-white">Devscast</span>
+                </a>
+            </div>
+
+            <p class="text-center text-gray-500">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+    <script src="../public/js/series.js"></script>
+    <script src="../public/js/splide.min.js"></script>
+
+</body>
+
+</html>
