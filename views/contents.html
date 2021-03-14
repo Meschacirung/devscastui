@@ -14,12 +14,14 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="../public/css/mosaic.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+<body class="overflow-x-hidden bg-gray-100" style="font-family:'Rubik', sans-serif;">
 
     <header>
         <nav class="fixed bg-white z-50
@@ -71,17 +73,13 @@
         </nav>
     </header>
 
-    <section id="hero" class="bg-gradient-to-b from-white via-white to-gray-100 mb-40">
+    <section id="hero" class="bg-gray-800 mb-40 hidden">
         
         <div class="lg:flex items-center py-24">
-            <div class="lg:w-7/12 lg:px-24 md:px-16 px-6">
-                <h1 class="lg:text-5xl font-bold text-4xl text-gray-800 lg:leading-snug leading-snug">Contenu créatif pour tout le monde.</h1>
-                <p class="mt-6 text-gray-600">Rem doloremque beatae eaque! Aliquam praesentium ipsam omnis pariatur doloribus animi ipsum!</p>
+            <div class="lg:w-7/12 lg:px-24 md:px-16 px-6 pt-20">
+                <h1 class="lg:text-3xl font-bold text-4xl text-white lg:leading-snug leading-snug">Contenu créatif pour tout le monde.</h1>
             </div>
     
-            <div class="lg:w-4/12 -mb-24">
-                <img src="../public/images/services/web devlopment.svg" alt="">
-            </div>
         </div>
 
         <div class="w-10/12 m-auto absolute left-0 right-0 -mt-9" style="z-index:20;">
@@ -102,164 +100,525 @@
                     <button type="submit" class="md:inline hidden ml-8 bg-indigo-500 py-3 px-6 rounded-md text-white hover:bg-indigo-600">Rechercher</button>
                 </div>
 
-                <input autocomplete="additional-name" type="search" class="py-6 pl-20 shadow-xl w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="De quel contenu avez-vous besoin ?" name="" id="">
+                <input autocomplete="additional-name" type="search" class="py-6 pl-20 shadow-lg w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="De quel contenu avez-vous besoin ?" name="" id="">
                 
             </form>
         </div>
 
     </section>
 
-    <section class="md:mb-16 mb-6">
-        <div class="lg:px-24 md:px-16 px-6">
 
-            <h2 class="md:text-4xl text-3xl font-semibold text-gray-800 mb-16">Les plus vus en ce moment</h2>
+    <div class="mosaic mosaic--v lg:px-24 md:px-16 px-6 gap-6 justify-center pt-32">
+        
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
 
-            <div class="grid md:grid-cols-2 gap-6">
-
-                <div class="relative">
-                    <div class="lg:-mt-7 -mt-2 absolute top-0 right-8 bg-yellow-500 p-4">
-                        <h4 class="font-bold">16.67 $</h4>
-                    </div>
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-purple-900 bg-opacity-95">
-                        <span class="border border-white px-4 text-sm p-2 text-white rounded-full">
-                            UI DESIGN
-                        </span>
-                        <h3 class="lg:my-6 md:my-4 mt-6 lg:text-3xl text-xl font-semibold text-white leading-snug">Prototypez vos maquettes avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/2.png" class="rounded-2xl" alt="">
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
                 </div>
 
-                <div class="relative">
-                    <div class="lg:-mt-7 -mt-2 absolute top-0 right-8 bg-yellow-500 p-4">
-                        <h4 class="font-bold">16.67 $</h4>
+                <img src="../public/images/projects/mockup.jpg" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-pink-500 text-sm">CSS</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">7.5 $</h3>
                     </div>
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <span class="border border-white px-4 text-sm p-2 text-white rounded-full">
-                            UI DESIGN
-                        </span>
-                        <h3 class="lg:my-6 md:my-4 mt-6 lg:text-3xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">Les classes utilitaires avec Taillwind Css</h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
                     </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
                 </div>
 
             </div>
-
         </div>
-    </section>
 
-    <section class="md:mb-16 mb-6">
-        <div class="lg:px-24 md:px-16 px-6">
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
 
-            <h2 class="md:text-4xl text-2xl font-semibold text-gray-800 md:mb-16 mb-6">Développement Web</h2>
-
-            <div class="grid lg:grid-cols-6 md:grid-cols-8 grid-cols-8 gap-6 overflow-x-scoll items-center" style="width: 2600px;">
-
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-purple-900 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Prototypez vos maquettes avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/2.png" class="rounded-2xl" alt="">
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
+                <img src="../public/images/projects/bootstrap5.png" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-500 text-sm">PHP</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
                     </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-gray-500 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Material Design System <span class="text-pink-300">Adobe XD</span> .</h3>
+                <h2 class="text-2xl mt-4 text-gray-700">Domain Driven Design (DDD) avec Symfony 5</h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Avancé
+                        </div>
                     </div>
-                    <img src="../public/images/projects/1.jpg" class="rounded-2xl" alt="">
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <span class="border border-white px-4 text-sm p-2 text-white rounded-full">
-                            UI DESIGN
-                        </span>
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
-                </div>
-
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
-                </div>
-
-                <div class="flex justify-start">
-                    <div class="w-24 h-24 border rounded-full flex items-center justify-center hover:border-white hover:shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-gray-600 hover:text-green-500" width="31.504" height="30.705" viewBox="0 0 31.504 30.705">
-                            <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
-                        </svg>
-                          
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
 
-    <section class="md:mb-16 mb-6">
-        <div class="lg:px-24 md:px-16 px-6">
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
 
-            <h2 class="md:text-4xl text-2xl font-semibold text-gray-800 md:mb-16 mb-6">Développement Web</h2>
-
-            <div class="grid lg:grid-cols-6 md:grid-cols-8 grid-cols-8 gap-6 overflow-x-scoll items-center" style="width: 2600px;">
-
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-gray-500 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Material Design System <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/1.jpg" class="rounded-2xl" alt="">
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-purple-900 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Prototypez vos maquettes avec <span class="text-pink-300">Adobe XD</span> .</h3>
+                <img src="../public/images/projects/v5-new-logo.png" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-pink-500 text-sm">CSS</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
                     </div>
-                    <img src="../public/images/projects/2.png" class="rounded-2xl" alt="">
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
+                <h2 class="text-2xl mt-4 text-gray-700">Le nouveau Bootstrap 5</h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
                     </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
                 </div>
 
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <span class="border border-white px-4 text-sm p-2 text-white rounded-full">
-                            UI DESIGN
-                        </span>
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
-                </div>
-
-                <div class="relative">
-                    <div class="rounded-2xl w-full absolute bottom-0 p-6 bg-gradient-to-b from-transparent to-green-800 bg-opacity-95">
-                        <h3 class="mb-2 lg:text-2xl text-xl font-semibold text-white leading-snug">Créez un design system pour votre entreprise avec <span class="text-pink-300">Adobe XD</span> .</h3>
-                    </div>
-                    <img src="../public/images/projects/3.png" class="rounded-2xl" alt="">
-                </div>
-
-                <div class="flex justify-start">
-                    <div class="w-24 h-24 border rounded-full flex items-center justify-center hover:border-white hover:shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-gray-600 hover:text-green-500" width="31.504" height="30.705" viewBox="0 0 31.504 30.705">
-                            <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
-                        </svg>
-                          
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
+                </div>
+
+                <img src="../public/images/projects/3.jpg" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-500 text-sm">PHP</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">La nouvelle version de PHP </h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
+                    </div>
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
+                </div>
+
+                <img src="../public/images/projects/6.jpg" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-yellow-500 text-sm">JS</span>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">Angular, React, Vue.js... Les meilleurs frameworks JavaScript</h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
+                    </div>
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
+                </div>
+
+                <img src="../public/images/projects/4.jpg" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-pink-500 text-sm">CSS</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">Intégration d'une maquette web.</h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
+                    </div>
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
+                </div>
+
+                <img src="../public/images/projects/congo memoire.png" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-green-500 text-sm">UI DESIGN</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">Créez des prototypes avancés avec Adobe XD </h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Moyenne
+                        </div>
+                    </div>
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mosaic-brick mosaic-brick--v 
+                    rounded-xl hover:shadow-sm hover:border-transparent">
+                    
+            <div class="flex justify-center items-center">
+                
+                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
+                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>
+                      
+                </div>
+
+                <img src="../public/images/projects/3.jpg" class="rounded-t-xl" alt="">
+            
+            </div>
+
+            
+            <div class="p-6">
+
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-500 text-sm">PHP</span>
+
+                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl mt-4 text-gray-700">La nouvelle version de PHP </h2>
+
+                <hr class="my-7">
+
+                <div class="flex justify-between items-center">
+                    
+                    <div class="flex items-center gap-1">
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                        </div>
+
+                        <div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
+
+                        </div>
+
+                        
+                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+
+                        <div class="text-sm text-gray-400 ml-3">
+                            Débutant
+                        </div>
+                    </div>
+
+                    <a href="" class="text-blue-400">Suivre</a>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <footer class="mt-32">
         <div class="bg-gray-50 lg:px-24 px-6 py-16">

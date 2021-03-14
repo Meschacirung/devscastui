@@ -1,0 +1,110 @@
+.mosaic {
+  display: flex;
+  width: 95vw;
+}
+
+.mosaic--h {
+  flex-flow: row wrap;
+}
+
+.mosaic--v {
+  flex-flow: column wrap;
+  max-height: 1080px;
+}
+
+.mosaic--h,
+.mosaic--v {
+  margin-left: -8px; /* Adjustment for the gutter */
+  counter-reset: brick;
+}
+
+.mosaic-brick {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  position: relative;
+}
+
+/*
+.mosaic-brick:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  transform: translate(-50%, -50%);
+  counter-increment: brick;
+  content: counter(brick);
+  transition: font-size .25s, opacity .25s ease-in-out;
+  font-weight: 700;
+  opacity: .5;
+  font-size: 1.25em;
+}
+
+.mosaic-brick:hover:after {
+  font-size: 2.25em;
+  opacity: 1;
+}
+
+.mosaic-brick--h {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+}
+*/
+
+@media only screen and (min-width: 1024px) {
+  /* Horizontal mosaic bricks on desktop-sized screen */
+  .mosaic-brick--h:nth-child(4n+1) {
+    width: 250px;
+  }
+  .mosaic-brick--h:nth-child(4n+2) {
+    width: 325px;
+  }
+  .mosaic-brick--h:nth-child(4n+3) {
+    width: 180px;
+  }
+  .mosaic-brick--h:nth-child(4n+4) {
+    width: 380px;
+  }
+
+  /* Adjusting vertical mosaic height on desktop-sized screen */
+  .mosaic--v {
+    max-height: 1600px;
+  }
+
+  /* Vertical mosaic bricks on desktop-sized screen */
+  .mosaic-brick--v {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Horizontal mosaic bricks on tabled-sized screen */
+  .mosaic-brick--h:nth-child(4n+1) {
+    width: 200px;
+  }
+  .mosaic-brick--h:nth-child(4n+2) {
+    width: 250px;
+  }
+  .mosaic-brick--h:nth-child(4n+3) {
+    width: 120px;
+  }
+  .mosaic-brick--h:nth-child(4n+4) {
+    width: 280px;
+  }
+
+  /* Adjusting vertical mosaic height on tablet-sized screen */
+  .mosaic--v {
+    max-height: 2000px;
+  }
+
+  /* Vertical mosaic bricks on tablet-sized screen */
+  .mosaic-brick--v {
+    width: 50%;
+  }
+}
+
+.mosaic-img {
+  width: 100%;
+  height: 100%;
+}
