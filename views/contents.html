@@ -14,14 +14,13 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
-    <link rel="stylesheet" href="../public/css/mosaic.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="overflow-x-hidden bg-gray-100" style="font-family:'Rubik', sans-serif;">
+<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
 
     <header>
         <nav class="fixed bg-white z-50
@@ -95,6 +94,7 @@
         </div>
 
         <div class="lg:px-24 md:px-16 px-6 m-auto absolute left-0 right-0 -mt-9" style="z-index:20;">
+            
             <form action="" class="flex items-center">
 
                 <div class="absolute md:ml-8 ml-4">
@@ -152,521 +152,192 @@
                 <input autocomplete="additional-name" type="search" class="md:py-6 py-4 md:pl-20 pl-12 shadow-lg w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="Votre contenu ici" name="" id="">
                 
             </form>
+
         </div>
 
     </section>
 
 
-    <div class="mosaic mosaic--v lg:px-24 md:px-16 px-6 gap-6 justify-center pt-32">
+    <div class="lg:px-24 md:px-16 px-6 
+                grid lg:grid-cols-3 gap-10 justify-center">
         
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
+        <div class="rounded-xl hover:shadow-md rounded-b-3xl">
                     
-            <div class="flex justify-center items-center">
+            <div class="relative">
                 
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+                <div class="absolute h-10 w-10 top-3 right-3 border rounded-full 
+                            flex justify-center items-center">
 
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                        <defs>
+                            <clipPath id="clip-path">
+                            <rect id="Rectangle_6" data-name="Rectangle 6" width="17" height="17" transform="translate(416 297)" fill="#fff" stroke="#707070" stroke-width="1"/>
+                            </clipPath>
+                        </defs>
+                        <g id="Groupe_de_masques_2" data-name="Groupe de masques 2" transform="translate(-416 -297)" clip-path="url(#clip-path)">
+                            <path id="__TEMP__SVG__" d="M17,.911V11.232a.567.567,0,0,1-.37.56.662.662,0,0,1-.237.047.564.564,0,0,1-.427-.18L12.143,7.836V9.41a2.738,2.738,0,0,1-2.732,2.732H2.732a2.631,2.631,0,0,1-1.93-.8A2.633,2.633,0,0,1,0,9.411V2.732A2.631,2.631,0,0,1,.8.8,2.634,2.634,0,0,1,2.732,0H9.411a2.631,2.631,0,0,1,1.93.8,2.632,2.632,0,0,1,.8,1.93V4.3L15.966.484A.564.564,0,0,1,16.393.3a.662.662,0,0,1,.237.047A.567.567,0,0,1,17,.91Z" transform="translate(416 299.429)"/>
+                        </g>
                     </svg>
+                              
                       
                 </div>
 
-                <img src="../public/images/projects/mockup.jpg" class="rounded-t-xl" alt="">
-            
-            </div>
+                <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
 
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-pink-500 text-sm">CSS</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">7.5 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Les classes utilitaires avec Taillwind Css</h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
                     <div class="flex items-center gap-1">
 
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                            <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
                         </div>
-
+    
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+    
                         </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
+    
+                        <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                        <div class="text-sm text-gray-200 ml-3">
                             Débutant
                         </div>
                     </div>
 
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
+                    <div class="py-2 w-max px-4 rounded-full bg-white bg-opacity-90">
+                        <h3 class="text-md font-semibold text-gray-700">7.5 $</h3>
+                    </div>
                 </div>
 
+                <img src="../public/images/projects/2.png" class="rounded-t-2xl rounded-bl-3xl" alt="">
+            
+            </div>
+            
+            <div class="px-4 py-6 -mt-6 border rounded-b-3xl">
+                <h2 class="text-xl mt-4 text-gray-700">Les classes utilitaires avec Taillwindcss</h2>
             </div>
         </div>
 
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
+        <div class="rounded-xl hover:shadow-md rounded-b-3xl">
                     
-            <div class="flex justify-center items-center">
+            <div class="relative">
                 
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
+                <div class="absolute h-10 w-10 top-3 right-3 border rounded-full 
+                            flex justify-center items-center">
 
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                        <defs>
+                            <clipPath id="clip-path">
+                            <rect id="Rectangle_6" data-name="Rectangle 6" width="17" height="17" transform="translate(416 297)" fill="#fff" stroke="#707070" stroke-width="1"/>
+                            </clipPath>
+                        </defs>
+                        <g id="Groupe_de_masques_2" data-name="Groupe de masques 2" transform="translate(-416 -297)" clip-path="url(#clip-path)">
+                            <path id="__TEMP__SVG__" d="M17,.911V11.232a.567.567,0,0,1-.37.56.662.662,0,0,1-.237.047.564.564,0,0,1-.427-.18L12.143,7.836V9.41a2.738,2.738,0,0,1-2.732,2.732H2.732a2.631,2.631,0,0,1-1.93-.8A2.633,2.633,0,0,1,0,9.411V2.732A2.631,2.631,0,0,1,.8.8,2.634,2.634,0,0,1,2.732,0H9.411a2.631,2.631,0,0,1,1.93.8,2.632,2.632,0,0,1,.8,1.93V4.3L15.966.484A.564.564,0,0,1,16.393.3a.662.662,0,0,1,.237.047A.567.567,0,0,1,17,.91Z" transform="translate(416 299.429)"/>
+                        </g>
                     </svg>
+                              
                       
                 </div>
 
-                <img src="../public/images/projects/bootstrap5.png" class="rounded-t-xl" alt="">
-            
-            </div>
+                <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
 
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-indigo-500 text-sm">PHP</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Domain Driven Design (DDD) avec Symfony 5</h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
                     <div class="flex items-center gap-1">
 
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                            <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
                         </div>
-
+    
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+    
                         </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
-                            Avancé
-                        </div>
-                    </div>
-
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/v5-new-logo.png" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-pink-500 text-sm">CSS</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Le nouveau Bootstrap 5</h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
-                    <div class="flex items-center gap-1">
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-                        </div>
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
-                        </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
+    
+                        <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                        <div class="text-sm text-gray-200 ml-3">
                             Débutant
                         </div>
                     </div>
 
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/3.jpg" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-indigo-500 text-sm">PHP</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
+                    <div class="py-2 w-max px-4 rounded-full bg-white bg-opacity-90">
+                        <h3 class="text-md font-semibold text-gray-700">7.5 $</h3>
                     </div>
                 </div>
 
-                <h2 class="text-2xl mt-4 text-gray-700">La nouvelle version de PHP </h2>
+                <img src="../public/images/projects/2.png" class="rounded-t-2xl rounded-bl-3xl" alt="">
+            
+            </div>
+            
+            <div class="px-4 py-6 -mt-6 border rounded-b-3xl">
+                <h2 class="text-xl mt-4 text-gray-700">Les classes utilitaires avec Taillwindcss</h2>
+            </div>
+        </div>
 
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
+        <div class="rounded-xl hover:shadow-md rounded-b-3xl">
                     
+            <div class="relative">
+                
+                <div class="absolute h-10 w-10 top-3 right-3 border rounded-full 
+                            flex justify-center items-center">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                        <defs>
+                            <clipPath id="clip-path">
+                            <rect id="Rectangle_6" data-name="Rectangle 6" width="17" height="17" transform="translate(416 297)" fill="#fff" stroke="#707070" stroke-width="1"/>
+                            </clipPath>
+                        </defs>
+                        <g id="Groupe_de_masques_2" data-name="Groupe de masques 2" transform="translate(-416 -297)" clip-path="url(#clip-path)">
+                            <path id="__TEMP__SVG__" d="M17,.911V11.232a.567.567,0,0,1-.37.56.662.662,0,0,1-.237.047.564.564,0,0,1-.427-.18L12.143,7.836V9.41a2.738,2.738,0,0,1-2.732,2.732H2.732a2.631,2.631,0,0,1-1.93-.8A2.633,2.633,0,0,1,0,9.411V2.732A2.631,2.631,0,0,1,.8.8,2.634,2.634,0,0,1,2.732,0H9.411a2.631,2.631,0,0,1,1.93.8,2.632,2.632,0,0,1,.8,1.93V4.3L15.966.484A.564.564,0,0,1,16.393.3a.662.662,0,0,1,.237.047A.567.567,0,0,1,17,.91Z" transform="translate(416 299.429)"/>
+                        </g>
+                    </svg>
+                              
+                      
+                </div>
+
+                <div class="absolute left-3 right-3 bottom-3 flex justify-between items-end">
+
                     <div class="flex items-center gap-1">
 
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
+                            <div class="w-1 h-1 rounded-full bg-gray-100"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 mt-1"></div>
                         </div>
-
+    
                         <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                            <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30 mt-1"></div>
+    
                         </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
+    
+                        <div class="w-1 h-1 rounded-full bg-gray-100 opacity-30"></div>
+    
+                        <div class="text-sm text-gray-200 ml-3">
                             Débutant
                         </div>
                     </div>
 
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
+                    <div class="py-2 w-max px-4 rounded-full bg-white bg-opacity-90">
+                        <h3 class="text-md font-semibold text-gray-700">7.5 $</h3>
+                    </div>
                 </div>
 
+                <img src="../public/images/projects/2.png" class="rounded-t-2xl rounded-bl-3xl" alt="">
+            
+            </div>
+            
+            <div class="px-4 py-6 -mt-6 border rounded-b-3xl">
+                <h2 class="text-xl mt-4 text-gray-700">Les classes utilitaires avec Taillwindcss</h2>
             </div>
         </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/6.jpg" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-yellow-500 text-sm">JS</span>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Angular, React, Vue.js... Les meilleurs frameworks JavaScript</h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
-                    <div class="flex items-center gap-1">
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-                        </div>
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
-                        </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
-                            Débutant
-                        </div>
-                    </div>
-
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/4.jpg" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-pink-500 text-sm">CSS</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Intégration d'une maquette web.</h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
-                    <div class="flex items-center gap-1">
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-                        </div>
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
-                        </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
-                            Débutant
-                        </div>
-                    </div>
-
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/congo memoire.png" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-green-500 text-sm">UI DESIGN</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">Créez des prototypes avancés avec Adobe XD </h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
-                    <div class="flex items-center gap-1">
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-                        </div>
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
-                        </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
-                            Moyenne
-                        </div>
-                    </div>
-
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        <div class="mosaic-brick mosaic-brick--v 
-                    rounded-xl hover:shadow-sm hover:border-transparent">
-                    
-            <div class="flex justify-center items-center">
-                
-                <div class="absolute h-14 w-14 bg-green-900 rounded-full bg-opacity-50 flex justify-center items-center">
-
-                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="36.001" viewBox="0 0 31.499 36.001">
-                        <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M29.841,15.1,5.091.464A3.356,3.356,0,0,0,0,3.368V32.625a3.372,3.372,0,0,0,5.091,2.9L29.841,20.9a3.372,3.372,0,0,0,0-5.808Z" transform="translate(0 -0.002)" fill="#fff"/>
-                    </svg>
-                      
-                </div>
-
-                <img src="../public/images/projects/3.jpg" class="rounded-t-xl" alt="">
-            
-            </div>
-
-            
-            <div class="p-6">
-
-                <div class="flex justify-between items-center">
-                    <span class="text-indigo-500 text-sm">PHP</span>
-
-                    <div class="-mt-16 py-2 w-max px-4 rounded-full bg-yellow-200">
-                        <h3 class="text-lg font-semibold text-yellow-700">12.0 $</h3>
-                    </div>
-                </div>
-
-                <h2 class="text-2xl mt-4 text-gray-700">La nouvelle version de PHP </h2>
-
-                <hr class="my-7">
-
-                <div class="flex justify-between items-center">
-                    
-                    <div class="flex items-center gap-1">
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-green-400 mt-1"></div>
-                        </div>
-
-                        <div>
-                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                            <div class="w-2 h-2 rounded-full bg-gray-200 mt-1"></div>
-
-                        </div>
-
-                        
-                        <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-
-                        <div class="text-sm text-gray-400 ml-3">
-                            Débutant
-                        </div>
-                    </div>
-
-                    <a href="" class="text-blue-400">Suivre</a>
-                    
-                </div>
-
-            </div>
-        </div>
-
+       
     </div>
 
     <footer class="mt-32">
