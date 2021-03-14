@@ -94,25 +94,62 @@
     
         </div>
 
-        <div class="w-10/12 m-auto absolute left-0 right-0 -mt-9" style="z-index:20;">
+        <div class="lg:px-24 md:px-16 px-6 m-auto absolute left-0 right-0 -mt-9" style="z-index:20;">
             <form action="" class="flex items-center">
-                <div class="absolute ml-8">
-                    <svg class="fill-current text-gray-500 pointer-events-none  w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+
+                <div class="absolute md:ml-8 ml-4">
+                    <svg class="fill-current text-gray-500 pointer-events-none  md:w-6 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
                     </svg>
                 </div>
-                <div class="absolute right-0 mr-3">
-                    <select name="" id="" class="outline-none border-l-2 p-2 pl-6">
-                        <option value="">Formations</option>
-                        <option value="">Code</option>
-                        <option value="">Astuces</option>
-                        <option value="">Templates</option>
-                    </select>
+                
+                <div class="absolute right-0 lg:mr-28 md:mr-20 mr-8 flex items-center">
 
-                    <button type="submit" class="md:inline hidden ml-8 bg-indigo-500 py-3 px-6 rounded-md text-white hover:bg-indigo-600">Rechercher</button>
+                    <div>
+
+                        <button class="md:hidden block bg-gray-800 p-3 
+                                        rounded-lg text-white hover:bg-gray-900 shadow-lg">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 31.5 31.5">
+                                <g id="Icon_ionic-md-options" data-name="Icon ionic-md-options" transform="translate(-2.25 -2.25)">
+                                    <g id="Groupe_1" data-name="Groupe 1">
+                                    <path id="Tracé_1" data-name="Tracé 1" d="M2.25,27H21.375v2.25H2.25Z" fill="#fff"/>
+                                    <path id="Tracé_2" data-name="Tracé 2" d="M28.125,27H33.75v2.25H28.125Z" fill="#fff"/>
+                                    <path id="Tracé_3" data-name="Tracé 3" d="M27,31.465a2.268,2.268,0,0,1-2.25,2.285h0a2.268,2.268,0,0,1-2.25-2.285v-6.68A2.268,2.268,0,0,1,24.75,22.5h0A2.268,2.268,0,0,1,27,24.785Z" fill="#fff"/>
+                                    </g>
+                                    <g id="Groupe_2" data-name="Groupe 2">
+                                    <path id="Tracé_4" data-name="Tracé 4" d="M2.25,16.875H7.875v2.25H2.25Z" fill="#fff"/>
+                                    <path id="Tracé_5" data-name="Tracé 5" d="M14.625,16.875H33.75v2.25H14.625Z" fill="#fff"/>
+                                    <path id="Tracé_6" data-name="Tracé 6" d="M13.5,21.34a2.268,2.268,0,0,1-2.25,2.285h0A2.268,2.268,0,0,1,9,21.34V14.66a2.268,2.268,0,0,1,2.25-2.285h0A2.268,2.268,0,0,1,13.5,14.66Z" fill="#fff"/>
+                                    </g>
+                                    <g id="Groupe_3" data-name="Groupe 3">
+                                    <path id="Tracé_7" data-name="Tracé 7" d="M2.25,6.75H21.375V9H2.25Z" fill="#fff"/>
+                                    <path id="Tracé_8" data-name="Tracé 8" d="M28.125,6.75H33.75V9H28.125Z" fill="#fff"/>
+                                    <path id="Tracé_9" data-name="Tracé 9" d="M27,11.215A2.268,2.268,0,0,1,24.75,13.5h0a2.268,2.268,0,0,1-2.25-2.285V4.535A2.268,2.268,0,0,1,24.75,2.25h0A2.268,2.268,0,0,1,27,4.535Z" fill="#fff"/>
+                                    </g>
+                                </g>
+                            </svg>                 
+
+                        </button>
+
+                        <select name="" id="" class="outline-none md:block hidden border-l-2 p-2 pl-6">
+                            <option value="">Formations</option>
+                            <option value="">Code</option>
+                            <option value="">Astuces</option>
+                            <option value="">Templates</option>
+                        </select>
+                    </div>
+                    
+
+                    <button type="submit" class="md:inline ml-8 bg-indigo-500 py-3 px-6 
+                                                rounded-md text-white hover:bg-indigo-600 
+                                                md:block hidden">
+                        Rechercher
+                    </button>
+
                 </div>
 
-                <input autocomplete="additional-name" type="search" class="py-6 pl-20 shadow-lg w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="De quel contenu avez-vous besoin ?" name="" id="">
+                <input autocomplete="additional-name" type="search" class="md:py-6 py-4 md:pl-20 pl-12 shadow-lg w-full bg-white outline-none rounded-lg focus:shadow-md" placeholder="Votre contenu ici" name="" id="">
                 
             </form>
         </div>
