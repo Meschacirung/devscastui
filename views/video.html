@@ -30,18 +30,38 @@
                     bg-gradient-to-b from-gray-900 to-transparent">
 
             <div class="w-full bg-gray-800 bg-opacity-80 z-50
-                        lg:h-auto h-auto lg:px-8 md:px-8 px-4 py-2
+                        lg:h-auto h-auto lg:px-8 md:px-8 px-4 lg:py-0 py-3
                         flex flex-wrap lg:items-center items-start justify-between 
                         transition-all duration-700 ease-in-out"
-                 style ="-webkit-backdrop-filter:blur(10px); backdrop-filter: blur(10px);" >
+                 style ="-webkit-backdrop-filter:blur(6px); backdrop-filter: blur(6px);" >
 
                         <div class="flex-shrink-0">
                             <a href="index.html" class="flex items-center  mt-0">
-                                <img src="../public/images/icon.png" class="w-12" alt="">
-                                <span class="text-2xl text-white">Devscast</span>
+                                <img src="../public/images/icon.png" class="w-10" alt="">
+                                <span class="text-lg text-white md:block hidden">Devscast</span>
                             </a>
                         </div>
-                        
+
+                        <form action="" class="lg:w-4/12 md:w-6/12 w-8/12 m-auto relative">
+
+            
+                            <input autocomplete="additional-name" type="search" 
+                                   class="py-2 md:pl-4 pl-3 w-full h-10 text-gray-400
+                                          bg-gray-900 outline-none rounded-lg text-sm" 
+                                   placeholder="Qu'est voulez-vous suivre ?" autocomplete="" name="" id="">
+                            
+
+                            <button class="bg-gray-700 p-2 absolute right-0 top-0 h-full w-10 
+                                            flex justify-center items-center rounded-r-lg 
+                                            hover:bg-indigo-900 focus:outline-none focus:bg-indigo-800"
+                                    type="submit">
+
+                                <svg class="fill-current text-white pointer-events-none  w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                                </svg>
+                            </button>
+                        </form>
+
                         <div class="block lg:hidden mt-3">
                             <button type="button" id="navbar-open" class="hamburger-open flex lg:hidden transition-all">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" width="27" height="18" viewBox="0 0 27 18">
@@ -70,10 +90,21 @@
             
                         <div class="lg:text-md lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
                             <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-gray-300  hover:text-green-500">Portfolio</a>
-                            <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 text-green-500 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                            
+                            <a href="contents.html" class="lg:inline block lg:my-0 md:py-4 
+                                                            text-gray-100 hover:text-green-500 
+                                                            border-b-2 border-green-700">
+                                Nos contenus
+                            </a>
+                            
                             <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-300 hover:text-green-500">Nous</a>
+                            
                             <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-300 hover:text-green-500">Blog</a>
-                            <a href="contact.html" class="w-max lg:inline block lg:my-0 md:mt-8 mt-6 py-3 px-6 rounded-md bg-gray-700 hover:bg-green-600 text-white">Prendre contact</a>
+                            
+                            <a href="contact.html" class="w-max text-sm lg:inline block lg:my-0 md:mt-8 mt-6 py-3 px-6 
+                                                          rounded-md border border-gray-700 text-white hover:border-green-500">
+                                Prendre contact
+                            </a>
                             
                             <div class="w-8 lg:block hidden">
                                 <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
