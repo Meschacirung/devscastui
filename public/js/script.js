@@ -72,3 +72,28 @@ interact.addEventListener('click', ()=>{
     
 
 })
+
+let saved = document.querySelector('#saved')
+let expander = document.querySelector('#expand')
+let cContainer = document.querySelector('#mContent')
+let closer = document.querySelector('#closer')
+
+closer.addEventListener('click', ()=>{
+    saved.classList.add('-mb-100')
+})
+
+expander.addEventListener('click', ()=>{
+
+    if (cContainer.classList[3] != 'scrollbar-black'){
+
+        cContainer.classList.add('scrollbar-black', 'scroller');
+        saved.classList.remove('-mb-56');
+        expander.classList.add('rotate-90');
+
+    }else{
+        cContainer.classList.remove('scrollbar-black', 'scroller');
+        saved.classList.add('-mb-56');
+        expander.classList.remove('rotate-90');
+    }
+
+})
