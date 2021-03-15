@@ -22,16 +22,44 @@
 
 </head>
 
-<body class="overflow-x-hidden bg-gray-900" style="font-family:'Rubik', sans-serif;">
+<style>
+    .scrollbar-black::-webkit-scrollbar-track {
+        background-color: none;
+    }
+    
+    .scrollbar-black::-webkit-scrollbar {
+        width: 6px;
+        height:98vh;
+        border-radius:8px;
+        padding-right:1px;
+    }
+
+    .scrollbar-black::-webkit-scrollbar-thumb {
+        background-color:#4d5d86; }
+    .scrollbar-black::-webkit-scrollbar-thumb:hover{
+        background: #536081;
+    }
+
+
+    .scroller{
+        overflow-y: scroll;
+        scrollbar-color: #536081 #171b2700;
+        scrollbar-width:thin;
+    }
+</style>
+
+
+<body class="bg-gray-900 scrollbar-black scroller" style="font-family:'Rubik', sans-serif;">
 
     <header>
-        <nav class="fixed w-full z-50 py-4 lg:px-16 md:px-8 px-3 flex justify-center
-                    bg-gradient-to-b from-gray-900 to-transparent" id="navbar">
+        <nav class="fixed w-full z-50  flex justify-center
+                    bg-gradient-to-b from-gray-900 to-transparent">
 
-            <div class="rounded-xl w-full bg-gray-800 bg-opacity-95 z-50
-                        lg:h-auto h-auto px-6 py-2
+            <div class="w-full bg-gray-800 bg-opacity-80 z-50
+                        lg:h-auto h-auto lg:px-8 md:px-8 px-4 py-2
                         flex flex-wrap lg:items-center items-start justify-between 
-                        transition-all duration-700 ease-in-out">
+                        transition-all duration-700 ease-in-out"
+                 style ="-webkit-backdrop-filter:blur(10px); backdrop-filter: blur(10px);" >
 
                         <div class="flex-shrink-0">
                             <a href="index.html" class="flex items-center  mt-0">
@@ -88,17 +116,17 @@
         </nav>
     </header>
 
-    <section class="md:pt-32 lg:pb-20 md:pb-16 pb-8 pt-24">
+    <section class="md:pt-16 lg:pb-20 md:pb-16 pb-8">
 
         <div class="">
 
-            <div class="lg:flex gap-8">  
+            <div class="lg:flex gap-6">  
                 
-                <div class="lg:w-9/12  lg:pl-16 md:pl-8 lg:pr-0 md:pr-8 pr-3 pl-3">
+                <div class="lg:w-9/12  md:pl-8 lg:pr-0 md:pr-8 pr-3 pl-3">
                     <div class="sticky top-24 flex">
 
                         <div class="relative flex items-center">
-                            <video controls src="../public/videos/specify-dsp-destination-vscode.2700c3b.mp4" class="shadow-3xl focus:outline-none rounded-l-2xl" ></video>
+                            <video controls src="../public/videos/Construisez votre stratégie commerciale digitale en freelance (Teaser).mp4" class="shadow-3xl focus:outline-none rounded-l-2xl" ></video>
                             
                             <div class="absolute right-0">
                                 
@@ -127,7 +155,7 @@
                             </div>
                         </div>
                         
-                        <div class="relative flex flex-wrap items-end w-24  px-2 py-3 rounded-r-2xl bg-indigo-950">
+                        <div class="relative flex flex-wrap items-end w-20  px-2 py-3 rounded-r-2xl bg-indigo-950">
                             
                             <style>
                                 .bg-indigo-950{
@@ -199,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="p-6 md:rounded-3xl rounded-lg md:mt-8 mt-4 border border-gray-700">
+                    <div class="p-6 md:rounded-3xl rounded-lg md:mt-16 border border-gray-800">
                         <h1 class="md:text-3xl text-2xl text-white">Basic principles of UI Design</h1>
                         <p class="text-gray-200 mt-6 md:block hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illum aspernatur reprehenderit dicta assumenda laborum qui unde libero ab optio ex magnam tenetur id, labore praesentium facere vero, velit quidem?</p>
                     </div>
@@ -207,9 +235,9 @@
                     
                 </div>
 
-                <div class="lg:w-3/12 lg:mt-0 mt-8">
+                <div class="lg:w-3/12 ml-auto lg:mt-0 pt-7 opacity-90">
 
-                    <div class="lg:pr-16 md:pr-8 md:pl-8 pr-6 pl-6 rounded-lg z-50
+                    <div class="lg:pr-16 lg:pl-2 md:pr-8 md:pl-8 pr-6 pl-6 rounded-lg z-50
                                 flex justify-between items-center">
                         <h2 class="md:text-2xl text-xl text-gray-200">UI Design series</h2>
 
@@ -219,7 +247,7 @@
 
                     <div class="splide md:mt-8 mt-4" id="series">
 
-                        <div class="splide__track md:pr-16 pr-6">
+                        <div class="splide__track md:pr-8 pr-6">
                             <div class="splide__list lg:gap-5 gap-4">
                                 <div class="splide__slide p-2 lg:rounded-xl rounded-3xl hover:bg-gray-800
                                     transition-all duration-300">
