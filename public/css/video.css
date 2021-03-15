@@ -61,6 +61,14 @@
     width:70%;
 }
 
+.col-left{
+    width:72.3%;
+}
+
+.col-right{
+    width:27.7%;
+}
+
 .serie{
     width:28%;
 }
@@ -86,6 +94,14 @@
     .-mb-100{
         margin-bottom:-50%;
     }
+
+    .col-left{
+        width:65% !important;
+    }
+    
+    .col-right{
+        width:35% !important;
+    }
 }
 
 @media (max-width:756px){
@@ -103,7 +119,7 @@
         width:100%; 
     }
     .-mb-100{
-        margin-bottom:-100%;
+        margin-bottom:-110%;
     }
     .text-sm{
         font-size: 12px !important;
@@ -111,5 +127,13 @@
     .unactive{
         margin-left: -12.5%;
         transition: all ease-in-out .7s;
+    }
+
+    .col-left{
+        width:100% !important;
+    }
+    
+    .col-right{
+        width:100% !important;
     }
 }
