@@ -75,7 +75,7 @@
 
 @media (max-width:1024px){
     .video{
-        width:100%;
+        width:100% !important;
     }
     .serie{
         width:100%;
@@ -107,5 +107,9 @@
     }
     .text-sm{
         font-size: 12px !important;
+    }
+    .unactive{
+        margin-left: -12.5%;
+        transition: all ease-in-out .7s;
     }
 }
