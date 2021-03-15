@@ -14,39 +14,13 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
-
     <link rel="stylesheet" href="../public/css/splide/splide.min.css">
+    <link rel="stylesheet" href="../public/css/video.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
-
-<style>
-    .scrollbar-black::-webkit-scrollbar-track {
-        background-color: none;
-    }
-    
-    .scrollbar-black::-webkit-scrollbar {
-        width: 6px;
-        height:98vh;
-        border-radius:8px;
-        padding-right:1px;
-    }
-
-    .scrollbar-black::-webkit-scrollbar-thumb {
-        background-color:#4d5d86; }
-    .scrollbar-black::-webkit-scrollbar-thumb:hover{
-        background: #536081;
-    }
-
-
-    .scroller{
-        overflow-y: scroll;
-        scrollbar-color: #536081 #171b2700;
-        scrollbar-width:thin;
-    }
-</style>
 
 
 <body class="bg-gray-900 scrollbar-black scroller" style="font-family:'Rubik', sans-serif;">
@@ -122,15 +96,18 @@
 
             <div class="lg:flex gap-6">  
                 
-                <div class="lg:w-9/12  md:pl-8 lg:pr-0 md:pr-8 pr-3 pl-3">
+                <div class="video md:pl-8 lg:pr-0 md:pr-8 pr-3 pl-3">
                     <div class="sticky top-24 flex">
 
-                        <div class="relative flex items-center">
-                            <video controls src="../public/videos/Construisez votre stratégie commerciale digitale en freelance (Teaser).mp4" class="shadow-3xl focus:outline-none rounded-l-2xl" ></video>
+                        <div class="relative flex items-center z-50">
+                            <video controls src="../public/videos/Construisez votre stratégie commerciale digitale en freelance (Teaser).mp4" 
+                                    class="focus:outline-none rounded-l-2xl transition-all duration-700" >
+                            </video>
                             
-                            <div class="absolute right-0">
+                            <button id="interact" class="absolute right-0 focus:outline-none">
                                 
                                 <div class="relative">
+
                                     <div class="relative flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="74.6" viewBox="0 0 23 74.6">
                                             <g id="shape" transform="translate(-435 -377.2)">
@@ -140,7 +117,7 @@
                                             </g>
                                         </svg>
 
-                                        <div class="absolute left-3">
+                                        <div class="absolute left-3 transition-all duration-700" id="inticon">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-white" viewBox="0 0 21.621 19.243">
                                                 <g id="Icon_feather-chevrons-right" data-name="Icon feather-chevrons-right" transform="translate(-6.879 -8.379)">
                                                   <path id="Tracé_16" data-name="Tracé 16" d="M9,25.5,16.5,18,9,10.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
@@ -151,80 +128,111 @@
                                     </div>
                                 </div>
                                   
-                                  
-                            </div>
+                            </button>
                         </div>
                         
-                        <div class="relative flex flex-wrap items-end w-20  px-2 py-3 rounded-r-2xl bg-indigo-950">
-                            
-                            <style>
-                                .bg-indigo-950{
-                                    background: #1b1f42;
-                                }
-
-                                .border-indigo-950{
-                                    border-color: #1b1f42;
-                                }
-
-                                .text-950{
-                                    color: #1b1f42;
-                                    fill: #1b1f42;
-                                }
-                            </style>
+                        <div class="relative flex flex-wrap items-end 
+                                    w-20  px-2 py-3 rounded-r-2xl bg-indigo-950
+                                    transition-all duration-700"
+                             id="interactions">
 
                             <div class="absolute top-4 grid gap-1">
+
                                 <div class="text-center">
-                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+
+                                    <button class="h-10 w-10 rounded-full
+                                                   flex justify-center items-center
+                                                   focus:outline-none focus:bg-indigo-900 hover:bg-indigo-900">
+
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-300" viewBox="0 0 36.001 31.501">
                                             <path id="Icon_awesome-heart" data-name="Icon awesome-heart" d="M32.505,4.4a9.615,9.615,0,0,0-13.12.956L18,6.785,16.615,5.358A9.615,9.615,0,0,0,3.495,4.4,10.1,10.1,0,0,0,2.8,19.02L16.4,33.068a2.2,2.2,0,0,0,3.185,0L33.195,19.02A10.09,10.09,0,0,0,32.505,4.4Z" transform="translate(0.001 -2.248)"/>
                                         </svg>
-                                    </div>
+
+                                    </button>
 
                                     <p class="text-sm text-indigo-500">567</p>
 
                                 </div>
                                 
                                 <div class="text-center">
-                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+
+                                    <button class="
+                                                   h-10 w-10 rounded-full
+                                                   flex justify-center items-center
+                                                   focus:outline-none focus:bg-indigo-900 hover:bg-indigo-900">
+                                        
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-200" viewBox="0 0 36.001 31.501">
                                             <path id="Icon_awesome-share" data-name="Icon awesome-share" d="M35.416,13.348,23.04,2.661a1.689,1.689,0,0,0-2.79,1.277V9.567C8.956,9.7,0,11.96,0,22.664c0,4.32,2.783,8.6,5.859,10.837a1.253,1.253,0,0,0,1.974-1.31c-3.188-10.2,1.512-12.9,12.416-13.06v6.182a1.689,1.689,0,0,0,2.79,1.277L35.416,15.9A1.688,1.688,0,0,0,35.416,13.348Z" transform="translate(0 -2.25)"/>
                                         </svg>
-                                    </div>
+
+                                    </button>
 
                                     <p class="text-sm text-indigo-500">567</p>
 
                                 </div>
 
                                 <div class="text-center">
-                                    <div class="h-10 w-10 rounded-full hover:bg-indigo-900 flex justify-center items-center">
+
+                                    <button class="
+                                                   h-10 w-10 rounded-full
+                                                   flex justify-center items-center
+                                                   focus:outline-none focus:bg-indigo-900 hover:bg-indigo-900">
+                                        
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-200 ml-1" viewBox="0 0 36.001 31.501">
                                             <path id="Icon_awesome-save" data-name="Icon awesome-save" d="M30.511,9.136l-5.9-5.9a3.375,3.375,0,0,0-2.386-.989H3.375A3.375,3.375,0,0,0,0,5.625v24.75A3.375,3.375,0,0,0,3.375,33.75h24.75A3.375,3.375,0,0,0,31.5,30.375V11.523a3.375,3.375,0,0,0-.989-2.386ZM15.75,29.25a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,15.75,29.25ZM22.5,7.838v7.068a.844.844,0,0,1-.844.844H5.344a.844.844,0,0,1-.844-.844V7.594a.844.844,0,0,1,.844-.844H21.412a.843.843,0,0,1,.6.247l.245.245a.843.843,0,0,1,.247.6Z" transform="translate(0 -2.25)"/>
                                         </svg>
-                                    </div>
+
+                                    </button>
 
                                 </div>
                             </div>
 
                             <div class="flex flex-wrap justify-center">
-                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 
+                                            rounded-full hover:border-none hover:border-indigo-800 
+                                            transition-all duration-300">
+
                                     <img src="../public/images/user.png" alt="" class="rounded-full">
+                                
                                 </div>
 
-                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 
+                                            rounded-full hover:border-none hover:border-indigo-800 
+                                            transition-all duration-300">
+
                                     <img src="../public/images/user.png" alt="" class="rounded-full">
+                                
                                 </div>
-                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 
+                                            rounded-full hover:border-none hover:border-indigo-800 
+                                            transition-all duration-300">
+
                                     <img src="../public/images/user.png" alt="" class="rounded-full">
+                                
                                 </div>
-                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
+
+                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 
+                                            rounded-full hover:border-none hover:border-indigo-800 
+                                            transition-all duration-300">
+
                                     <img src="../public/images/user.png" alt="" class="rounded-full">
+                                
                                 </div>
-                                <div class="h-9 w-9 border-4 border-indigo-950 -mt-2 rounded-full">
-                                    <img src="../public/images/user.png" alt="" class="rounded-full">
+
+                                <div class="h-12 w-12 bg-blue-700 -mt-2 rounded-full
+                                            border-4 border-indigo-950
+                                            hover:border-none hover:border-blue-700 
+                                            transition-all duration-300
+                                            flex justify-center items-center">
+
+                                    <span class="text-white" style="font-size:12px;">+10k</span>
                                 </div>
                             </div>
                             
                         </div>
+
                     </div>
 
                     <div class="p-6 md:rounded-3xl rounded-lg md:mt-16 border border-gray-800">
@@ -235,10 +243,10 @@
                     
                 </div>
 
-                <div class="lg:w-3/12 ml-auto lg:mt-0 pt-7 opacity-90">
+                <div class="serie ml-auto lg:mt-0 pt-7 opacity-90">
 
-                    <div class="lg:pr-16 lg:pl-2 md:pr-8 md:pl-8 pr-6 pl-6 rounded-lg z-50
-                                flex justify-between items-center">
+                    <div class="lg:mr-8 lg:pr-0 lg:pl-2 md:pr-8 md:pl-8 pr-6 pl-6 pb-5
+                                flex justify-between items-center lg:border-b border-gray-800">
                         <h2 class="md:text-2xl text-xl text-gray-200">UI Design series</h2>
 
                         <p class="text-gray-200">3/12</p>
@@ -435,7 +443,7 @@
 
     <section class="mb-32">
 
-        <div class="md:px-16 px-6">
+        <div class="md:px-8 px-4">
 
             <div class="md:mb-12 mb-6">
                 <h2 class="md:text-3xl text-xl font-semibold text-gray-200">Sur le même sujet</h2>

@@ -50,3 +50,25 @@ hamburgerc.addEventListener('click', function(){
     hamburgero.classList.remove('hidden');
     hamburgerc.classList.add('hidden');
 })
+
+let interact = document.querySelector("#interact")
+let inticon = document.querySelector("#inticon")
+let interactions = document.querySelector("#interactions")
+
+
+interact.addEventListener('click', ()=>{
+    
+    if (interactions.classList[11] == 'unactive'){
+        inticon.classList.remove('rotate-270')
+        interactions.classList.remove('unactive')
+
+        document.querySelector("video").classList.remove('rounded-r-2xl')
+    } else {
+        inticon.classList.add('rotate-270')
+        interactions.classList.add('unactive')
+
+        document.querySelector("video").classList.add('rounded-r-2xl')
+    }
+    
+
+})
