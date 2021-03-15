@@ -58,16 +58,16 @@ let interactions = document.querySelector("#interactions")
 
 interact.addEventListener('click', ()=>{
     
-    if (interactions.classList[11] == 'unactive'){
+    if (interactions.classList[14] == 'unactive'){
         inticon.classList.remove('rotate-270')
         interactions.classList.remove('unactive')
 
-        document.querySelector("video").classList.remove('rounded-r-2xl')
+        document.querySelector("video").classList.remove('md:rounded-r-2xl')
     } else {
         inticon.classList.add('rotate-270')
         interactions.classList.add('unactive')
 
-        document.querySelector("video").classList.add('rounded-r-2xl')
+        document.querySelector("video").classList.add('md:rounded-r-2xl')
     }
     
 
