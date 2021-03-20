@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+
+    <header>
+        <nav class="fixed lg:bg-white bg-white border-b border-gray-100
+                    w-full lg:h-auto h-auto lg:px-24 md:px-16 px-6 py-4 
+                    flex flex-wrap lg:items-center items-start justify-between 
+                    transition-all duration-700 ease-in-out" id="navbar">
+
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+            
+            <div class="block lg:hidden mt-2">
+                <button type="button" id="navbar-open" class="hamburger-open flex lg:hidden transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+                        <g id="menu" transform="translate(-362 -381)">
+                          <path id="Rectangle_9" data-name="Rectangle 9" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 397)" fill="#636363"/>
+                          <path id="Rectangle_8" data-name="Rectangle 8" d="M1,0H20a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(369 389)" fill="#636363"/>
+                          <path id="Rectangle_7" data-name="Rectangle 7" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 381)" fill="#636363"/>
+                        </g>
+                    </svg>
+                    </button>
+                <button type="button" id="navbar-close" class="hidden hamburger-close flex hidden">
+                    <svg class="fill-current text-gray-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+                </button>
+            </div>
+
+            <div class="w-full lg:hidden hidden justify-center z-50 -mt-10 transition-all duration-700" id="navuser">
+                <div class="flex gap-6">
+                    <a href="" class="bg-indigo-50 py-3 px-6 rounded-md text-indigo-500 font-semibold">Se connecter</a>
+                    <a href="" class="bg-indigo-500 py-3 px-6 rounded-md text-white font-semibold">S'inscrire</a>
+                </div>
+                
+                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+            </div>
+
+            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 bg-white lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
+                <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-gray-700  hover:text-green-500">Portfolio</a>
+                <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-green-500 hover:text-green-500">Nous</a>
+                <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Blog</a>
+                <a href="contact.html" class="text-md w-max lg:inline block lg:my-0 md:mt-8 mt-6 lg:py-2 py-3 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
+                
+                <div class="w-10 lg:block hidden">
+                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                </div>
+            </div>
+
+            <div class="lg:hidden hidden -mt-72 transition-all duration-700 ease-in-out" id="navfooter">
+                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="lg:px-24 md:px-16 px-6 pt-48">
+            
+            <h1 class="text-5xl font-semibold text-gray-800">Lisez nous</h1>
+            <p class="text-gray-600 mt-5">Les dernières nouvelles sur le Web, l'UI / UX Design et plus encore.</p>
+            
+
+            <div class="grid md:grid-cols-4 grid-cols-2 lg:gap-8 gap-4 mt-16 pb-12">
+
+                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
+                            bg-white hover:border-pink-300 border-b-4 border-transparent
+                            transition-all duration-100
+                            flex justify-center items-center gap-3">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-pink-400" viewBox="0 0 36 35.1">
+                            <path id="Icon_simple-adobexd" data-name="Icon simple-adobexd" d="M29.625.45H6.375A6.37,6.37,0,0,0,0,6.825v22.35A6.37,6.37,0,0,0,6.375,35.55h23.25A6.37,6.37,0,0,0,36,29.175V6.825A6.37,6.37,0,0,0,29.625.45Zm4.86,28.14a5.435,5.435,0,0,1-5.43,5.46H6.945A5.454,5.454,0,0,1,1.5,28.6V7.395A5.454,5.454,0,0,1,6.945,1.95H29.04a5.445,5.445,0,0,1,5.445,5.445ZM14.235,16.875l4.2,8.07c.075.12.03.24-.09.24h-2.61a.294.294,0,0,1-.315-.195c-.96-1.98-1.935-3.96-2.94-6.09h-.03c-.9,2.01-1.89,4.125-2.85,6.1a.288.288,0,0,1-.27.165H6.855c-.15,0-.165-.12-.09-.21l4.11-7.83L6.9,9.21A.121.121,0,0,1,6.99,9H9.57a.236.236,0,0,1,.27.165c.945,1.98,1.9,4.02,2.805,6.015h.03c.87-1.98,1.83-4.035,2.76-6,.075-.12.12-.195.27-.195H18.12c.12,0,.165.09.09.21ZM19.17,19.32a5.867,5.867,0,0,1,6.015-6.225,6.652,6.652,0,0,1,.78.03V9.15a.15.15,0,0,1,.15-.15h2.37c.12,0,.15.045.15.12V22.89a10.684,10.684,0,0,0,.075,1.47c0,.09-.03.12-.12.165a8.935,8.935,0,0,1-3.84.87C21.495,25.41,19.17,23.4,19.17,19.32Zm6.8-3.84a2.269,2.269,0,0,0-.87-.15c-1.89,0-3.21,1.455-3.21,3.87,0,2.76,1.35,3.87,3.045,3.87a2.83,2.83,0,0,0,1.035-.165V15.48Z" transform="translate(0 -0.45)"/>
+                        </svg>
+                          
+                    </div>
+
+                    <h2 class="lg:text-2xl md:text-xl text-gray-600">UX Design</h2>
+                </div>
+
+                <div class="rounded-xl p-6 shadow-md md:h-32 h-20
+                            bg-white hover:border-blue-300 border-b-4 border-transparent
+                            transition-all duration-100
+                            flex justify-center items-center gap-3">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-blue-400" viewBox="0 0 36 35.1">
+                            <path id="Icon_awesome-react" data-name="Icon awesome-react" d="M29.4,12.459q-.57-.19-1.139-.359c.063-.26.12-.52.176-.78.865-4.191.3-7.559-1.624-8.67-1.849-1.062-4.866.042-7.917,2.7-.3.26-.6.534-.879.809-.19-.183-.387-.366-.584-.541-3.2-2.841-6.405-4.036-8.325-2.918C7.27,3.769,6.722,6.94,7.5,10.905c.077.394.162.78.26,1.174-.45.127-.893.267-1.308.415C2.693,13.8,0,15.848,0,17.972c0,2.194,2.869,4.395,6.771,5.73.316.105.633.211.956.3-.105.422-.2.837-.281,1.266-.738,3.9-.162,7,1.68,8.058,1.9,1.1,5.091-.028,8.2-2.749.246-.218.492-.443.738-.682.309.3.633.591.956.872C22.029,33.356,25,34.4,26.838,33.342c1.9-1.1,2.517-4.423,1.716-8.473q-.095-.464-.211-.949c.225-.063.443-.134.661-.2,4.057-1.343,7-3.516,7-5.745,0-2.13-2.77-4.2-6.6-5.512ZM19.891,6.49c2.616-2.278,5.055-3.171,6.166-2.531,1.188.682,1.645,3.438.9,7.059-.049.239-.1.471-.162.7a35.995,35.995,0,0,0-4.732-.745,35.525,35.525,0,0,0-3-3.734c.274-.26.541-.506.823-.752ZM11.756,21.621c.359.612.724,1.223,1.111,1.821A31.839,31.839,0,0,1,9.6,22.915a32.846,32.846,0,0,1,1.146-3.129c.323.619.654,1.23,1.005,1.835Zm-2.13-8.459c1.012-.225,2.088-.408,3.206-.548-.373.584-.738,1.181-1.083,1.786s-.682,1.209-1,1.828c-.443-1.048-.816-2.074-1.125-3.066Zm1.927,4.845c.464-.97.97-1.92,1.5-2.855s1.111-1.842,1.716-2.735c1.055-.077,2.13-.12,3.227-.12s2.18.042,3.227.12q.9,1.329,1.709,2.721t1.526,2.841q-.707,1.455-1.519,2.869c-.534.935-1.1,1.842-1.7,2.742-1.048.077-2.138.112-3.241.112s-2.173-.035-3.206-.1q-.918-1.339-1.73-2.742c-.541-.935-1.041-1.884-1.512-2.855Zm12.7,3.6c.359-.619.7-1.245,1.027-1.877a32.64,32.64,0,0,1,1.188,3.115,30.884,30.884,0,0,1-3.3.563C23.541,22.816,23.9,22.212,24.251,21.607Zm1.013-5.379c-.33-.619-.668-1.238-1.02-1.842s-.7-1.188-1.076-1.772a32.357,32.357,0,0,1,3.227.563,31.117,31.117,0,0,1-1.132,3.052Zm-7.249-7.91A30.876,30.876,0,0,1,20.1,10.835c-1.392-.063-2.791-.063-4.184,0C16.6,9.928,17.311,9.084,18.014,8.318ZM9.858,4.008c1.181-.689,3.8.3,6.567,2.742.176.155.352.323.534.492a35.723,35.723,0,0,0-3.016,3.734,37.064,37.064,0,0,0-4.725.731c-.091-.359-.169-.724-.246-1.09-.661-3.4-.225-5.97.886-6.609ZM8.135,22.542c-.3-.084-.584-.176-.872-.274a14.341,14.341,0,0,1-4.43-2.194,3.155,3.155,0,0,1-1.322-2.1c0-1.287,2.222-2.932,5.428-4.05.4-.141.809-.267,1.216-.387a37.388,37.388,0,0,0,1.723,4.472,38.434,38.434,0,0,0-1.744,4.535Zm8.2,6.891a12.869,12.869,0,0,1-3.966,2.482,3.112,3.112,0,0,1-2.482.091c-1.118-.647-1.582-3.129-.949-6.469.077-.394.162-.788.26-1.174a35.175,35.175,0,0,0,4.774.689,37.106,37.106,0,0,0,3.037,3.755C16.784,29.025,16.559,29.236,16.334,29.433Zm1.723-1.709c-.717-.773-1.434-1.631-2.13-2.552.675.028,1.371.042,2.074.042.724,0,1.434-.014,2.138-.049a30.322,30.322,0,0,1-2.081,2.559Zm9.19,2.109a3.125,3.125,0,0,1-1.16,2.2c-1.118.647-3.5-.2-6.075-2.4-.3-.253-.591-.527-.893-.809a34.783,34.783,0,0,0,2.967-3.769,34.662,34.662,0,0,0,4.8-.738c.07.288.134.577.19.858a12.817,12.817,0,0,1,.176,4.662Zm1.28-7.559c-.2.063-.394.127-.6.183a35.719,35.719,0,0,0-1.793-4.486,35.54,35.54,0,0,0,1.723-4.423c.366.105.717.218,1.055.33,3.277,1.125,5.576,2.8,5.576,4.078,0,1.378-2.454,3.157-5.962,4.317ZM18,21.22A3.22,3.22,0,1,0,14.78,18,3.22,3.22,0,0,0,18,21.22Z" transform="translate(0 -2.251)"/>
+                          
+                        </svg>
+
+
+                    </div>
+
+                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Frontend</h2>
+                </div>
+
+                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
+                            bg-white hover:border-red-300 border-b-4 border-transparent
+                            transition-all duration-100
+                            flex justify-center items-center gap-3">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-red-400" viewBox="0 0 36 35.1">
+                            <path id="Icon_awesome-symfony" data-name="Icon awesome-symfony" d="M18,.563A17.438,17.438,0,1,0,35.438,18,17.434,17.434,0,0,0,18,.563Zm9.4,10.093a1.228,1.228,0,0,1-1.39-1.186c-.019-.645.47-.945.459-1.325-.016-.461-.714-.48-.9-.469-2.8.091-3.416,4.008-4.141,8.005a4.682,4.682,0,0,0,3.174-.437c.844-.545-.235-1.105-.1-1.727a1.14,1.14,0,0,1,2.25.373c-.025,1.256-1.823,2.94-5.456,2.51C20.538,20.583,20,24.484,17.2,27.769A7,7,0,0,1,12.17,30.6c-1.733.06-2.883-.866-2.924-2.1a1.842,1.842,0,0,1,1.709-1.87c1.539-.053,2.118,1.8,1.046,2.391-.85.683.008.887.144.882a2.712,2.712,0,0,0,1.56-.633c1.688-1.406,2.337-3.857,3.189-8.321a44.163,44.163,0,0,1,1.282-5.766c-1.19-.9-1.9-2.007-3.505-2.441a1.908,1.908,0,0,0-2.237.551,1.621,1.621,0,0,0,.167,2.159l.888.984C14.579,17.7,15.176,18.679,14.951,20c-.356,2.1-2.863,3.72-5.828,2.808-2.531-.781-3-2.571-2.7-3.559.528-1.7,2.978-.824,2.434.956a8.749,8.749,0,0,1-.442.919c-.321,1.039,2.943,2,3.586-.1.314-1.021-.373-1.526-1.564-2.8a3.689,3.689,0,0,1,.207-5.6c3.713-2.767,7.068,1.232,7.775,1.815,2.614-7.664,7.069-7.415,7.2-7.42,1.769-.057,3.107.745,3.152,2.014A1.5,1.5,0,0,1,27.4,10.655Z" transform="translate(-0.563 -0.563)"/>
+                        </svg>
+
+                    </div>
+
+                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Backend</h2>
+                </div>
+
+                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
+                            bg-white hover:border-yellow-300 border-b-4 border-transparent
+                            transition-all duration-100
+                            flex flex-grow justify-center items-center gap-3">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-yellow-400" viewBox="0 0 36 35.1">
+                            <path id="Icon_ionic-md-flashlight" data-name="Icon ionic-md-flashlight" d="M9,20.953l4.5,4.5v8.3h9v-8.3l4.5-4.5V12.375L9.056,12.4Zm7.509-18.7h2.981v4.5H16.509ZM5.625,7.762l2.1-2.137,3.157,3.206-2.1,2.137ZM25.109,8.831l3.164-3.2,2.1,2.137-3.157,3.2Z" transform="translate(-5.625 -2.25)"/>
+                        
+                        </svg>
+                          
+                    </div>
+
+                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Astuces</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="-mt-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="183.81" viewBox="0 0 1892.281 183.81">
+                <path id="Tracé_1" data-name="Tracé 1" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,505.95-141.947,750.5-170.846,291.591-34.458,434.623,17.231,434.623,17.231" transform="translate(0.351 55.56)" fill="none" stroke="#abff88" stroke-width="1"/>
+                <path id="Tracé_2" data-name="Tracé 2" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,521.633-70.879,766.187-99.779,291.591-34.458,530.458,36.1,530.458,36.1" transform="translate(0.351 55.56)" fill="none" stroke="#7df2ff" stroke-width="1"/>
+            </svg>
+              
+        </div>
+          
+          
+    </section>
+
+    <section>
+        <div class="lg:px-24 md:px-16 px-6 pb-8 mt-8">
+
+            <div class="md:flex justify-center items-center lg:gap-16 md:gap-8 
+                        text-gray-700 hover:text-blue-500">
+                    
+                <div class="md:w-5/12">
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                        class="mt-4 lg:h-auto h-40 w-full md:h-64 object-cover rounded-xl" 
+                        alt="image de l'article">
+                </div>
+
+                <div class="md:w-8/12 mt-4">
+                    <h1 class="lg:text-4xl md:text-3xl text-2xl leading-normal">La nouvelle version de Bootstrap sans Jquery</h1>
+                    <p class="my-6 text-gray-500">Adipisicing audantium laborum vel tempora atque fugiat exercitationem nisi et blanditiis adipisci culpa accusamus, inventore expedita. Ex sunt amet fuga dolorem quod at?</p>
+                    
+                    <div class="flex flex-grow items-center gap-4">
+                        <a href="" class="text-blue-500 hover:text-underline">Lire plus</a> 
+                        <span class="ml-6 pl-6 text-gray-400 border-l">Janvier 24, 2021</span>
+
+                        <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                            <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                            <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div> 
+
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:px-24 md:px-16 px-6 pb-24">
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-16 mb-16">
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/projects/bootstrap5.png" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/projects/bootstrap5.png" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/projects/v5-new-logo.png" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Quest_ce_quune_solution_SaaS.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+            </div>
+
+            <div class="w-max m-auto">
+                
+                <div class="m-auto w-2 mb-8 h-8 border-l-2 border-dashed">
+
+                </div>
+                
+                <nav class="py-2 px-6 rounded-full shadow-md">
+                    <ul class="flex gap-4 items-center">
+
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3" height="19.243" viewBox="0 0 21.621 19.243">
+                                    <g id="Icon_feather-chevrons-left" data-name="Icon feather-chevrons-left" transform="translate(-7.1 -8.379)">
+                                      <path id="Tracé_3" data-name="Tracé 3" d="M16.5,25.5,9,18l7.5-7.5" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                      <path id="Tracé_4" data-name="Tracé 4" d="M27,25.5,19.5,18,27,10.5" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    </g>
+                                </svg>
+                                  
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2" height="22.243" viewBox="0 0 12.621 22.243">
+                                    <path id="Icon_feather-chevron-left" data-name="Icon feather-chevron-left" d="M22.5,27l-9-9,9-9" transform="translate(-12 -6.879)" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="bg-green-500 h-8 w-8 rounded-full
+                                    flex justify-center items-center text-white">
+                            <a href="">1</a>
+                        </li>
+
+                        <li class="hover:bg-green-50 h-8 w-8 rounded-full
+                                    flex justify-center items-center text-gray-400 hover:text-green-500">
+                            <a href="">2</a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2" height="22.243" viewBox="0 0 12.621 22.243">
+                                    <path id="Icon_feather-chevron-left" data-name="Icon feather-chevron-left" d="M22.5,27l-9-9,9-9" transform="translate(24.621 29.121) rotate(180)" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </svg>
+                                  
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3" height="19.243" viewBox="0 0 21.621 19.243">
+                                    <g id="Icon_feather-chevrons-left" data-name="Icon feather-chevrons-left" transform="translate(29.121 27.621) rotate(180)">
+                                      <path id="Tracé_3" data-name="Tracé 3" d="M16.5,25.5,9,18l7.5-7.5" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                      <path id="Tracé_4" data-name="Tracé 4" d="M27,25.5,19.5,18,27,10.5" fill="none" stroke="#81929f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    </g>
+                                </svg>
+                                  
+                            </a>
+                        </li>
+                        
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="bg-gray-50 lg:px-24 px-6 py-16">
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+
+            <p class="text-center">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+
+</body>
+</html>
