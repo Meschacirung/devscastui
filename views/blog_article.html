@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+
+    <header>
+        <nav class="fixed lg:bg-white bg-white border-b border-gray-100
+                    w-full lg:h-auto h-auto lg:px-24 md:px-16 px-6 py-4 
+                    flex flex-wrap lg:items-center items-start justify-between 
+                    transition-all duration-700 ease-in-out" id="navbar" style="z-index:1000;">
+
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+            
+            <div class="block lg:hidden mt-2">
+                <button type="button" id="navbar-open" class="hamburger-open flex lg:hidden transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+                        <g id="menu" transform="translate(-362 -381)">
+                          <path id="Rectangle_9" data-name="Rectangle 9" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 397)" fill="#636363"/>
+                          <path id="Rectangle_8" data-name="Rectangle 8" d="M1,0H20a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(369 389)" fill="#636363"/>
+                          <path id="Rectangle_7" data-name="Rectangle 7" d="M1,0H27a0,0,0,0,1,0,0V2a0,0,0,0,1,0,0H1A1,1,0,0,1,0,1V1A1,1,0,0,1,1,0Z" transform="translate(362 381)" fill="#636363"/>
+                        </g>
+                    </svg>
+                    </button>
+                <button type="button" id="navbar-close" class="hidden hamburger-close flex hidden">
+                    <svg class="fill-current text-gray-600 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+                </button>
+            </div>
+
+            <div class="w-full lg:hidden hidden justify-center z-50 -mt-10 transition-all duration-700" id="navuser">
+                <div class="flex gap-6">
+                    <a href="" class="bg-indigo-50 py-3 px-6 rounded-md text-indigo-500 font-semibold">Se connecter</a>
+                    <a href="" class="bg-indigo-500 py-3 px-6 rounded-md text-white font-semibold">S'inscrire</a>
+                </div>
+                
+                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+            </div>
+
+            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-7 gap-24 bg-white lg:shadow-none shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden -mt-40 z-50 transition-all duration-700" id="navlinks">
+                <a href="work.html" class="lg:inline block lg:my-0 md:mb-8 mb-6 text-gray-700  hover:text-green-500">Portfolio</a>
+                <a href="contents.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Nos contenus</a>
+                <a href="us.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-green-500 hover:text-green-500">Nous</a>
+                <a href="blog.html" class="lg:inline block lg:my-0 md:my-8 my-6 text-gray-700 hover:text-green-500">Blog</a>
+                <a href="contact.html" class="text-md w-max lg:inline block lg:my-0 md:mt-8 mt-6 lg:py-2 py-3 px-6 rounded-md border-gray-500 border-2 text-gray-800">Prendre contact</a>
+                
+                <div class="w-10 lg:block hidden">
+                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                </div>
+            </div>
+
+            <div class="lg:hidden hidden -mt-72 transition-all duration-700 ease-in-out" id="navfooter">
+                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section>
+        <div class="lg:px-24 md:px-16 px-6 lg:pt-32 md:pt-48 pt-32">
+            <div class="md:flex grid gap-8 items-start">
+
+                <div class="md:w-1/12 md:mt-32 md:mb-0 mb-16 md:sticky top-56 md:order-first order-last">
+                    <div class="">
+    
+                        <div class="md:grid flex gap-2">
+                            
+                            <a href="" title="Partager sur facebook" class="h-12 w-12 flex justify-center items-center rounded-full 
+                                            text-gray-500 hover:text-indigo-500 hover:shadow-md">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current" height="36" viewBox="0 0 19.281 36">
+                                    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M19.627,20.25l1-6.515H14.375V9.507c0-1.782.873-3.52,3.673-3.52h2.842V.44A34.658,34.658,0,0,0,15.846,0C10.7,0,7.332,3.12,7.332,8.769v4.965H1.609V20.25H7.332V36h7.043V20.25Z" transform="translate(-1.609)"/>
+                                </svg>
+
+                            </a>
+                            
+                            <a href="" title="Partager sur twitter" class="h-12 w-12 flex justify-center items-center rounded-full 
+                                            text-gray-500 hover:text-blue-400 hover:shadow-md">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="29.239" viewBox="0 0 36 29.239">
+                                    <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M32.3,10.668c.023.32.023.64.023.959,0,9.754-7.424,20.992-20.992,20.992A20.85,20.85,0,0,1,0,29.307a15.263,15.263,0,0,0,1.782.091,14.776,14.776,0,0,0,9.16-3.152,7.391,7.391,0,0,1-6.9-5.117,9.3,9.3,0,0,0,1.393.114,7.8,7.8,0,0,0,1.942-.251,7.379,7.379,0,0,1-5.916-7.241V13.66A7.431,7.431,0,0,0,4.8,14.6,7.389,7.389,0,0,1,2.513,4.728a20.972,20.972,0,0,0,15.213,7.721,8.329,8.329,0,0,1-.183-1.69A7.385,7.385,0,0,1,30.312,5.711a14.526,14.526,0,0,0,4.683-1.782,7.358,7.358,0,0,1-3.244,4.066A14.791,14.791,0,0,0,36,6.853a15.86,15.86,0,0,1-3.7,3.815Z" transform="translate(0 -3.381)"/>
+                                </svg>
+
+                            </a>
+
+                            <a href="" title="Partager sur linkedin" class="h-12 w-12 flex justify-center items-center rounded-full 
+                                            text-gray-500 hover:text-blue-500 hover:shadow-md">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="31.499" viewBox="0 0 31.5 31.499">
+                                    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M7.051,31.5H.52V10.47H7.051ZM3.782,7.6A3.8,3.8,0,1,1,7.564,3.783,3.814,3.814,0,0,1,3.782,7.6ZM31.493,31.5H24.976V21.263c0-2.44-.049-5.569-3.4-5.569-3.4,0-3.916,2.651-3.916,5.393V31.5H11.142V10.47h6.263v2.869H17.5a6.862,6.862,0,0,1,6.179-3.4c6.609,0,7.824,4.352,7.824,10.005V31.5Z" transform="translate(0 -0.001)"/>
+                                </svg>
+
+                            </a>
+                            
+                            <a href="" title="Lien" class="h-12 w-12 flex justify-center items-center rounded-full 
+                                            text-gray-500 hover:text-green-500 hover:shadow-md">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="36" viewBox="0 0 36 36">
+                                    <path id="Icon_awesome-link" data-name="Icon awesome-link" d="M22.965,13.035a10.682,10.682,0,0,1,.025,15.088l-.025.026L18.24,32.875A10.687,10.687,0,0,1,3.126,17.76l2.609-2.609a1.124,1.124,0,0,1,1.919.746A12.956,12.956,0,0,0,8.335,19.6a1.132,1.132,0,0,1-.266,1.168l-.92.92a5.063,5.063,0,1,0,7.114,7.2l4.725-4.724a5.061,5.061,0,0,0,0-7.16,5.267,5.267,0,0,0-.727-.6,1.128,1.128,0,0,1-.488-.886,2.8,2.8,0,0,1,.823-2.1l1.48-1.48a1.13,1.13,0,0,1,1.447-.122,10.721,10.721,0,0,1,1.443,1.209Zm9.909-9.91a10.7,10.7,0,0,0-15.114,0L13.035,7.85l-.025.026a10.69,10.69,0,0,0,1.468,16.3,1.13,1.13,0,0,0,1.447-.122l1.48-1.48a2.8,2.8,0,0,0,.823-2.1,1.128,1.128,0,0,0-.488-.886,5.267,5.267,0,0,1-.727-.6,5.061,5.061,0,0,1,0-7.16L21.738,7.1a5.063,5.063,0,1,1,7.114,7.2l-.92.92a1.132,1.132,0,0,0-.266,1.168,12.956,12.956,0,0,1,.681,3.707,1.124,1.124,0,0,0,1.919.746l2.609-2.609a10.7,10.7,0,0,0,0-15.114Z" transform="translate(0 0)" />
+                                </svg>
+
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="lg:w-11/12 relative md:order-last order-first">
+
+                    <div class="lg:flex items-center gap-20">
+        
+                        <div class="lg:w-6/12">
+                            <h1 class="text-gray-800 text-4xl md:leading-normal leading-snug">Migrating your design system from Sketch to Adobe XD.</h1>
+                            <p class="text-lg text-gray-700 mt-7">By Méschac Irung</p>
+                            
+                            
+                            <div class="flex gap-6 items-center mt-2">
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                                </div> 
+        
+                                <div class="text-gray-400 flex gap-4">
+                                    <span>24 Décembre 2020</span>
+                                    <span>4 min lecture</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-6/12 lg:mt-0 md:mt-16 mt-8">
+
+                            <div>
+                                <div class="z-50 relative">
+                                    <img src="../public/images/blog/surprised-software-developer-cannot-adapt-necessary-application.jpg" class="rounded-2xl lg:h-auto md:h-96 w-full object-cover" alt="">
+                        
+                                </div>
+                                
+                                <div class="md:inline hidden absolute lg:top-24 md:top-56 right-0 lg:-mr-24 md:-mr-16 h-64 w-64 bg-pink-100 rounded-full">
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="-ml-56 -mt-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="183.81" viewBox="0 0 1892.281 183.81">
+                            <path id="Tracé_1" data-name="Tracé 1" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,505.95-141.947,750.5-170.846,291.591-34.458,434.623,17.231,434.623,17.231" transform="translate(0.351 55.56)" fill="none" stroke="#abff88" stroke-width="1"/>
+                            <path id="Tracé_2" data-name="Tracé 2" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,521.633-70.879,766.187-99.779,291.591-34.458,530.458,36.1,530.458,36.1" transform="translate(0.351 55.56)" fill="none" stroke="#7df2ff" stroke-width="1"/>
+                        </svg>
+                          
+                    </div>
+
+                    <div class="md:w-11/12 md:mt-6">
+                        <div>
+                            <p class="text-2xl font-thin text-gray-500 text-gray-600 leading-normal"> 
+                                <span class="text-7xl font-semibold">L</span> 
+                                orem, ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore quis aliquam enim labore numquam illum quidem nihil modi aliquid, qui temporibus sit officia unde ad eveniet quos fugiat animi!
+                                Consectetur adipisicing elit. Tempore excepturi nisi, nemo porro nobis totam sapiente deserunt? Eveniet, in suscipit eius repudiandae sed necessitatibus autem sunt nam blanditiis eum cumque.
+                            </p>
+                            
+                            <hr class="w-5/12 my-16">
+                            
+    
+                            <h2 class="text-3xl text-gray-800">A home for all your Libraries</h2>
+    
+                            <p class="leading-normal text-gray-600 my-10">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                            
+                            </p>
+    
+                            <img src="../public/images/blog/best-practices-creative-cloud-libraries_02.webp" alt="">
+    
+                            <p class="leading-normal text-gray-600 my-6">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                                
+                            </p>
+    
+                            <p class="leading-normal text-gray-600">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                                
+                            </p>
+    
+                            <h2 class="text-3xl text-gray-800 mt-16">A home for all your Libraries</h2>
+    
+                            <p class="leading-normal text-gray-600 my-10">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                            
+                            </p>
+    
+                            <img src="../public/images/blog/best-practices-creative-cloud-libraries_03.webp" alt="">
+    
+    
+                            <p class="leading-normal text-gray-600 my-10">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                            
+                            </p>
+    
+                            <img src="../public/images/blog/how-to-create-design-system-in-xd-step-0-header.png" alt="">
+    
+    
+                            <p class="leading-normal text-gray-600 my-10">
+                                
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
+                            
+                            </p>
+                        </div>
+
+                        <div class="lg:w-4/12 md:w-7/12 md:my-32">
+                            <div class="flex items-center gap-6">
+                                <div class="w-3/12">
+                                    <img src="../public/images/user.png" class="rounded-full" alt="">
+                                </div>
+
+                                <div class="w-9/12">
+                                    <h3 class="text-gray-800 text-2xl">Méschac Irung</h3>
+                                    <p class="text-lg text-gray-500">UX / UI Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>            
+
+                <div class="fixed md:bottom-10 md:right-10 bottom-5 right-5">
+                    <div class="h-16 w-16 rounded-full shadow-xl bg-white">
+
+                        <div class="flex justify-center h-full items-center
+                                    hover:text-indigo-500 text-gray-400">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-current" height="36.002" viewBox="0 0 36 36.002">
+                                <path id="Icon_awesome-comment-alt" data-name="Icon awesome-comment-alt" d="M31.5,0H4.5A4.5,4.5,0,0,0,0,4.5V24.75a4.5,4.5,0,0,0,4.5,4.5h6.75v5.906a.846.846,0,0,0,1.343.682l8.782-6.588H31.5a4.5,4.5,0,0,0,4.5-4.5V4.5A4.5,4.5,0,0,0,31.5,0Z"/>
+                            </svg>
+                              
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
+          
+    </section>
+
+    <section>
+        <div class="lg:px-24 md:px-16 px-6 pb-24">
+
+            
+            <div class="w-max m-auto">
+                
+                <h1 class="text-4xl text-gray-800">Sur le même sujet</h1>
+
+                <div class="m-auto w-2 mt-8 h-16 border-l-2"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-16 mb-16">
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/projects/bootstrap5.png" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
+
+                    <div>
+                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
+                        
+                        <div class="flex gap-6 my-6">
+                            
+                            <div class="w-3/12">
+                                <span class="text-gray-400">23.01.21</span>
+
+                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                                </div> 
+                            </div>
+
+                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
+                            class="h-48 w-full object-cover rounded-xl" 
+                            alt="image de l'article">
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-gray-50 lg:px-24 px-6 py-16">
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+
+            <p class="text-center">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+
+</body>
+</html>
