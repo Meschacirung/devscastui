@@ -1,14 +1,13 @@
 window.addEventListener('scroll', function(){
     if (window.pageYOffset > 250) {
         document.querySelector('#navbar').classList.remove('py-4')
-        document.querySelector('#navbar').classList.add('shadow-sm', 'py-2')
+        document.querySelector('#navbar').classList.add('shadow-sm')
         document.querySelector('.dots').classList.add('fixed', 'left-0', 'top-48');
         document.querySelector('body').classList.add('bg-gray-800');
     }
 
     else  {
-        document.querySelector('#navbar').classList.remove('shadow-sm', 'py-2')
-        document.querySelector('#navbar').classList.add('py-4')
+        document.querySelector('#navbar').classList.remove('shadow-sm')
         document.querySelector('.dots').classList.remove('fixed', 'left-0', 'top-48');
         document.querySelector('body').classList.remove('bg-gray-800');
     }
@@ -18,38 +17,47 @@ let navbar = document.querySelector("#navbar");
 let navlinks = document.querySelector("#navlinks");
 let navfooter = document.querySelector("#navfooter");
 let navuser = document.querySelector("#navuser");
-let hamburgero = document.querySelector("#navbar-open");
-let hamburgerc = document.querySelector("#navbar-close");
+let hamburger = document.querySelector("#hamburger");
 
-hamburgero.addEventListener('click', function(){
-    navbar.classList.remove('h-auto');
-    navbar.classList.add('h-full' , 'bg-gradient-to-b', 'from-white', 'via-gray-50', 'to-white');
+hamburger.addEventListener('click', function(){
 
-    navlinks.classList.remove('-mt-40', 'hidden');
-    navlinks.classList.add('mt-0', 'block');
+    if (document.querySelector('.line-1').classList[3] != 'rotate-1'){
 
-    navfooter.classList.remove('hidden', '-mt-72');
-    navfooter.classList.add('block', 'mt-0');
+        document.querySelector('.line-1').classList.add('rotate-1');
+        document.querySelector('.line-2').classList.add('hidden');
+        document.querySelector('.line-3').classList.add('rotate-2');
+        
 
-    navuser.classList.remove('hidden', '-mt-10');
+        navbar.classList.remove('h-16');
+        navbar.classList.add('h-full');
 
-    hamburgero.classList.add('hidden');
-    hamburgerc.classList.remove('hidden');
+        navlinks.classList.remove('hidden');
+        navlinks.classList.add('mt-0', 'block');
+
+        navfooter.classList.remove('hidden');
+        navfooter.classList.add('block', 'mt-0');
+
+        navuser.classList.remove('hidden', '-mt-10');
+    } else {
+
+        document.querySelector('.line-1').classList.remove('rotate-1');
+        document.querySelector('.line-2').classList.remove('hidden');
+        document.querySelector('.line-3').classList.remove('rotate-2');
+
+        navbar.classList.add('h-16');
+        navbar.classList.remove('h-full');
+
+        navlinks.classList.add('hidden');
+        navlinks.classList.remove('mt-0', 'block');
+
+        navfooter.classList.add('hidden');
+        navfooter.classList.add('block', 'mt-0');
+
+        navuser.classList.add('hidden', '-mt-10');
+
+    }
+
 });
-
-hamburgerc.addEventListener('click', function(){
-    navbar.classList.add('h-auto' , 'bg-white');
-    navbar.classList.remove('h-full' , 'bg-gradient-to-b', 'from-white', 'via-gray-50', 'to-white');
-
-    navlinks.classList.add('-mt-40', 'hidden');
-    navfooter.classList.add('hidden', '-mt-72');
-    navfooter.classList.remove('block');
-
-    navuser.classList.add('hidden', '-mt-10');
-
-    hamburgero.classList.remove('hidden');
-    hamburgerc.classList.add('hidden');
-})
 
 let interact = document.querySelector("#interact")
 let inticon = document.querySelector("#inticon")
