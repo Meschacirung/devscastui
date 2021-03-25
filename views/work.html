@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -22,7 +23,7 @@
 <body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
 
     <header>
-        <nav class="fixed bg-white bg-opacity-75 border-b border-gray-100
+        <nav class="fixed bg-white bg-opacity-75
                     w-full lg:h-auto h-16 lg:px-24 md:px-16 px-6 lg:py-0 py-3 
                     flex flex-wrap lg:items-center items-start justify-between 
                     transition-all duration-500" id="navbar" 
@@ -94,7 +95,8 @@
                         z-50 transition-all duration-900" id="navlinks">
 
                 <a href="work.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
+                                                text-gray-500 hover:text-green-500
+                                                border-b-2 border-green-700">
                     Portfolio
                 </a>
 
@@ -109,8 +111,7 @@
                 </a>
 
                 <a href="blog.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-600 hover:text-green-500 
-                                                border-b-2 border-green-700">
+                                                text-gray-600 hover:text-green-500">
                     Blog
                 </a>
                 
@@ -133,100 +134,399 @@
         </nav>
     </header>
 
-    <section class="lg:px-24 md:px-16 px-6" id="hero">
-        <div class="lg:pt-48 md:pt-64 pt-48 lg:flex justify-between">
+    <section class="lg:px-24 md:px-16 px-6 pt-48" id="hero">
+        <div class="lg:pt-0 md:pt-64 pt-48 justify-between">
 
-            <div class="lg:w-8/12 m-auto text-center">
-                <h1 class="text-gray-900 md:text-5xl text-3xl  md:leading-snug leading-normal">
-                    Chaque <span style="color:#506FE2;" class="text-green-500 font-bold">produit</span>   que nous développons aide nos clients à atteindre leurs <span style="color:#506FE2;" class="text-green-500 font-bold">objectifs commerciaux</span>.
-                </h1>
-    
-                <div class="mt-16">
-                    <a href="" class="text-center">
-                        <div class="m-auto">
-                            <div class="flex justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
-                                    <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(23.989 26.767) rotate(180)" fill="#8d8d8d" stroke="#fff" stroke-width="3"/>
-                                </svg>  
-                            </div>
-                            
-                            <div class="my-3 font-bold uppercase text-gray-700">Lire nos études des cas</div>
-                            
-                            <div class="flex justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
-                                    <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(1.504 -9.24)" fill="#8d8d8d" stroke="#fff" stroke-width="3"/>
-                                </svg>
-                                  
-                            </div>
+            <div class="flex">
+                <div class="lg:w-8/12">
+                    <h1 class="text-gray-800 md:text-5xl text-3xl font-semibold  md:leading-snug leading-normal">
+                        Chaque produit que nous développons aide nos clients à atteindre leurs objectifs commerciaux.
+                    </h1>
+        
+                    <a href="" class="block w-max mt-16 text-indigo-500 hover:text-blue-500 
+                                transition-all duration-300">
+                        
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-gray-400" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
+                                <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(23.989 26.767) rotate(180)" stroke="#fff" stroke-width="3"/>
+                            </svg>  
+                        </div>
+                        
+                        <div class="my-3 font-semibold uppercase">Lire nos études des cas</div>
+                        
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-gray-400" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
+                                <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(1.504 -9.24)" stroke="#fff" stroke-width="3"/>
+                            </svg>
                               
                         </div>
+                          
                     </a>
+                </div>
+    
+                <div class="w-5/12 mt-64">
+                    
+
+                    
+                      
+                      
                 </div>
             </div>
     
         </div>
     </section>
 
-    <section class="lg:px-24 md:px-16 px-6 my-64" id="projects">
-        <div class="fixed grid items-center -ml-2 left-32 top-20 right-0 bottom-0 w-1/12 l-0 border-l border-gray-200">
-        </div>
+    <section class="lg:px-24 md:px-16 px-6 mt-72">
 
+        <div class="grid lg:grid-cols-2 lg:gap-24 md:gap-16 gap-8">
 
-        <div class="grid grid-cols-2 gap-20 my-20">
-            <div class="flex items-center gap-10">
-                <div class="w-2/12 z-50 flex items-center">
-                    
-                    <div class="ml-2 h-8 w-8 border-8 border-white bg-indigo-300 rounded-full">
-                
+            
+            <div class="text-gray-400 hover:text-blue-500">
+                <img class="rounded-3xl" src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" alt="">
+            
+                <div class="md:px-6 px-3 md:mt-8 mt-4 flex justify-between">
+
+                    <div>
+                        <h2 class="text-3xl text-gray-700">Congo Mémoire</h2>
+
+                        <p class="text-gray-500 mt-2">Application web</p>
                     </div>
                     
-                </div>
 
-                <div class="text-center">
+                    <div class="flex items-center">
 
-                    <h2 class="text-4xl text-gray-900 leading-snug">Bibliothèque numérique congo mémoire.</h2>
-                    <p class="mt-8 text-gray-600">Incidunt nulla voluptate ipsam deleniti. Veritatis exercitationem dignissimos, quo tenetur voluptate fugiat natus eaque expedita atque voluptatibus?</p>
-                
-                    <div class="mt-16">
-                        <a href="" class="text-center">
-                            <div class="m-auto">
-                                <div class="flex justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
-                                        <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(23.989 26.767) rotate(180)" fill="#8d8d8d" stroke="#fff" stroke-width="3"/>
-                                    </svg>  
-                                </div>
-                                
-                                <div class="py-3 font-bold uppercase text-gray-700">Etude de cas</div>
-                                
-                                <div class="flex justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25.493" height="17.527" viewBox="0 0 25.493 17.527">
-                                        <path id="Icon_awesome-angle-down" data-name="Icon awesome-angle-down" d="M10.055,24.771.492,15.209a1.681,1.681,0,0,1,0-2.384l1.589-1.589a1.681,1.681,0,0,1,2.384,0l6.778,6.778,6.778-6.778a1.681,1.681,0,0,1,2.384,0l1.589,1.589a1.681,1.681,0,0,1,0,2.384l-9.562,9.562a1.672,1.672,0,0,1-2.377,0Z" transform="translate(1.504 -9.24)" fill="#8d8d8d" stroke="#fff" stroke-width="3"/>
-                                    </svg>
-                                      
-                                </div>
+                        <p class="text-gray-500 md:block hidden">Etude de cas</p>
+
+                        <div class="h-12 w-12 rounded-full transition-all duration-300
+                                flex justify-center items-center
+                                hover:bg-indigo-500 hover:text-white hover:z-50">
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                </svg>
                                   
-                            </div>
-                        </a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="flex items-end gap-4">
-                <div class="w-10/12">
-                    <img src="../public/images/projects/5.jpeg" class="rounded-xl" alt="">
-                </div>
+            <div class="lg:-mt-32 grid lg:gap-24 md:gap-16 gap-8">
+
+                <div class="text-gray-400 hover:text-blue-500">
+                    <img class="rounded-3xl" src="../public/images/blog/how-to-create-design-system-in-xd-step-0-header.png" alt="">
                 
-                <div class="w-2/12 mb-10">
-                    <img src="../public/images/projects/2.png" alt="">
+                    <div class="md:px-6 px-3 md:mt-8 mt-4 flex justify-between">
+
+                        <div>
+                            <h2 class="text-3xl text-gray-700">Humanitary</h2>
+    
+                            <p class="text-gray-500 mt-2">Design System</p>
+                        </div>
+                        
+    
+                        <div class="flex items-center">
+    
+                            <p class="text-gray-500 md:block hidden">Etude de cas</p>
+    
+                            <div class="h-12 w-12 rounded-full transition-all duration-300
+                                    flex justify-center items-center
+                                    hover:bg-indigo-500 hover:text-white hover:z-50">
+    
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                        <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                    </svg>
+                                      
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
+
+                <div class="text-gray-400 hover:text-blue-500">
+                    <img class="rounded-3xl" src="../public/images/blog/surprised-software-developer-cannot-adapt-necessary-application.jpg" alt="">
                 
+                    <div class="md:px-6 px-3 md:mt-8 mt-4 flex justify-between">
+
+                        <div>
+                            <h2 class="text-3xl text-gray-700">Lushitrap</h2>
+    
+                            <p class="text-gray-500 mt-2">Application web</p>
+                        </div>
+                        
+    
+                        <div class="flex items-center">
+    
+                            <p class="text-gray-500 md:block hidden">Etude de cas</p>
+    
+                            <div class="h-12 w-12 rounded-full transition-all duration-300
+                                    flex justify-center items-center
+                                    hover:bg-indigo-500 hover:text-white hover:z-50">
+    
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                        <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                    </svg>
+                                      
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
             </div>
         </div>
 
         
     </section>
 
-    <footer class="hidden">
+    <section class="lg:px-24 md:px-16 px-6 my-24">
+
+        <div class="flex items-center gap-16">
+
+            <div class="w-5/12 -mt-96 -ml-24">
+                <div class="w-10/12 h-96 pl-24 border-r-4 rounded--full rounded-r-full -mt-24">
+
+                    <div class="grid grid-cols-2 -mr-40">
+
+                        <div class="w-32 h-32 -mt-16 
+                                flex flex-wrap items-center justify-center  
+                                bg-white rounded-full hover:shadow-xl
+                                hover:border-transparent shadow-md
+                                transition-all duration-300">
+
+                            <div class="text-center">
+                                <h3 class="text-4xl text-indigo-400">41</h3>
+                                <p class="text-sm text-gray-500">Projets</p>
+                            </div>
+                            
+                        </div> 
+                    
+                        <div class="w-32 h-32 mt-28 
+                                    flex flex-wrap items-center justify-center  
+                                    bg-white rounded-full hover:shadow-xl
+                                    hover:border-transparent shadow-md
+                                    transition-all duration-300">
+
+                            <div class="text-center">
+                                <h3 class="text-4xl text-pink-400">12k</h3>
+                                <p class="text-sm text-gray-500">Visites</p>
+                            </div>
+                            
+                        </div> 
+
+                        <div class="w-32 h-32 mt-20 
+                                    flex flex-wrap items-center justify-center  
+                                    bg-white rounded-full hover:shadow-xl
+                                    hover:border-transparent shadow-md
+                                    transition-all duration-300">
+
+                            <div class="text-center">
+                                <h3 class="text-4xl text-green-400">12</h3>
+                                <p class="text-sm text-gray-500">Clients</p>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="w-7/12 ml-auto mb-24">
+
+                <h2 class="text-4xl text-gray-800 mb-12 leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+                <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorem nemo! Officiis vero accusamus placeat quis labore saepe ducimus et laborum. Minus, perferendis nam perspiciatis est repudiandae architecto eos ullam.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8">
+            <a href="" class="relative flex items-end hover:shadow-xl rounded-xl">
+
+                <div class="absolute w-full h-64 flex items-end
+                            opacity-0 hover:opacity-100
+                            transition-all duration-100 rounded-xl">
+
+                    <div class="p-4 w-full h-max bg-opacity-40 bg-gray-900 
+                                rounded-b-xl"
+
+                                style="-webkit-backdrop-filter:blur(12px); 
+                                backdrop-filter: blur(12px);" >
+
+
+                        <div class="md:mt-8 mt-4 flex justify-between gap-5 items-center">
+
+                            <div>
+                                <h2 class="text-2xl text-white">Congo Mémoire</h2>
+        
+                                <p class="text-gray-200 mt-2">Application web</p>
+                            </div>
+                            
+                            <div class="border-l border-gray-100 text-white pl-3 w-4/12 ml-auto">
+                                Etude de cas
+
+                                <div class="h-12 w-12 rounded-full transition-all duration-300
+                                        flex justify-center items-center text-gray-200
+                                        hover:bg-white hover:text-indigo-500 hover:z-50">
+        
+        
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                        <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                    </svg>
+                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <img class="h-64 object-cover rounded-xl" src="../public/images/blog/migrating-design-system-sketch-to-adobe-xd_00.webp" alt="">
+            </a>
+
+            <a href="" class="relative flex items-end hover:shadow-xl rounded-xl">
+
+                <div class="absolute w-full h-64 flex items-end
+                            opacity-0 hover:opacity-100
+                            transition-all duration-100 rounded-xl">
+
+                    <div class="p-4 w-full h-max bg-opacity-40 bg-gray-900 
+                                rounded-b-xl"
+
+                                style="-webkit-backdrop-filter:blur(12px); 
+                                backdrop-filter: blur(12px);" >
+
+
+                        <div class="md:mt-8 mt-4 flex justify-between gap-5 items-center">
+
+                            <div>
+                                <h2 class="text-2xl text-white">Congo Mémoire</h2>
+        
+                                <p class="text-gray-200 mt-2">Application web</p>
+                            </div>
+                            
+                            <div class="border-l border-gray-100 text-white pl-3 w-4/12 ml-auto">
+                                Etude de cas
+
+                                <div class="h-12 w-12 rounded-full transition-all duration-300
+                                        flex justify-center items-center text-gray-200
+                                        hover:bg-white hover:text-indigo-500 hover:z-50">
+        
+        
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                        <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                    </svg>
+                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <img class="h-64 object-cover rounded-xl" src="../public/images/blog/Quest_ce_quune_solution_SaaS.original.jpg" alt="">
+            </a>
+
+            <a href="" class="relative flex items-end hover:shadow-xl rounded-xl">
+
+                <div class="absolute w-full h-64 flex items-end
+                            opacity-0 hover:opacity-100
+                            transition-all duration-100 rounded-xl">
+
+                    <div class="p-4 w-full h-max bg-opacity-40 bg-gray-900 
+                                rounded-b-xl"
+
+                                style="-webkit-backdrop-filter:blur(12px); 
+                                backdrop-filter: blur(12px);" >
+
+
+                        <div class="md:mt-8 mt-4 flex justify-between gap-5 items-center">
+
+                            <div>
+                                <h2 class="text-2xl text-white">Congo Mémoire</h2>
+        
+                                <p class="text-gray-200 mt-2">Application web</p>
+                            </div>
+                            
+                            <div class="border-l border-gray-100 text-white pl-3 w-4/12 ml-auto">
+                                Etude de cas
+
+                                <div class="h-12 w-12 rounded-full transition-all duration-300
+                                        flex justify-center items-center text-gray-200
+                                        hover:bg-white hover:text-indigo-500 hover:z-50">
+        
+        
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current" height="30.705" viewBox="0 0 31.504 30.705">
+                                        <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0 -2.647)"/>
+                                    </svg>
+                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <img class="h-64 object-cover rounded-xl" src="../public/images/blog/how-to-create-design-system-in-xd-step-0-header.png" alt="">
+            </a>
+
+        </div>
+
+        
+
+    </section>
+
+
+    <div class="-mb-2 -ml-1 mt-40">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="181.155" viewBox="0 0 1367.743 181.155">
+            <path class="stroke-current text-pink-300" id="Tracé_2" data-name="Tracé 2" d="M1.156-14.547S67.627-64.11,392.727-64.11c153.122,0,358.295,59.211,541.725,75.43C1141.112,29.594,1289.9-67.574,1289.9-67.574" transform="translate(0.243 87.655)" fill="none" stroke-linecap="round" stroke-width="2"/>
+            <path class="fill-current text-indigo-800" id="Tracé_1" data-name="Tracé 1" d="M0,0S166.91-56.211,405.877-49.5,715.838,14.48,955.869,26.854,1366,0,1366,0V115H0Z" transform="translate(1.743 66.155)"/>
+            <path id="Icon_awesome-rocket" data-name="Icon awesome-rocket" d="M20.331.769A.64.64,0,0,0,19.84.278,14.608,14.608,0,0,0,16.52,0c-4.154,0-6.646,2.222-8.5,5.152H3.82A1.932,1.932,0,0,0,2.095,6.219L.106,10.2a.966.966,0,0,0,.865,1.4H5.148l-.9.9a1.288,1.288,0,0,0,0,1.821l2.049,2.049a1.288,1.288,0,0,0,1.822,0l.9-.9v4.18a.966.966,0,0,0,1.4.865l3.973-1.988a1.928,1.928,0,0,0,1.067-1.727v-4.2c2.922-1.864,5.152-4.363,5.152-8.5A14.279,14.279,0,0,0,20.331.769ZM15.459,6.762a1.61,1.61,0,1,1,1.61-1.61,1.61,1.61,0,0,1-1.61,1.61Z" transform="translate(1289.923)" fill="#80c8ff"/>
+        </svg>
+          
+    </div>
+    <section class="bg-indigo-800 lg:px-24 md:px-16 px-6">
+
+        <div class="flex items-center gap-24 pb-20 relative z-50">
+            
+            <div class="lg:w-7/12 md:w-10/12 w-full text-center m-auto">
+                <h2 class="md:text-4xl text-4xl font-semibold text-gray-100 lg:leading-normal">Un click vous sépare du coup de Boost.</h2>
+                <p class="text-gray-200 mt-8 leading-normal">Notre équipe a fait ses preuves en entreprise puis en freelance et est prête à vous accompagner dans votre projet.</p>
+                
+                <div class="mt-8 w-max m-auto">
+                    <div class="justify-center z-50" id="navuser">
+                    
+                        <div class="md:flex grid gap-6">
+        
+                            <a href="us.html" class="block bg-white shadow-md py-3 px-6 
+                                                        rounded-md text-green-500">
+                                Apropos de nous
+                            </a>
+                            
+                            <a href="register.html" class="block bg-green-500 py-3 px-6 rounded-md text-white 
+                                                            hover:bg-green-600 shadow-md">
+                                Prendre contact
+                            </a>
+                        
+                        </div>
+                        
+                        <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <footer>
         <div class="bg-gray-50 lg:px-24 px-6 py-16">
             <div class="flex justify-center mb-8">
                 <a href="index.html" class="flex items-center  mt-0">
