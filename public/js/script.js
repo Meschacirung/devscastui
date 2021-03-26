@@ -105,3 +105,14 @@ expander.addEventListener('click', ()=>{
     }
 
 })
+
+
+let portfolio = document.querySelector("#toportfolio")
+
+portfolio.addEventListener('click', ()=>{
+
+    document.getElementById('#main').scrollIntoView ( {
+        behavior : 'smooth',
+    });
+
+})
