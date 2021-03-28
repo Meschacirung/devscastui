@@ -139,7 +139,7 @@
 
             <div class="lg:w-6/12 lg:px-24 md:px-16 px-6 py-24 lg:bg-gray-50">
 
-                <div class="w-fyllsticky top-32">
+                <div class="sticky top-20">
 
                     <div class="bg-white lg:p-8 rounded-2xl lg:shadow-md">
                         <h1 class="text-gray-700 text-3xl font-semibold">Nos coordonnées</h1>
@@ -206,7 +206,6 @@
                                 <img src="../public/images/undraw_contact_us_15o2.svg" alt="">
                             </div>
                         </div>      
-                        
                     
                     </div>
 
@@ -214,21 +213,101 @@
 
             </div>
 
-        </div>
-    </section>
+            <div class="lg:w-6/12 lg:px-24 md:px-16 px-6 lg:py-24 md:py-16 py-6">
 
-    <footer>
-        <div class="bg-gray-50 lg:px-24 px-6 py-16">
-            <div class="flex justify-center mb-8">
-                <a href="index.html" class="flex items-center  mt-0">
-                    <img src="../public/images/icon.png" class="w-12" alt="">
-                    <span class="text-2xl text-gray-800">Devscast</span>
-                </a>
+                <div class="relative">
+
+                    <div>
+                        <h1 class="text-gray-700 text-3xl font-semibold">Laissez-nous un message</h1>
+                        <p class="mt-4 text-gray-600">Que vous ayez des questions ou que vous souhaitiez simplement nous dire bonjour, nous nous ferions un plaisir de discuter avec vous.</p>
+                    </div>
+                    
+                    <form action="" method="POST" class="mt-8" >
+
+                        <div class="md:flex justify-between items-center gap-4">
+
+                            <label class="text-gray-500" for="">Nom complet <span class="text-yellow-500">*</span> </label>
+                            
+                            <div class="md:w-8/12 md:mt-0 mt-3">
+                                <input class="px-4 py-2 bg-gray-100 rounded-md w-full border-2 
+                                              border-transparent focus:outline-none 
+                                              focus:border-indigo-400 focus:bg-white 
+                                              " type="text" placeholder="Votre nom complet" required>
+                            </div>
+                            
+                        </div>
+
+                        <div class="md:flex justify-between items-center gap-4 mt-6">
+
+                            <label class="text-gray-500 md:mb-0 mb-2" for="">Adresse email <span class="text-yellow-500">*</span> </label>
+                            
+                            <div class="md:w-8/12 md:mt-0 mt-3">
+                                <input class="px-4 py-2 bg-gray-100 rounded-md w-full border-2 
+                                              border-transparent focus:outline-none 
+                                              focus:border-indigo-400 focus:bg-white 
+                                              " type="email" placeholder="Email" required>
+                            </div>
+                            
+                        </div>
+
+                        <div class="md:flex justify-between items-center gap-4 mt-6">
+
+                            <label class="text-gray-500 md:mb-0 mb-2" for="">Sujet </label>
+                            
+                            <div class="md:w-8/12 md:mt-0 mt-3">
+
+                                <select class="px-4 py-2 bg-gray-100 rounded-md w-full border-2 
+                                                border-transparent focus:outline-none 
+                                                focus:border-indigo-400 focus:bg-white 
+                                                " name="" id="">
+
+                                    <option value="">Backend</option>
+                                    <option value="">Mentoring</option>
+                                    <option value="">Backend</option>
+                                    <option value="">Mentoring</option>
+                                    
+                                </select>
+
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="md:flex justify-between gap-4 mt-6">
+
+                            <label class="text-gray-500 md:mb-0 mb-2" for="">Votre message <span class="text-yellow-500">*</span></label>
+                            
+                            <div class="md:w-8/12 md:mt-0 mt-3">
+                                
+                                <textarea name="" id="" rows="5" class="px-4 py-2 bg-gray-100 rounded-md w-full border-2 
+                                                                        border-transparent focus:outline-none text-gray-500
+                                                                        focus:border-indigo-400 focus:bg-white 
+                                                                        " required placeholder="Ecrivez quelque chose :)">
+                                </textarea>
+
+                                
+                            </div>
+                            
+                        </div>
+
+                        <p class="text-gray-500 text-sm mt-8">Ce formulaire utilise  <a href="" class="text-blue-400">reCAPTCHA</a>  afin de lutter contre le SPAM. L'utilisation de cette fonctionnalité est soumise aux Règles de confidentialité et aux Conditions d'utilisation de Google.</p>
+
+
+                        <button class="mt-8 w-full py-3 bg-green-500 rounded-md
+                                        text-white hover:bg-green-600 shadow-md
+                                        focus:outline-none"
+                                type="submit">
+                            Envoyer le message
+                        </button>
+                    </form>
+
+                </div>
+
             </div>
 
-            <p class="text-center">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+
         </div>
-    </footer>
+    </section>
 
     <script src="../public/js/script.js"></script>
 
