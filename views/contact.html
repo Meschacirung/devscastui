@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+
+    <header>
+        <nav class="fixed bg-white bg-opacity-75
+                    w-full lg:h-auto h-16 lg:px-24 md:px-16 px-6 lg:py-0 py-3 
+                    flex flex-wrap lg:items-center items-start justify-between 
+                    transition-all duration-500" id="navbar" 
+
+             style="z-index:1000; -webkit-backdrop-filter:blur(12px); 
+                    backdrop-filter: blur(12px);">
+
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+            
+            <div class="block lg:hidden -mt-1">
+                
+                <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
+                    
+
+                    <div style="width:25px;" class="flex flex-wrap justify-end">
+
+                        <style>
+                            .rotate-1{
+
+                                transform: rotate(134deg);
+                                margin-top:24px !important;
+
+                            }
+
+                            .rotate-2{
+
+                                transform: rotate(-134deg);
+                                margin-top:-1px !important;
+
+                            }
+                        </style>
+
+                        <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                        <div class="line-2 transition-all duration-500" style="height:2px; width:20px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                        <div class="line-3 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="w-full lg:hidden hidden justify-center z-50" id="navuser">
+                
+                <div class="flex gap-6">
+
+                    <a href="login.html" class="bg-white border border-indigo-400 py-3 px-6 
+                                                rounded-md text-indigo-500 font-semibold">
+                        Se connecter
+                    </a>
+                    
+                    <a href="register.html" class="bg-indigo-500 py-3 px-6 rounded-md text-white 
+                                                    hover:bg-indigo-600  font-semibold">
+                        S'inscrire
+                    </a>
+                
+                </div>
+                
+                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
+            </div>
+
+            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-8 
+                        gap-24 lg:bg-transparent bg-white lg:shadow-none 
+                        shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden 
+                        z-50 transition-all duration-900" id="navlinks">
+
+                <a href="work.html" class="lg:inline block lg:my-0 md:py-4 py-3 
+                                                text-gray-500 hover:text-green-500">
+                    Portfolio
+                </a>
+
+                <a href="contents.html" class="lg:inline block lg:my-0 md:py-4 py-3 
+                                                text-gray-500 hover:text-green-500">
+                    Nos contenus
+                </a>
+                
+                <a href="us.html" class="lg:inline block lg:my-0 md:py-4 py-3 
+                                                text-gray-500 hover:text-green-500">
+                    Nous
+                </a>
+
+                <a href="blog.html" class="lg:inline block lg:my-0 md:py-4 py-3 
+                                                text-gray-500 hover:text-green-500">
+                    Blog
+                </a>
+                
+                <a href="contact.html" class="w-max bg-green-500 text-sm text-white 
+                                              hover:bg-green-600
+                                                lg:inline block lg:my-0 md:mt-8 mt-6 
+                                                lg:py-3 py-3 px-6 rounded-md">
+
+                    Prendre contact
+                </a>
+                
+                <div class="w-8 lg:block hidden">
+                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                </div>
+            </div>
+
+            <div class="lg:hidden hidden transition-all duration-700" id="navfooter">
+                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="lg:px-0 md:px-16 px-6">
+            <div class="flex">
+
+                <div class="w-6/12 px-24 py-24 lg:bg-gray-50">
+
+                    <div class="sticky top-32">
+
+                        <div class="bg-white p-8 rounded-2xl shadow-md">
+                            <h1 class="text-gray-700 text-3xl font-semibold">Nos coordonnées</h1>
+                            
+                            <div class="w-max">
+
+                                <div class="flex items-center gap-4">
+
+                                    <div class="h-20 w-20 border-2 border-indigo-700 rounded-full
+                                                flex justify-center items-center">
+
+                                        <h4 class="text-3xl text-white">356</h4>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="text-indigo-400">Adresse</p>
+                                        <h5 class="text-xl text-gray-600 font-thin">Lubumbashi, RDC</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-gray-50 lg:px-24 px-6 py-16">
+            <div class="flex justify-center mb-8">
+                <a href="index.html" class="flex items-center  mt-0">
+                    <img src="../public/images/icon.png" class="w-12" alt="">
+                    <span class="text-2xl text-gray-800">Devscast</span>
+                </a>
+            </div>
+
+            <p class="text-center">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500"> Licence</a>  </p>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+
+</body>
+</html>
