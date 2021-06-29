@@ -11,29 +11,22 @@
 
     <title>Devscast - Digital builders</title>
 
-    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://assets.devscast.tech/files/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+<body class="overflow-x-hidden selection:bg-green-300 relative">
 
-    <header>
-        <nav class="fixed bg-white bg-opacity-75 border-b border-gray-100
-                    w-full lg:h-auto h-16 lg:px-24 md:px-16 px-6 lg:py-0 py-3 
-                    flex flex-wrap lg:items-center items-start justify-between 
-                    transition-all duration-500" id="navbar" 
-
-             style="z-index:1000; -webkit-backdrop-filter:blur(12px); 
-                    backdrop-filter: blur(12px);">
-
+    <header class="bg-gray-100 bg-opacity-50 relative w-full lg:h-auto h-16 lg:py-0 transition-all duration-500 z-10">
+        <nav role="navigation" class="flex flex-wrap lg:items-center items-start justify-between lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4">
             <div class="flex-shrink-0">
-                <a href="index.html" class="flex items-center  mt-0">
-                    <img src="../public/images/icon.png" class="w-12" alt="">
-                    <span class="text-2xl text-gray-800">Devscast</span>
+                <a href="index.html" class="flex items-center  mt-0 space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
+                        <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                    </svg>
+                    <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
                 </a>
             </div>
             
@@ -88,43 +81,60 @@
                 <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
             </div>
 
-            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-8 
-                        gap-24 lg:bg-transparent bg-white lg:shadow-none 
+            <div class="text-md lg:w-auto w-full lg:flex items-center lg:bg-transparent bg-white lg:shadow-none 
                         shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden 
-                        z-50 transition-all duration-900" id="navlinks">
+                        z-50 transition-all duration-900 group relative" id="navlinks">
 
-                <a href="index.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
+                <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
                     Portfolio
                 </a>
-
-                <a href="contents.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
+                
+                <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
+                                               text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
                     Nos contenus
+                    <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
+                        <div class="rounded-lg shadow-md bg-white flex p-2">
+                            <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                <a href="" class="px-6 py-3 block">
+                                    <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
+                                    <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
+                                </a>
+                            </div>
+                            <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                <a href="" class="px-6 py-3 block">
+                                    <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
+                                    <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
+                                </a>
+                            </div>
+                
+                        </div>
+                    </div>
                 </a>
                 
-                <a href="us.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
+                <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                        text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
                     Nous
                 </a>
 
-                <a href="blog.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-600 hover:text-green-500 
-                                                border-b-2 border-green-700">
-                    Blog
+                <a href="blog.html" class="lg:inline block lg:my-0   px-4
+                                                text-gray-600 hover:text-gray-900 lg:mr-4
+                                                group-hover:opacity-75 hover:opacity-100">
+                    <div class="relative md:py-5 py-3 h-full active">
+                        Blog
+                    </div>
+                    
                 </a>
-                
-                <a href="contact.html" class="w-max bg-green-500 text-sm text-white 
-                                              hover:bg-green-600
+            </div>
+
+            <div>
+                <a href="contact.html" class="w-max bg-green-500 text-sm text-gray-800 font-semibold px-4 
+                                              hover:bg-green-600 shadow-xl
                                                 lg:inline block lg:my-0 md:mt-8 mt-6 
-                                                lg:py-3 py-3 px-6 rounded-md">
+                                                py-4 px-6 rounded">
 
                     Prendre contact
                 </a>
-                
-                <div class="w-8 lg:block hidden">
-                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
-                </div>
             </div>
 
             <div class="lg:hidden hidden transition-all duration-700" id="navfooter">
@@ -133,14 +143,18 @@
         </nav>
     </header>
 
-    <section>
-        <div class="lg:px-24 md:px-16 px-6 pt-48">
+    <section class="z-10 relative bg-gray-100 bg-opacity-50 pb-40">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 pt-20">
             
-            <h1 class="text-5xl font-semibold text-gray-800">Lisez nous</h1>
-            <p class="text-gray-600 mt-5">Les dernières nouvelles sur le Web, l'UI / UX Design et plus encore.</p>
-            
+            <div class="lg:w-6/12">
 
-            <div class="grid md:grid-cols-4 grid-cols-2 lg:gap-8 gap-4 mt-16 pb-12">
+                <span class="text-green-500 font-thin tracking-wider text-sm indicate">BLOG</span>
+                <h1 class="text-5xl font-semibold text-gray-800 mt-8">Les dernières nouvelles</h1>
+                <p class="text-gray-600 mt-5">Les dernières nouvelles sur le Web, l'UI / UX Design et plus encore.</p>
+            
+            </div>
+
+            <div class="grid md:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 mt-16 pb-12 hidden">
 
                 <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
                             bg-white hover:border-pink-300 border-b-4 border-transparent
@@ -208,7 +222,7 @@
             </div>
         </div>
 
-        <div class="-mt-8">
+        <div class="mt-16 -mb-56 hidde">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="183.81" viewBox="0 0 1892.281 183.81">
                 <path id="Tracé_1" data-name="Tracé 1" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,505.95-141.947,750.5-170.846,291.591-34.458,434.623,17.231,434.623,17.231" transform="translate(0.351 55.56)" fill="none" stroke="#abff88" stroke-width="1"/>
                 <path id="Tracé_2" data-name="Tracé 2" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,521.633-70.879,766.187-99.779,291.591-34.458,530.458,36.1,530.458,36.1" transform="translate(0.351 55.56)" fill="none" stroke="#7df2ff" stroke-width="1"/>
@@ -219,131 +233,52 @@
           
     </section>
 
-    <section>
-        <div class="lg:px-24 md:px-16 px-6 pb-8 mt-8">
+    <section class="z-10 relative">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-11 md:px-16 px-4 mt-8">
 
-            <div class="md:flex justify-center items-center lg:gap-16 md:gap-8 
-                        text-gray-700 hover:text-blue-500">
-                    
-                <div class="md:w-5/12">
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                        class="mt-4 lg:h-auto h-40 w-full md:h-64 object-cover rounded-xl" 
-                        alt="image de l'article">
-                </div>
-
-                <div class="md:w-8/12 mt-4">
-                    <h1 class="lg:text-4xl md:text-3xl text-2xl leading-normal">La nouvelle version de Bootstrap sans Jquery</h1>
-                    <p class="my-6 text-gray-500">Adipisicing audantium laborum vel tempora atque fugiat exercitationem nisi et blanditiis adipisci culpa accusamus, inventore expedita. Ex sunt amet fuga dolorem quod at?</p>
-                    
-                    <div class="flex flex-grow items-center gap-4">
-                        <a href="" class="text-blue-500 hover:text-underline">Lire plus</a> 
-                        <span class="ml-6 pl-6 text-gray-400 border-l">Janvier 24, 2021</span>
-
-                        <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                            <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                            <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                        </div> 
+            <div class="shadow-xl bg-white p-8 rounded-lg -mt-24">
+                <div class="w-max">
+                    <span class="text-gray-400">Janvier 24, 2021</span>
+                    <div class="flex gap-4 items-center mt-4">
+                        <img src="../public/images/user 2.jpg" class="w-16 h-16 object-cover rounded-full" alt="author avatar">
+                        <div>
+                            <h4 class="text-gray-700 text-lg">Scott Trésor</h4>
+                            <span class="text-gray-400 font-light text-sm">Développeur Backend</span>
+                        </div>
                     </div>
-                    
+                </div>
+                <div class="md:flex justify-center items-center lg:gap-16 md:gap-8 text-gray-700 hover:text-blue-500 group">
+                    <div class="md:w-6/12 order-last">
+                        <h1 class="lg:text-4xl md:text-3xl text-2xl leading-normal">La nouvelle version de Bootstrap sans Jquery</h1>
+                        <p class="my-6 text-gray-500">Adipisicing audantium laborum vel tempora atque fugiat exercitationem nisi et blanditiis adipisci culpa accusamus, inventore expedita. Ex sunt amet fuga dolorem quod at?</p>
+                        
+                        <div class="flex flex-grow items-center gap-4">
+                            <a href="" class="text-blue-500 hover:text-underline">Lire plus</a> 
+
+                            <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
+                                <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
+                                <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <div class="md:w-6/12 mt-4">
+                        <img src="../public/images/projects/UI-3.jpg" 
+                            class="mt-4 lg:h-auto h-40 w-full md:h-64 object-cover rounded-xl group-hover:rounded-3xl" 
+                            alt="image de l'article">
+                    </div>
                 </div>
             </div> 
 
         </div>
     </section>
 
-    <section>
-        <div class="lg:px-24 md:px-16 px-6 pb-24">
+    <section class="z-10 relative">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-32 md:px-16 px-4 pb-24">
 
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-16 mb-16">
+            <div class="grid md:grid-cols-2 gap-8 mt-16 mb-16">
 
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/projects/bootstrap5.png" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
+                <div class="text-gray-700 hover:text-blue-500 mt-8 p-8 rounded-xl shadow-lg">
 
                     <div>
                         <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
@@ -366,151 +301,6 @@
                     </div>
 
                     <img src="../public/images/projects/bootstrap5.png" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/projects/v5-new-logo.png" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Quest_ce_quune_solution_SaaS.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
                             class="h-48 w-full object-cover rounded-xl" 
                             alt="image de l'article">
 
@@ -586,7 +376,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="z-10 relative">
         <div class="bg-gray-50 lg:px-24 px-6 py-16">
             <div class="flex justify-center mb-8">
                 <a href="index.html" class="flex items-center  mt-0">

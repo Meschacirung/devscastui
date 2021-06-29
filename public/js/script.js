@@ -1,13 +1,13 @@
 window.addEventListener('scroll', function(){
     if (window.pageYOffset > 250) {
         document.querySelector('#navbar').classList.remove('py-4')
-        document.querySelector('#navbar').classList.add('shadow-sm')
+        document.querySelector('#navbar').classList.add('shadow-md')
         document.querySelector('.dots').classList.add('fixed', 'left-0', 'top-48');
         document.querySelector('body').classList.add('bg-gray-800');
     }
 
     else  {
-        document.querySelector('#navbar').classList.remove('shadow-sm')
+        document.querySelector('#navbar').classList.remove('shadow-md')
         document.querySelector('.dots').classList.remove('fixed', 'left-0', 'top-48');
         document.querySelector('body').classList.remove('bg-gray-800');
     }

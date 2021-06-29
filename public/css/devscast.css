@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Medium.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Book.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url("../fonts/CircularStd-Book.ttf");
+    font-weight: 100;
+}
+
+body{
+    font-family: 'CircularStd', sans-serif;
+    z-index:5000;
+}
+
+header::before{
+    content:'';
+    height:1px;
+    @apply w-full absolute bottom-0 border-b border-dashed border-gray-200;
+}
+
+body::before{
+    content:'';
+    z-index:1;
+    @apply lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-20 md:px-12 px-4 lg:mx-20 md:mx-12 mx-4 fixed left-0 right-0 h-screen border-r border-l border-gray-200;
+}
+
+.indicate{
+    margin-left: -18.1px;
+    letter-spacing:2px;
+    font-weight: 100 !important;
+    @apply border-l-2 border-green-500 pl-4;
+}
+
+/*
+body::after{
+    content:'';
+    z-index:1;
+    @apply h-screen w-5/12 m-auto absolute top-0 left-0 right-0 border-r border-l border-dashed border-gray-100;
+}
+*/
+
+.active::after{
+    content:'';
+
+    @apply absolute left-0 bottom-0 w-full bg-green-500;
+
+    height:2px;
+}
+
