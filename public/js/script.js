@@ -1,26 +1,13 @@
-window.addEventListener('scroll', function(){
-    if (window.pageYOffset > 250) {
-        document.querySelector('#navbar').classList.remove('py-4')
-        document.querySelector('#navbar').classList.add('shadow-md')
-        document.querySelector('.dots').classList.add('fixed', 'left-0', 'top-48');
-        document.querySelector('body').classList.add('bg-gray-800');
-    }
-
-    else  {
-        document.querySelector('#navbar').classList.remove('shadow-md')
-        document.querySelector('.dots').classList.remove('fixed', 'left-0', 'top-48');
-        document.querySelector('body').classList.remove('bg-gray-800');
-    }
-});
-
 let navbar = document.querySelector("#navbar");
 let navlinks = document.querySelector("#navlinks");
-let navfooter = document.querySelector("#navfooter");
 let navuser = document.querySelector("#navuser");
 let hamburger = document.querySelector("#hamburger");
 
 hamburger.addEventListener('click', function(){
 
+    navlinks.classList.remove('hidden', '-mt-12')
+    navlinks.classList.add('mt-3')
+    /*
     if (document.querySelector('.line-1').classList[3] != 'rotate-1'){
 
         document.querySelector('.line-1').classList.add('rotate-1');
@@ -28,14 +15,11 @@ hamburger.addEventListener('click', function(){
         document.querySelector('.line-3').classList.add('rotate-2');
         
 
-        navbar.classList.remove('h-16');
+        navbar.classList.remove('h-14');
         navbar.classList.add('h-full');
 
         navlinks.classList.remove('hidden');
         navlinks.classList.add('mt-0', 'block');
-
-        navfooter.classList.remove('hidden');
-        navfooter.classList.add('block', 'mt-0');
 
         navuser.classList.remove('hidden', '-mt-10');
     } else {
@@ -44,7 +28,7 @@ hamburger.addEventListener('click', function(){
         document.querySelector('.line-2').classList.remove('hidden');
         document.querySelector('.line-3').classList.remove('rotate-2');
 
-        navbar.classList.add('h-16');
+        navbar.classList.add('h-14');
         navbar.classList.remove('h-full');
 
         navlinks.classList.add('hidden');
@@ -56,6 +40,7 @@ hamburger.addEventListener('click', function(){
         navuser.classList.add('hidden', '-mt-10');
 
     }
+    */
 
 });
 

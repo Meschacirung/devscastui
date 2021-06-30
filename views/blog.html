@@ -19,210 +19,141 @@
 
 <body class="overflow-x-hidden selection:bg-green-300 relative">
 
-    <header class="bg-gray-100 bg-opacity-50 relative w-full lg:h-auto h-16 lg:py-0 transition-all duration-500 z-10">
-        <nav role="navigation" class="flex flex-wrap lg:items-center items-start justify-between lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4">
-            <div class="flex-shrink-0">
-                <a href="index.html" class="flex items-center  mt-0 space-x-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
-                        <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
-                    </svg>
-                    <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
-                </a>
-            </div>
-            
-            <div class="block lg:hidden">
-                
-                <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
-                    
-
-                    <div style="width:25px;" class="flex flex-wrap justify-end">
-
-                        <style>
-                            .rotate-1{
-
-                                transform: rotate(134deg);
-                                margin-top:24px !important;
-
-                            }
-
-                            .rotate-2{
-
-                                transform: rotate(-134deg);
-                                margin-top:-1px !important;
-
-                            }
-                        </style>
-
-                        <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
-                        <div class="line-2 transition-all duration-500" style="height:2px; width:20px; border-radius:100px; background:#636363; margin-top:7px;"></div>
-                        <div class="line-3 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
-                    </div>
-
-                </button>
-
-            </div>
-
-            <div class="w-full lg:hidden hidden justify-center z-50" id="navuser">
-                
-                <div class="flex gap-6">
-
-                    <a href="login.html" class="bg-white border border-indigo-400 py-3 px-6 
-                                                rounded-md text-indigo-500 font-semibold">
-                        Se connecter
+    <header class="bg-gray-100 bg-opacity-50 relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
+        <nav role="navigation" id="navbar" class="w-full flex lg:flex-nowrap flex-wrap lg:items-center lg:justify-end justify-between items-start lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-0 py-3">
+            <div class="flex justify-between w-full px-4 lg:px-0 z-10">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center  mt-0 space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
+                            <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                        </svg>
+                        <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
                     </a>
-                    
-                    <a href="register.html" class="bg-indigo-500 py-3 px-6 rounded-md text-white 
-                                                    hover:bg-indigo-600  font-semibold">
-                        S'inscrire
-                    </a>
-                
                 </div>
                 
-                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
-            </div>
-
-            <div class="text-md lg:w-auto w-full lg:flex items-center lg:bg-transparent bg-white lg:shadow-none 
-                        shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden 
-                        z-50 transition-all duration-900 group relative" id="navlinks">
-
-                <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
-                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
-                    Portfolio
-                </a>
-                
-                <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
-                                               text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
-                    Nos contenus
-                    <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
-                        <div class="rounded-lg shadow-md bg-white flex p-2">
-                            <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                <a href="" class="px-6 py-3 block">
-                                    <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
-                                    <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
-                                </a>
-                            </div>
-                            <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                <a href="" class="px-6 py-3 block">
-                                    <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
-                                    <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
-                                </a>
-                            </div>
-                
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
-                                        text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
-                    Nous
-                </a>
-
-                <a href="blog.html" class="lg:inline block lg:my-0   px-4
-                                                text-gray-600 hover:text-gray-900 lg:mr-4
-                                                group-hover:opacity-75 hover:opacity-100">
-                    <div class="relative md:py-5 py-3 h-full active">
-                        Blog
-                    </div>
+                <div class="block lg:hidden -mt-1">
                     
-                </a>
+                    <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
+                        
+    
+                        <div style="width:25px;" class="flex flex-wrap justify-end">
+                            <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                            <div class="line-2 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                        </div>
+    
+                    </button>
+    
+                </div>
             </div>
 
-            <div>
-                <a href="contact.html" class="w-max bg-green-500 text-sm text-gray-800 font-semibold px-4 
-                                              hover:bg-green-600 shadow-xl
-                                                lg:inline block lg:my-0 md:mt-8 mt-6 
-                                                py-4 px-6 rounded">
+            <div style="margin-left:-.5px;" class="lg:bg-transparent text-md bg-white w-full lg:ml-auto m-auto hidden lg:flex lg:py-0 py-6 lg:justify-between items-center lg:mt-0 -mt-12 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500" id="navlinks">
 
-                    Prendre contact
-                </a>
-            </div>
+                <div class="lg:flex">
+                    <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Portfolio
+                    </a>
+                
+                    <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Nos contenus
+                        <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
+                            <div class="rounded-lg shadow-md bg-white flex p-2">
+                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="px-6 py-3 block">
+                                        <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
+                                        <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
+                                    </a>
+                                </div>
+                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="px-6 py-3 block">
+                                        <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
+                                        <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
+                                    </a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                            text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Nous
+                    </a>
 
-            <div class="lg:hidden hidden transition-all duration-700" id="navfooter">
-                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
-            </div>
+                    <a href="blog.html" class="lg:inline block lg:my-0   px-4
+                                                    text-gray-600 hover:text-gray-900 lg:mr-4
+                                                    group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full active">
+                            Blog
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="w-max lg:ml-auto lg:px-0 px-4">
+                    <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
+                                                  hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
+                                                    lg:inline block lg:my-0 md:mt-8 mt-6 
+                                                    py-4 px-6 rounded">
+    
+                        Prendre contact
+                    </a>
+                </div>
+            </div> 
         </nav>
     </header>
 
-    <section class="z-10 relative bg-gray-100 bg-opacity-50 pb-40">
-        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 pt-20">
+    <section class="bg-gray-100 bg-opacity-50 md:pb-40 pb-24">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 md:pt-20 pt-10">
             
-            <div class="lg:w-6/12">
+            <div class="lg:w-6/12 lg:pl-0 pl-4">
 
                 <span class="text-green-500 font-thin tracking-wider text-sm indicate">BLOG</span>
-                <h1 class="text-5xl font-semibold text-gray-800 mt-8">Les dernières nouvelles</h1>
+                <h1 class="md:text-5xl text-4xl font-semibold text-gray-800 mt-8">Les dernières nouvelles</h1>
                 <p class="text-gray-600 mt-5">Les dernières nouvelles sur le Web, l'UI / UX Design et plus encore.</p>
             
             </div>
 
-            <div class="grid md:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 mt-16 pb-12 hidden">
+            <div class="md:mt-8 w-full mt-4 py-6 lg:px-0 px-4 lg:overflow-x-hidden overflow-x-auto">
 
-                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
-                            bg-white hover:border-pink-300 border-b-4 border-transparent
-                            transition-all duration-100
+                <div class="scroll lg:grid grid-cols-4 flex grid-cols-2 lg:gap-8 gap-4">
+                    <div class="rounded-lg md:p-6 p-4 px-6 shadow-md transform hover:-translate-y-2 md:h-32 lg:w-auto w-max h-20 
+                            bg-white transition-all duration-300 hover:shadow-lg cursor-pointer
                             flex justify-center items-center gap-3">
 
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-pink-400" viewBox="0 0 36 35.1">
-                            <path id="Icon_simple-adobexd" data-name="Icon simple-adobexd" d="M29.625.45H6.375A6.37,6.37,0,0,0,0,6.825v22.35A6.37,6.37,0,0,0,6.375,35.55h23.25A6.37,6.37,0,0,0,36,29.175V6.825A6.37,6.37,0,0,0,29.625.45Zm4.86,28.14a5.435,5.435,0,0,1-5.43,5.46H6.945A5.454,5.454,0,0,1,1.5,28.6V7.395A5.454,5.454,0,0,1,6.945,1.95H29.04a5.445,5.445,0,0,1,5.445,5.445ZM14.235,16.875l4.2,8.07c.075.12.03.24-.09.24h-2.61a.294.294,0,0,1-.315-.195c-.96-1.98-1.935-3.96-2.94-6.09h-.03c-.9,2.01-1.89,4.125-2.85,6.1a.288.288,0,0,1-.27.165H6.855c-.15,0-.165-.12-.09-.21l4.11-7.83L6.9,9.21A.121.121,0,0,1,6.99,9H9.57a.236.236,0,0,1,.27.165c.945,1.98,1.9,4.02,2.805,6.015h.03c.87-1.98,1.83-4.035,2.76-6,.075-.12.12-.195.27-.195H18.12c.12,0,.165.09.09.21ZM19.17,19.32a5.867,5.867,0,0,1,6.015-6.225,6.652,6.652,0,0,1,.78.03V9.15a.15.15,0,0,1,.15-.15h2.37c.12,0,.15.045.15.12V22.89a10.684,10.684,0,0,0,.075,1.47c0,.09-.03.12-.12.165a8.935,8.935,0,0,1-3.84.87C21.495,25.41,19.17,23.4,19.17,19.32Zm6.8-3.84a2.269,2.269,0,0,0-.87-.15c-1.89,0-3.21,1.455-3.21,3.87,0,2.76,1.35,3.87,3.045,3.87a2.83,2.83,0,0,0,1.035-.165V15.48Z" transform="translate(0 -0.45)"/>
-                        </svg>
-                          
+                        <img src="../public/images/icons/creativity.svg" class="md:w-16 w-10" alt="icône créativité">
+                        <h2 class="md:text-2xl text-lg text-gray-600">Tout</h2>
                     </div>
 
-                    <h2 class="lg:text-2xl md:text-xl text-gray-600">UX Design</h2>
-                </div>
+                    <div class="rounded-lg md:p-6 p-4 px-6 shadow-md transform hover:-translate-y-2 md:h-32 lg:w-auto w-max h-20 
+                                bg-white transition-all duration-300 hover:shadow-lg cursor-pointer
+                                flex justify-center items-center md:gap-3 gap-2">
 
-                <div class="rounded-xl p-6 shadow-md md:h-32 h-20
-                            bg-white hover:border-blue-300 border-b-4 border-transparent
-                            transition-all duration-100
-                            flex justify-center items-center gap-3">
-
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-blue-400" viewBox="0 0 36 35.1">
-                            <path id="Icon_awesome-react" data-name="Icon awesome-react" d="M29.4,12.459q-.57-.19-1.139-.359c.063-.26.12-.52.176-.78.865-4.191.3-7.559-1.624-8.67-1.849-1.062-4.866.042-7.917,2.7-.3.26-.6.534-.879.809-.19-.183-.387-.366-.584-.541-3.2-2.841-6.405-4.036-8.325-2.918C7.27,3.769,6.722,6.94,7.5,10.905c.077.394.162.78.26,1.174-.45.127-.893.267-1.308.415C2.693,13.8,0,15.848,0,17.972c0,2.194,2.869,4.395,6.771,5.73.316.105.633.211.956.3-.105.422-.2.837-.281,1.266-.738,3.9-.162,7,1.68,8.058,1.9,1.1,5.091-.028,8.2-2.749.246-.218.492-.443.738-.682.309.3.633.591.956.872C22.029,33.356,25,34.4,26.838,33.342c1.9-1.1,2.517-4.423,1.716-8.473q-.095-.464-.211-.949c.225-.063.443-.134.661-.2,4.057-1.343,7-3.516,7-5.745,0-2.13-2.77-4.2-6.6-5.512ZM19.891,6.49c2.616-2.278,5.055-3.171,6.166-2.531,1.188.682,1.645,3.438.9,7.059-.049.239-.1.471-.162.7a35.995,35.995,0,0,0-4.732-.745,35.525,35.525,0,0,0-3-3.734c.274-.26.541-.506.823-.752ZM11.756,21.621c.359.612.724,1.223,1.111,1.821A31.839,31.839,0,0,1,9.6,22.915a32.846,32.846,0,0,1,1.146-3.129c.323.619.654,1.23,1.005,1.835Zm-2.13-8.459c1.012-.225,2.088-.408,3.206-.548-.373.584-.738,1.181-1.083,1.786s-.682,1.209-1,1.828c-.443-1.048-.816-2.074-1.125-3.066Zm1.927,4.845c.464-.97.97-1.92,1.5-2.855s1.111-1.842,1.716-2.735c1.055-.077,2.13-.12,3.227-.12s2.18.042,3.227.12q.9,1.329,1.709,2.721t1.526,2.841q-.707,1.455-1.519,2.869c-.534.935-1.1,1.842-1.7,2.742-1.048.077-2.138.112-3.241.112s-2.173-.035-3.206-.1q-.918-1.339-1.73-2.742c-.541-.935-1.041-1.884-1.512-2.855Zm12.7,3.6c.359-.619.7-1.245,1.027-1.877a32.64,32.64,0,0,1,1.188,3.115,30.884,30.884,0,0,1-3.3.563C23.541,22.816,23.9,22.212,24.251,21.607Zm1.013-5.379c-.33-.619-.668-1.238-1.02-1.842s-.7-1.188-1.076-1.772a32.357,32.357,0,0,1,3.227.563,31.117,31.117,0,0,1-1.132,3.052Zm-7.249-7.91A30.876,30.876,0,0,1,20.1,10.835c-1.392-.063-2.791-.063-4.184,0C16.6,9.928,17.311,9.084,18.014,8.318ZM9.858,4.008c1.181-.689,3.8.3,6.567,2.742.176.155.352.323.534.492a35.723,35.723,0,0,0-3.016,3.734,37.064,37.064,0,0,0-4.725.731c-.091-.359-.169-.724-.246-1.09-.661-3.4-.225-5.97.886-6.609ZM8.135,22.542c-.3-.084-.584-.176-.872-.274a14.341,14.341,0,0,1-4.43-2.194,3.155,3.155,0,0,1-1.322-2.1c0-1.287,2.222-2.932,5.428-4.05.4-.141.809-.267,1.216-.387a37.388,37.388,0,0,0,1.723,4.472,38.434,38.434,0,0,0-1.744,4.535Zm8.2,6.891a12.869,12.869,0,0,1-3.966,2.482,3.112,3.112,0,0,1-2.482.091c-1.118-.647-1.582-3.129-.949-6.469.077-.394.162-.788.26-1.174a35.175,35.175,0,0,0,4.774.689,37.106,37.106,0,0,0,3.037,3.755C16.784,29.025,16.559,29.236,16.334,29.433Zm1.723-1.709c-.717-.773-1.434-1.631-2.13-2.552.675.028,1.371.042,2.074.042.724,0,1.434-.014,2.138-.049a30.322,30.322,0,0,1-2.081,2.559Zm9.19,2.109a3.125,3.125,0,0,1-1.16,2.2c-1.118.647-3.5-.2-6.075-2.4-.3-.253-.591-.527-.893-.809a34.783,34.783,0,0,0,2.967-3.769,34.662,34.662,0,0,0,4.8-.738c.07.288.134.577.19.858a12.817,12.817,0,0,1,.176,4.662Zm1.28-7.559c-.2.063-.394.127-.6.183a35.719,35.719,0,0,0-1.793-4.486,35.54,35.54,0,0,0,1.723-4.423c.366.105.717.218,1.055.33,3.277,1.125,5.576,2.8,5.576,4.078,0,1.378-2.454,3.157-5.962,4.317ZM18,21.22A3.22,3.22,0,1,0,14.78,18,3.22,3.22,0,0,0,18,21.22Z" transform="translate(0 -2.251)"/>
-                          
-                        </svg>
-
-
+                        <img src="../public/images/icons/ux.svg" class="md:w-16 w-10" alt="icône interface utilisateur">
+                        <h2 class="md:text-2xl text-lg text-gray-600">UX Design</h2>
                     </div>
 
-                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Frontend</h2>
-                </div>
+                    <div class="rounded-lg md:p-6 p-4 px-6 shadow-md transform hover:-translate-y-2 md:h-32 lg:w-auto w-max h-20 
+                                bg-white transition-all duration-300 hover:shadow-lg cursor-pointer
+                                flex justify-center items-center md:gap-3 gap-2">
 
-                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
-                            bg-white hover:border-red-300 border-b-4 border-transparent
-                            transition-all duration-100
-                            flex justify-center items-center gap-3">
-
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-red-400" viewBox="0 0 36 35.1">
-                            <path id="Icon_awesome-symfony" data-name="Icon awesome-symfony" d="M18,.563A17.438,17.438,0,1,0,35.438,18,17.434,17.434,0,0,0,18,.563Zm9.4,10.093a1.228,1.228,0,0,1-1.39-1.186c-.019-.645.47-.945.459-1.325-.016-.461-.714-.48-.9-.469-2.8.091-3.416,4.008-4.141,8.005a4.682,4.682,0,0,0,3.174-.437c.844-.545-.235-1.105-.1-1.727a1.14,1.14,0,0,1,2.25.373c-.025,1.256-1.823,2.94-5.456,2.51C20.538,20.583,20,24.484,17.2,27.769A7,7,0,0,1,12.17,30.6c-1.733.06-2.883-.866-2.924-2.1a1.842,1.842,0,0,1,1.709-1.87c1.539-.053,2.118,1.8,1.046,2.391-.85.683.008.887.144.882a2.712,2.712,0,0,0,1.56-.633c1.688-1.406,2.337-3.857,3.189-8.321a44.163,44.163,0,0,1,1.282-5.766c-1.19-.9-1.9-2.007-3.505-2.441a1.908,1.908,0,0,0-2.237.551,1.621,1.621,0,0,0,.167,2.159l.888.984C14.579,17.7,15.176,18.679,14.951,20c-.356,2.1-2.863,3.72-5.828,2.808-2.531-.781-3-2.571-2.7-3.559.528-1.7,2.978-.824,2.434.956a8.749,8.749,0,0,1-.442.919c-.321,1.039,2.943,2,3.586-.1.314-1.021-.373-1.526-1.564-2.8a3.689,3.689,0,0,1,.207-5.6c3.713-2.767,7.068,1.232,7.775,1.815,2.614-7.664,7.069-7.415,7.2-7.42,1.769-.057,3.107.745,3.152,2.014A1.5,1.5,0,0,1,27.4,10.655Z" transform="translate(-0.563 -0.563)"/>
-                        </svg>
-
+                        <img src="../public/images/icons/frontend.svg" class="md:w-16 w-10" alt="icône frontend">
+                        <h2 class="md:text-2xl text-lg text-gray-600">Frontend</h2>
                     </div>
 
-                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Backend</h2>
-                </div>
+                    <div class="rounded-lg md:p-6 p-4 px-6 shadow-md transform hover:-translate-y-2 md:h-32 lg:w-auto w-max h-20 
+                                bg-white transition-all duration-300 hover:shadow-lg cursor-pointer
+                                flex justify-center items-center md:gap-3 gap-2">
 
-                <div class="rounded-xl p-6 shadow-md md:h-32 h-20 
-                            bg-white hover:border-yellow-300 border-b-4 border-transparent
-                            transition-all duration-100
-                            flex flex-grow justify-center items-center gap-3">
-
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-10 w-8 fill-current text-yellow-400" viewBox="0 0 36 35.1">
-                            <path id="Icon_ionic-md-flashlight" data-name="Icon ionic-md-flashlight" d="M9,20.953l4.5,4.5v8.3h9v-8.3l4.5-4.5V12.375L9.056,12.4Zm7.509-18.7h2.981v4.5H16.509ZM5.625,7.762l2.1-2.137,3.157,3.206-2.1,2.137ZM25.109,8.831l3.164-3.2,2.1,2.137-3.157,3.2Z" transform="translate(-5.625 -2.25)"/>
-                        
-                        </svg>
-                          
+                        <img src="../public/images/icons/web-backend.svg" class="md:w-16 w-10" alt="icône développement backend">
+                        <h2 class="md:text-2xl text-lg text-gray-600">Backend</h2>
                     </div>
-
-                    <h2 class="lg:text-2xl md:text-xl text-gray-600">Astuces</h2>
                 </div>
-
             </div>
         </div>
 
-        <div class="mt-16 -mb-56 hidde">
+        <div class="md:-mb-56 -mb-32">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="183.81" viewBox="0 0 1892.281 183.81">
                 <path id="Tracé_1" data-name="Tracé 1" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,505.95-141.947,750.5-170.846,291.591-34.458,434.623,17.231,434.623,17.231" transform="translate(0.351 55.56)" fill="none" stroke="#abff88" stroke-width="1"/>
                 <path id="Tracé_2" data-name="Tracé 2" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,521.633-70.879,766.187-99.779,291.591-34.458,530.458,36.1,530.458,36.1" transform="translate(0.351 55.56)" fill="none" stroke="#7df2ff" stroke-width="1"/>
@@ -234,10 +165,10 @@
     </section>
 
     <section class="z-10 relative">
-        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-11 md:px-16 px-4 mt-8">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-11 md:px-16 px-4 lg:mt-8">
 
-            <div class="shadow-xl bg-white p-8 rounded-lg -mt-24">
-                <div class="w-max">
+            <div class="shadow-xl bg-white md:p-8 p-4 rounded-lg md:-mt-24 -mt-28">
+                <div class="w-max mb-4">
                     <span class="text-gray-400">Janvier 24, 2021</span>
                     <div class="flex gap-4 items-center mt-4">
                         <img src="../public/images/user 2.jpg" class="w-16 h-16 object-cover rounded-full" alt="author avatar">
@@ -247,24 +178,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:flex justify-center items-center lg:gap-16 md:gap-8 text-gray-700 hover:text-blue-500 group">
-                    <div class="md:w-6/12 order-last">
-                        <h1 class="lg:text-4xl md:text-3xl text-2xl leading-normal">La nouvelle version de Bootstrap sans Jquery</h1>
+                <div class="md:flex justify-center items-start lg:gap-16 md:gap-8">
+                    <div class="md:w-6/12 order-last group lg:p-6">
+                        <h1 class="lg:text-4xl md:text-3xl text-2xl leading-normal text-gray-700 group-hover:text-gray-800 lg:leading-normal mg:leading-snug">Les tendances frameworks JS de 2021</h1>
                         <p class="my-6 text-gray-500">Adipisicing audantium laborum vel tempora atque fugiat exercitationem nisi et blanditiis adipisci culpa accusamus, inventore expedita. Ex sunt amet fuga dolorem quod at?</p>
                         
                         <div class="flex flex-grow items-center gap-4">
                             <a href="" class="text-blue-500 hover:text-underline">Lire plus</a> 
 
-                            <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                            </div> 
                         </div>
                     </div>
     
                     <div class="md:w-6/12 mt-4">
-                        <img src="../public/images/projects/UI-3.jpg" 
-                            class="mt-4 lg:h-auto h-40 w-full md:h-64 object-cover rounded-xl group-hover:rounded-3xl" 
+                        <img src="../public/images/blog/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png" 
+                            class="mt-4 rounded-xl group-hover:rounded-3xl" 
                             alt="image de l'article">
                     </div>
                 </div>
@@ -273,12 +200,12 @@
         </div>
     </section>
 
-    <section class="z-10 relative">
-        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-32 md:px-16 px-4 pb-24">
+    <section>
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 pb-24">
 
             <div class="grid md:grid-cols-2 gap-8 mt-16 mb-16">
 
-                <div class="text-gray-700 hover:text-blue-500 mt-8 p-8 rounded-xl shadow-lg">
+                <div class="text-gray-700 hover:text-blue-500 mt-8">
 
                     <div>
                         <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
@@ -376,7 +303,7 @@
         </div>
     </section>
 
-    <footer class="z-10 relative">
+    <footer>
         <div class="bg-gray-50 lg:px-24 px-6 py-16">
             <div class="flex justify-center mb-8">
                 <a href="index.html" class="flex items-center  mt-0">

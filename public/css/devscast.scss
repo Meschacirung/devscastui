@@ -37,10 +37,12 @@ header::before{
     @apply w-full absolute bottom-0 border-b border-dashed border-gray-200;
 }
 
-body::before{
+html::before{
     content:'';
     z-index:1;
-    @apply lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-20 md:px-12 px-4 lg:mx-20 md:mx-12 mx-4 fixed left-0 right-0 h-screen border-r border-l border-gray-200;
+    @apply lg:max-w-screen-xl max-w-screen-lg m-auto ;
+    @apply fixed 2xl:left-44 lg:left-20 md:left-16 left-4 2xl:right-44;
+    @apply lg:right-20 md:right-16 right-4 h-screen border-r border-l border-gray-200;
 }
 
 .indicate{
@@ -50,14 +52,6 @@ body::before{
     @apply border-l-2 border-green-500 pl-4;
 }
 
-/*
-body::after{
-    content:'';
-    z-index:1;
-    @apply h-screen w-5/12 m-auto absolute top-0 left-0 right-0 border-r border-l border-dashed border-gray-100;
-}
-*/
-
 .active::after{
     content:'';
 
@@ -66,3 +60,14 @@ body::after{
     height:2px;
 }
 
+
+.scroll{
+    width:200vw;
+    @apply lg:w-full;
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .scroll{
+        width:120vw
+    }
+}
