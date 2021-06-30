@@ -67,7 +67,6 @@ html::before{
     height:2px;
 }
 
-
 .scroll{
     width:200vw;
     @apply lg:w-full;
@@ -78,3 +77,45 @@ html::before{
         width:120vw
     }
 }
+
+.bg-dark{
+    background: rgb(36, 48, 51);
+}
+
+.scrollbar-tranparent::-webkit-scrollbar-track {
+    @apply rounded-full bg-transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar {
+    @apply w-0 bg-transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar-thumb {
+    @apply bg-transparent
+}
+
+.scroller{
+    overflow-y: scroll;
+    scrollbar-color: #ffffff00 #ffffff00;
+    scrollbar-width:thin;
+}
+
+.pseudo-container{
+    max-height: 1024px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .pseudo-container {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .pseudo-container {
+      margin: auto;
+      max-height: 1280px;
+    }
+  }

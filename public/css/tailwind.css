@@ -32374,6 +32374,50 @@ html::before {
   }
 }
 
+.bg-dark{
+  background: rgb(36, 48, 51);
+}
+
+.scrollbar-tranparent::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar-thumb {
+  background-color: transparent
+}
+
+.scroller{
+  overflow-y: scroll;
+  scrollbar-color: #ffffff00 #ffffff00;
+  scrollbar-width:thin;
+}
+
+.pseudo-container{
+  max-height: 1024px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pseudo-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pseudo-container {
+    margin: auto;
+    max-height: 1280px;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
