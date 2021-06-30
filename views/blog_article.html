@@ -11,307 +11,165 @@
 
     <title>Devscast - Digital builders</title>
 
-    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://assets.devscast.tech/files/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    
 </head>
 
-<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+<body class="overflow-x-hidden selection:bg-green-300 relative">
 
-    <header>
-        <nav class="fixed bg-white bg-opacity-75 border-b border-gray-100
-                    w-full lg:h-auto h-16 lg:px-24 md:px-16 px-6 lg:py-0 py-3 
-                    flex flex-wrap lg:items-center items-start justify-between 
-                    transition-all duration-500" id="navbar" 
-
-             style="z-index:1000; -webkit-backdrop-filter:blur(12px); 
-                    backdrop-filter: blur(12px);">
-
-            <div class="flex-shrink-0">
-                <a href="index.html" class="flex items-center  mt-0">
-                    <img src="../public/images/icon.png" class="w-12" alt="">
-                    <span class="text-2xl text-gray-800">Devscast</span>
-                </a>
-            </div>
-            
-            <div class="block lg:hidden -mt-1">
-                
-                <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
-                    
-
-                    <div style="width:25px;" class="flex flex-wrap justify-end">
-
-                        <style>
-                            .rotate-1{
-
-                                transform: rotate(134deg);
-                                margin-top:24px !important;
-
-                            }
-
-                            .rotate-2{
-
-                                transform: rotate(-134deg);
-                                margin-top:-1px !important;
-
-                            }
-                        </style>
-
-                        <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
-                        <div class="line-2 transition-all duration-500" style="height:2px; width:20px; border-radius:100px; background:#636363; margin-top:7px;"></div>
-                        <div class="line-3 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
-                    </div>
-
-                </button>
-
-            </div>
-
-            <div class="w-full lg:hidden hidden justify-center z-50" id="navuser">
-                
-                <div class="flex gap-6">
-
-                    <a href="login.html" class="bg-white border border-indigo-400 py-3 px-6 
-                                                rounded-md text-indigo-500 font-semibold">
-                        Se connecter
+    <header class="relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
+        <nav role="navigation" id="navbar" class="w-full flex lg:flex-nowrap flex-wrap lg:items-center lg:justify-end justify-between items-start lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-0 py-3">
+            <div class="flex justify-between w-full px-4 lg:px-0 z-10">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center  mt-0 space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
+                            <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                        </svg>
+                        <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
                     </a>
-                    
-                    <a href="register.html" class="bg-indigo-500 py-3 px-6 rounded-md text-white 
-                                                    hover:bg-indigo-600  font-semibold">
-                        S'inscrire
-                    </a>
-                
                 </div>
                 
-                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
-            </div>
-
-            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-8 
-                        gap-24 lg:bg-transparent bg-white lg:shadow-none 
-                        shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden 
-                        z-50 transition-all duration-900" id="navlinks">
-
-                <a href="index.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
-                    Portfolio
-                </a>
-
-                <a href="contents.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
-                    Nos contenus
-                </a>
-                
-                <a href="us.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
-                    Nous
-                </a>
-
-                <a href="blog.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-600 hover:text-green-500 
-                                                border-b-2 border-green-700">
-                    Blog
-                </a>
-                
-                <a href="contact.html" class="w-max bg-green-500 text-sm text-white 
-                                              hover:bg-green-600
-                                                lg:inline block lg:my-0 md:mt-8 mt-6 
-                                                lg:py-3 py-3 px-6 rounded-md">
-
-                    Prendre contact
-                </a>
-                
-                <div class="w-8 lg:block hidden">
-                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                <div class="block lg:hidden -mt-1">
+                    
+                    <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
+                        
+    
+                        <div style="width:25px;" class="flex flex-wrap justify-end">
+                            <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                            <div class="line-2 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                        </div>
+    
+                    </button>
+    
                 </div>
             </div>
 
-            <div class="lg:hidden hidden transition-all duration-700" id="navfooter">
-                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
-            </div>
+            <div style="margin-left:-.5px;" class="lg:bg-transparent text-md bg-white w-full lg:ml-auto m-auto hidden lg:flex lg:py-0 py-6 lg:justify-between items-center lg:mt-0 -mt-12 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500" id="navlinks">
+
+                <div class="lg:flex">
+                    <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Portfolio
+                    </a>
+                
+                    <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Nos contenus
+                        <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
+                            <div class="rounded-lg shadow-md bg-white flex p-2">
+                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="px-6 py-3 block">
+                                        <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
+                                        <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
+                                    </a>
+                                </div>
+                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="px-6 py-3 block">
+                                        <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
+                                        <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
+                                    </a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                            text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Nous
+                    </a>
+
+                    <a href="blog.html" class="lg:inline block lg:my-0   px-4
+                                                    text-gray-600 hover:text-gray-900 lg:mr-4
+                                                    group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full active">
+                            Blog
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="w-max lg:ml-auto lg:px-0 px-4">
+                    <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
+                                                  hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
+                                                    lg:inline block lg:my-0 md:mt-8 mt-6 
+                                                    py-4 px-6 rounded">
+    
+                        Prendre contact
+                    </a>
+                </div>
+            </div> 
         </nav>
     </header>
 
     
     <section>
-        <div class="lg:px-24 md:px-16 px-6 lg:pt-32 md:pt-48 pt-32">
-            <div class="md:flex grid gap-8 items-start">
-
-                <div class="md:w-1/12 md:mt-32 md:mb-0 mb-16 md:sticky top-56 md:order-first order-last">
-                    <div class="">
-    
-                        <div class="md:grid flex gap-2">
-                            
-                            <a href="" title="Partager sur facebook" class="h-12 w-12 flex justify-center items-center rounded-full 
-                                            text-gray-500 hover:text-indigo-500 hover:shadow-md">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current" height="36" viewBox="0 0 19.281 36">
-                                    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M19.627,20.25l1-6.515H14.375V9.507c0-1.782.873-3.52,3.673-3.52h2.842V.44A34.658,34.658,0,0,0,15.846,0C10.7,0,7.332,3.12,7.332,8.769v4.965H1.609V20.25H7.332V36h7.043V20.25Z" transform="translate(-1.609)"/>
-                                </svg>
-
-                            </a>
-                            
-                            <a href="" title="Partager sur twitter" class="h-12 w-12 flex justify-center items-center rounded-full 
-                                            text-gray-500 hover:text-blue-400 hover:shadow-md">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="29.239" viewBox="0 0 36 29.239">
-                                    <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M32.3,10.668c.023.32.023.64.023.959,0,9.754-7.424,20.992-20.992,20.992A20.85,20.85,0,0,1,0,29.307a15.263,15.263,0,0,0,1.782.091,14.776,14.776,0,0,0,9.16-3.152,7.391,7.391,0,0,1-6.9-5.117,9.3,9.3,0,0,0,1.393.114,7.8,7.8,0,0,0,1.942-.251,7.379,7.379,0,0,1-5.916-7.241V13.66A7.431,7.431,0,0,0,4.8,14.6,7.389,7.389,0,0,1,2.513,4.728a20.972,20.972,0,0,0,15.213,7.721,8.329,8.329,0,0,1-.183-1.69A7.385,7.385,0,0,1,30.312,5.711a14.526,14.526,0,0,0,4.683-1.782,7.358,7.358,0,0,1-3.244,4.066A14.791,14.791,0,0,0,36,6.853a15.86,15.86,0,0,1-3.7,3.815Z" transform="translate(0 -3.381)"/>
-                                </svg>
-
-                            </a>
-
-                            <a href="" title="Partager sur linkedin" class="h-12 w-12 flex justify-center items-center rounded-full 
-                                            text-gray-500 hover:text-blue-500 hover:shadow-md">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="31.499" viewBox="0 0 31.5 31.499">
-                                    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M7.051,31.5H.52V10.47H7.051ZM3.782,7.6A3.8,3.8,0,1,1,7.564,3.783,3.814,3.814,0,0,1,3.782,7.6ZM31.493,31.5H24.976V21.263c0-2.44-.049-5.569-3.4-5.569-3.4,0-3.916,2.651-3.916,5.393V31.5H11.142V10.47h6.263v2.869H17.5a6.862,6.862,0,0,1,6.179-3.4c6.609,0,7.824,4.352,7.824,10.005V31.5Z" transform="translate(0 -0.001)"/>
-                                </svg>
-
-                            </a>
-                            
-                            <a href="" title="Lien" class="h-12 w-12 flex justify-center items-center rounded-full 
-                                            text-gray-500 hover:text-green-500 hover:shadow-md">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 fill-current" height="36" viewBox="0 0 36 36">
-                                    <path id="Icon_awesome-link" data-name="Icon awesome-link" d="M22.965,13.035a10.682,10.682,0,0,1,.025,15.088l-.025.026L18.24,32.875A10.687,10.687,0,0,1,3.126,17.76l2.609-2.609a1.124,1.124,0,0,1,1.919.746A12.956,12.956,0,0,0,8.335,19.6a1.132,1.132,0,0,1-.266,1.168l-.92.92a5.063,5.063,0,1,0,7.114,7.2l4.725-4.724a5.061,5.061,0,0,0,0-7.16,5.267,5.267,0,0,0-.727-.6,1.128,1.128,0,0,1-.488-.886,2.8,2.8,0,0,1,.823-2.1l1.48-1.48a1.13,1.13,0,0,1,1.447-.122,10.721,10.721,0,0,1,1.443,1.209Zm9.909-9.91a10.7,10.7,0,0,0-15.114,0L13.035,7.85l-.025.026a10.69,10.69,0,0,0,1.468,16.3,1.13,1.13,0,0,0,1.447-.122l1.48-1.48a2.8,2.8,0,0,0,.823-2.1,1.128,1.128,0,0,0-.488-.886,5.267,5.267,0,0,1-.727-.6,5.061,5.061,0,0,1,0-7.16L21.738,7.1a5.063,5.063,0,1,1,7.114,7.2l-.92.92a1.132,1.132,0,0,0-.266,1.168,12.956,12.956,0,0,1,.681,3.707,1.124,1.124,0,0,0,1.919.746l2.609-2.609a10.7,10.7,0,0,0,0-15.114Z" transform="translate(0 0)" />
-                                </svg>
-
-                            </a>
-
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-11 md:px-16 px-4">
+            <!---  Article head -->
+            <div class="lg:flex items-end lg:-mx-0 -mx-4">
+                <div class="lg:w-2/12 hidden">
+                    <div class="p-4 flex flex-wrap justify-center gap-4 items-center">
+                        <img src="../public/images/user 2.jpg" class="w-12 h-12 object-cover rounded-full" alt="author avatar">
+                        <div>
+                            <h4 class="text-gray-700 text-lg -mb-1">Scott Trésor</h4>
+                            <span class="text-gray-400 font-light text-sm">Dév Backend</span>
                         </div>
-                        
                     </div>
                 </div>
 
-                <div class="lg:w-11/12 relative md:order-last order-first">
-
-                    <div class="lg:flex items-center gap-20">
-        
-                        <div class="lg:w-6/12">
-                            <h1 class="text-gray-800 text-4xl md:leading-normal leading-snug">Migrating your design system from Sketch to Adobe XD.</h1>
-                            <p class="text-lg text-gray-700 mt-7">By Méschac Irung</p>
-                            
-                            
-                            <div class="flex gap-6 items-center mt-2">
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                                </div> 
-        
-                                <div class="text-gray-400 flex gap-4">
-                                    <span>24 Décembre 2020</span>
-                                    <span>4 min lecture</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg:w-6/12 lg:mt-0 md:mt-16 mt-8">
-
-                            <div>
-                                <div class="z-50 relative">
-                                    <img src="../public/images/blog/surprised-software-developer-cannot-adapt-necessary-application.jpg" class="rounded-2xl lg:h-auto md:h-96 w-full object-cover" alt="">
+                <div class="lg:w-8/12 lg:border-l lg:border-r border-dashed lg:pt-28 md:pt-48 pt-32 -mt-14">
+                    <div class="px-8">
                         
-                                </div>
+                        <div class="lg:px-0 px-4 mb-4 -ml-4">
+                            <div class="lg:pl-8  indicate">
+                                <span class="font-thin tracking-wider bg-pink-50 py-2 px-4 rounded text-pink-500 text-sm">
+                                    Frontend
+                                </span>
                                 
-                                <div class="md:inline hidden absolute lg:top-24 md:top-56 right-0 lg:-mr-24 md:-mr-16 h-64 w-64 bg-pink-100 rounded-full">
-
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="-ml-56 -mt-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-full" height="183.81" viewBox="0 0 1892.281 183.81">
-                            <path id="Tracé_1" data-name="Tracé 1" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,505.95-141.947,750.5-170.846,291.591-34.458,434.623,17.231,434.623,17.231" transform="translate(0.351 55.56)" fill="none" stroke="#abff88" stroke-width="1"/>
-                            <path id="Tracé_2" data-name="Tracé 2" d="M0,0S129.394,127.751,595.143,127.751c211.916,0,521.633-70.879,766.187-99.779,291.591-34.458,530.458,36.1,530.458,36.1" transform="translate(0.351 55.56)" fill="none" stroke="#7df2ff" stroke-width="1"/>
-                        </svg>
-                          
-                    </div>
-
-                    <div class="md:w-11/12 md:mt-6">
-                        <div>
-                            <p class="text-2xl font-thin text-gray-500 text-gray-600 leading-normal"> 
-                                <span class="text-7xl font-semibold">L</span> 
-                                orem, ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore quis aliquam enim labore numquam illum quidem nihil modi aliquid, qui temporibus sit officia unde ad eveniet quos fugiat animi!
-                                Consectetur adipisicing elit. Tempore excepturi nisi, nemo porro nobis totam sapiente deserunt? Eveniet, in suscipit eius repudiandae sed necessitatibus autem sunt nam blanditiis eum cumque.
-                            </p>
-                            
-                            <hr class="w-5/12 my-16">
-                            
-    
-                            <h2 class="text-3xl text-gray-800">A home for all your Libraries</h2>
-    
-                            <p class="leading-normal text-gray-600 my-10">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                            
-                            </p>
-    
-                            <img src="../public/images/blog/best-practices-creative-cloud-libraries_02.webp" alt="">
-    
-                            <p class="leading-normal text-gray-600 my-6">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                                
-                            </p>
-    
-                            <p class="leading-normal text-gray-600">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                                
-                            </p>
-    
-                            <h2 class="text-3xl text-gray-800 mt-16">A home for all your Libraries</h2>
-    
-                            <p class="leading-normal text-gray-600 my-10">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                            
-                            </p>
-    
-                            <img src="../public/images/blog/best-practices-creative-cloud-libraries_03.webp" alt="">
-    
-    
-                            <p class="leading-normal text-gray-600 my-10">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                            
-                            </p>
-    
-                            <img src="../public/images/blog/how-to-create-design-system-in-xd-step-0-header.png" alt="">
-    
-    
-                            <p class="leading-normal text-gray-600 my-10">
-                                
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ipsa alias dolorem eum suscipit dicta numquam dolores modi delectus repellat ratione iste, perferendis sequi ad magni minus quisquam impedit? 
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorum sunt eum. Amet quo autem fugiat temporibus, sed nam cumque qui esse, in quis, omnis fugit ad adipisci nobis odit.
-                            
-                            </p>
-                        </div>
-
-                        <div class="lg:w-4/12 md:w-7/12 md:my-32">
-                            <div class="flex items-center gap-6">
-                                <div class="w-3/12">
-                                    <img src="../public/images/user.png" class="rounded-full" alt="">
-                                </div>
-
-                                <div class="w-9/12">
-                                    <h3 class="text-gray-800 text-2xl">Méschac Irung</h3>
-                                    <p class="text-lg text-gray-500">UX / UI Designer</p>
-                                </div>
                             </div>
                         </div>
+                        
+                        <h1 class="lg:text-5xl text-4xl text-gray-800 mt-8">L'atomic css avec le framework tailwindcss</h1>
+                        <p class="mt-8 text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ratione similique fuga voluptatum alias aperiam quaerat at, neque consequatur. Beatae laudantium unde porro, enim assumenda minus quos asperiores itaque nobis.</p>
+                        <div class="lg:px-0 px-4 mb-4 -ml-4 mt-8">
+                            <span class="text-gray-400 lg:pl-8 font-thin tracking-wider text-sm indicate">28.06.2021</span>
+                        </div>
                     </div>
+                    <img class="mt-12 px-4" src="../public/images/blog/landing-page-examples.png" alt="">
+                </div>
+            </div>
+            <!--/ Article head -->
 
+            <!---  Article body -->
+            <div class="lg:flex">
+                <div class="lg:w-2/12">
                     
-                </div>            
+                </div>
+
+                <div class="lg:w-8/12 lg:border-l lg:border-r border-dashed md:mt-16 mt-8">
+                    <div class="lg:px-8 px-4">                        
+                        <h2 class="md:text-4xl text-3xl text-gray-800 mt-8 mb-4">Comprendre <a href="" class="text-blue-500 hover:text-blue-600">l'atomic Design</a>  avant l'atomic css</h2>
+                        <p class="my-4 text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ratione similique fuga voluptatum alias aperiam quaerat at, neque consequatur. Beatae laudantium unde porro, enim assumenda minus quos asperiores itaque nobis.</p>
+                        <p class="my-4 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ipsa nemo amet quidem, voluptatum soluta cupiditate dicta facilis, totam minima tempore aperiam esse ipsam iste labore voluptate, delectus excepturi? Fugit?</p>
+                        <ul class="list-disc my-4 space-y-4 list-outside text-gray-500 pl-4">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eaque, corrupti facilis tempora recusandae quisquam blanditiis impedit aperiam, dolorum iusto aliquam illum laboriosam assumenda unde ab ratione possimus temporibus ducimus?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consectetur deserunt minus numquam architecto aliquid placeat unde voluptatem assumenda neque, inventore deleniti aspernatur iure</li>
+                        </ul>
+                        
+                    </div>
+
+                    <img class="mt-8" src="../public/images/blog/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png" alt="">
+                    <div class="lg:px-8 px-4 mb-16">                        
+                        <p class="my-4 text-gray-500">Let’s say you’ve just started your design system. You’ve already set the list of the main components of your system and probably already put them into a sketch library. But now, you need to start building your system in code and you don’t really know which component you should develop first…</p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Article body -->
+
+            <div class="md:flex grid gap-8 items-start">
+     
 
                 <div class="fixed md:bottom-10 md:right-10 bottom-5 right-5">
                     <div class="h-16 w-16 rounded-full shadow-xl bg-white">
@@ -335,109 +193,6 @@
           
     </section>
 
-    <section>
-        <div class="lg:px-24 md:px-16 px-6 pb-24">
-
-            
-            <div class="w-max m-auto">
-                
-                <h1 class="text-4xl text-gray-800">Sur le même sujet</h1>
-
-                <div class="m-auto w-2 mt-8 h-16 border-l-2"></div>
-            </div>
-
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-16 mb-16">
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-blue-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-blue-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-blue-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/projects/bootstrap5.png" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-yellow-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-yellow-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-                <div class="text-gray-700 hover:text-blue-500 mt-8">
-
-                    <div>
-                        <h1 class="text-3xl leading-snug">La nouvelle version de Bootstrap</h1>
-                        
-                        <div class="flex gap-6 my-6">
-                            
-                            <div class="w-3/12">
-                                <span class="text-gray-400">23.01.21</span>
-
-                                <div class="flex gap-1 justify-center items-center rounded-full border border-pink-100 w-8 h-8">
-                                    <div class="h-1 w-1 bg-pink-300 rounded-full"></div>
-                                    <div class="h-3 w-3 bg-pink-400 rounded-full"></div>
-                                </div> 
-                            </div>
-
-                            <p class="text-gray-500">Obcaecati recusandae itaque, ducimus atque soluta expedita.</p>
-                        
-                        </div>
-                        
-                    </div>
-
-                    <img src="../public/images/blog/Il_y_a_de_mauvaises_agences_de_bonnes_agences_e.original.jpg" 
-                            class="h-48 w-full object-cover rounded-xl" 
-                            alt="image de l'article">
-
-                    
-                </div>
-
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="bg-gray-50 lg:px-24 px-6 py-16">
             <div class="flex justify-center mb-8">
