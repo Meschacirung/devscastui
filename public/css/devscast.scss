@@ -52,6 +52,13 @@ html::before{
     @apply border-l-2 border-green-500 pl-4;
 }
 
+.indicate-r{
+    margin-right: -18.1px;
+    letter-spacing:2px;
+    font-weight: 100 !important;
+    @apply border-r-2 border-green-500 pr-4;
+}
+
 .active::after{
     content:'';
 

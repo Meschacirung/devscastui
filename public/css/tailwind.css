@@ -32337,6 +32337,16 @@ html::before {
   padding-left: 1rem;
 }
 
+.indicate-r{
+  margin-right: -18.1px;
+  letter-spacing:2px;
+  font-weight: 100 !important;
+  border-right-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(5, 255, 187, var(--tw-border-opacity));
+  padding-right: 1rem;
+}
+
 .active::after{
   content:'';
   position: absolute;
