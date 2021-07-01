@@ -5,43 +5,33 @@ let hamburger = document.querySelector("#hamburger");
 
 hamburger.addEventListener('click', function(){
 
-    navlinks.classList.remove('hidden', '-mt-12')
-    navlinks.classList.add('mt-3')
-    /*
-    if (document.querySelector('.line-1').classList[3] != 'rotate-1'){
+    if(document.querySelector('#links').classList.contains('invisible')) {
+        navlinks.classList.remove('h-0')
+        navlinks.classList.add('h-80', 'py-6')
+    
+        document.querySelector('.line-1').classList.add('rotate-45', '-mb-1');
+        document.querySelector('.line-2').classList.add('-rotate-45');
+        document.querySelector('.line-2').classList.remove('mt-2');
+        hamburger.classList.remove('-mt-1');
+    
+        setTimeout(function (){
+            document.querySelector('#links').classList.remove('invisible', '-mt-32');
+            document.querySelector('#navactions').classList.remove('invisible');
+        }.bind(this), 360)
+    } else{
+        document.querySelector('#links').classList.add('invisible', '-mt-32');
+        document.querySelector('#navactions').classList.add('invisible');
 
-        document.querySelector('.line-1').classList.add('rotate-1');
-        document.querySelector('.line-2').classList.add('hidden');
-        document.querySelector('.line-3').classList.add('rotate-2');
-        
-
-        navbar.classList.remove('h-14');
-        navbar.classList.add('h-full');
-
-        navlinks.classList.remove('hidden');
-        navlinks.classList.add('mt-0', 'block');
-
-        navuser.classList.remove('hidden', '-mt-10');
-    } else {
-
-        document.querySelector('.line-1').classList.remove('rotate-1');
-        document.querySelector('.line-2').classList.remove('hidden');
-        document.querySelector('.line-3').classList.remove('rotate-2');
-
-        navbar.classList.add('h-14');
-        navbar.classList.remove('h-full');
-
-        navlinks.classList.add('hidden');
-        navlinks.classList.remove('mt-0', 'block');
-
-        navfooter.classList.add('hidden');
-        navfooter.classList.add('block', 'mt-0');
-
-        navuser.classList.add('hidden', '-mt-10');
-
+        document.querySelector('.line-1').classList.remove('rotate-45', '-mb-1');
+        document.querySelector('.line-2').classList.remove('-rotate-45');
+        document.querySelector('.line-2').classList.add('mt-2');
+        hamburger.classList.remove('-mt-1');
+    
+        setTimeout(function (){
+            navlinks.classList.add('h-0')
+            navlinks.classList.remove('h-80', 'py-6')
+        }.bind(this), 60)
     }
-    */
-
 });
 
 let interact = document.querySelector("#interact")
