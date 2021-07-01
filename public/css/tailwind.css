@@ -32269,6 +32269,24 @@ header::before{
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+footer::before{
+  content:'';
+  height:1px;
+  position: absolute;
+  bottom: 10rem;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-style: dashed;
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  footer::before {
+    bottom: 5rem;
+  }
+}
+
 html::before{
   content:'';
   z-index:1;

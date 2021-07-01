@@ -37,6 +37,12 @@ header::before{
     @apply w-full absolute bottom-0 border-b border-dashed border-gray-200;
 }
 
+footer::before{
+    content:'';
+    height:1px;
+    @apply w-full absolute md:bottom-20 bottom-40 border-b border-dashed border-gray-200;
+}
+
 html::before{
     content:'';
     z-index:1;
