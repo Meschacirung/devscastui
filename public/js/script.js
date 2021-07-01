@@ -6,7 +6,7 @@ let hamburger = document.querySelector("#hamburger");
 hamburger.addEventListener('click', function(){
 
     if(document.querySelector('#links').classList.contains('invisible')) {
-        navlinks.classList.remove('h-0')
+        navlinks.classList.remove('h-0', 'rounded-b-full')
         navlinks.classList.add('h-80', 'py-6')
     
         document.querySelector('.line-1').classList.add('rotate-45', '-mb-1');
@@ -28,7 +28,7 @@ hamburger.addEventListener('click', function(){
         hamburger.classList.remove('-mt-1');
     
         setTimeout(function (){
-            navlinks.classList.add('h-0')
+            navlinks.classList.add('h-0', 'rounded-b-full')
             navlinks.classList.remove('h-80', 'py-6')
         }.bind(this), 60)
     }
