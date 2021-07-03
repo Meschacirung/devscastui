@@ -44,35 +44,45 @@
                 </div>
             </div>
 
-            <div style="margin-left:-.5px;" class="z-10 h-0 mt-3 lg:bg-transparent text-md bg-white w-full lg:ml-auto m-auto lg:flex lg:py-0 py-0 lg:justify-between items-center lg:mt-0 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 rounded-b-full transition-all duration-500" id="navlinks">
+            <div style="margin-left:-.5px;" class="z-10 lg:h-auto h-0 mt-3 lg:bg-transparent bg-white w-full lg:ml-auto m-auto lg:flex lg:py-0 py-0 lg:justify-between items-center lg:mt-0 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500 ease-in-out" id="navlinks">
 
-                <div class="lg:flex invisible -mt-32" id="links">
+                <div class="lg:flex lg:visible invisible lg:mt-0 -mt-32 transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="links">
                     <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
                                                 text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
                         Portfolio
                     </a>
                 
-                    <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
-                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
-                        Nos contenus
-                        <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
-                            <div class="rounded-lg shadow-md bg-white flex p-2">
-                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                    <a href="" class="px-6 py-3 block">
-                                        <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
-                                        <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
-                                    </a>
-                                </div>
-                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                    <a href="" class="px-6 py-3 block">
-                                        <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
-                                        <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
-                                    </a>
-                                </div>
-                    
+                    <div class="lg:relative lg:my-0 group dropdown cursor-pointer">
+                        
+                        <div class="text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100 md:py-5 py-3 px-4 flex w-full items-center justify-between group bg-gray-100 bg-opacity-0 lg:hover:bg-opacity-0 hover:bg-opacity-50">
+                            Nos contenus
+
+                            <div class="dropper transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lg:hidden w-4 stroke-current text-gray-500 group-hover:text-gray-600" viewBox="0 0 20.828 11.414">
+                                    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l9,9,9-9" transform="translate(-7.586 -12.086)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
                             </div>
+
+                        </div>                        
+
+                        <div class="lg:absolute w-min lg:top-16  z-50 lg:-ml-16 dropdown-content transition-all duration-300">
+                            <ul class="rounded-lg lg:shadow-lg lg:bg-white lg:flex p-2">
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/check.svg" class="lg:w-12 w-5 m-auto" alt="icône podcasts">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Podcasts</h3>
+                                    </a>
+                                </li>
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/play.svg" class="lg:w-12 w-5 m-auto" alt="icône tutoriels video">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Tutoriels</h3>
+                                    </a>
+                                </li>
+                    
+                            </ul>
                         </div>
-                    </a>
+                    </div>
                     
                     <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
                                             text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
@@ -89,7 +99,7 @@
                     </a>
                 </div>
 
-                <div class="w-max lg:ml-auto lg:px-0 px-4 invisible" id="navactions">
+                <div class="w-max lg:ml-auto lg:px-0 px-4 lg:visible invisible transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="navactions">
                     <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
                                                   hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
                                                     lg:inline block lg:my-0 md:mt-8 mt-6 
@@ -158,8 +168,6 @@
             </svg>
               
         </div>
-          
-          
     </div>
 
     <div class="z-10 relative">

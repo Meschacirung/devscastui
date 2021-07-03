@@ -6,8 +6,8 @@ let hamburger = document.querySelector("#hamburger");
 hamburger.addEventListener('click', function(){
 
     if(document.querySelector('#links').classList.contains('invisible')) {
-        navlinks.classList.remove('h-0', 'rounded-b-full')
-        navlinks.classList.add('h-80', 'py-6')
+        navlinks.classList.remove('h-0')
+        navlinks.classList.add('py-6')
     
         document.querySelector('.line-1').classList.add('rotate-45', '-mb-1');
         document.querySelector('.line-2').classList.add('-rotate-45');
@@ -15,22 +15,22 @@ hamburger.addEventListener('click', function(){
         hamburger.classList.remove('-mt-1');
     
         setTimeout(function (){
-            document.querySelector('#links').classList.remove('invisible', '-mt-32');
-            document.querySelector('#navactions').classList.remove('invisible');
-        }.bind(this), 360)
+            document.querySelector('#links').classList.remove('invisible', '-mt-32', 'opacity-0');
+            document.querySelector('#navactions').classList.remove('invisible', 'opacity-0');
+        }.bind(this), 150)
     } else{
-        document.querySelector('#links').classList.add('invisible', '-mt-32');
-        document.querySelector('#navactions').classList.add('invisible');
+        document.querySelector('#links').classList.add('invisible', '-mt-32', 'opacity-0');
+        document.querySelector('#navactions').classList.add('invisible', 'opacity-0');
 
         document.querySelector('.line-1').classList.remove('rotate-45', '-mb-1');
         document.querySelector('.line-2').classList.remove('-rotate-45');
         document.querySelector('.line-2').classList.add('mt-2');
-        hamburger.classList.remove('-mt-1');
+        hamburger.classList.add('-mt-1');
     
         setTimeout(function (){
-            navlinks.classList.add('h-0', 'rounded-b-full')
-            navlinks.classList.remove('h-80', 'py-6')
-        }.bind(this), 60)
+            navlinks.classList.add('h-0')
+            navlinks.classList.remove('py-6')
+        }.bind(this), 150)
     }
 });
 

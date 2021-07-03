@@ -130,3 +130,19 @@ html::before{
     transform: rotate(-45deg);
     width:25px;
 }
+.dropdown .dropdown-content{
+    visibility: hidden;
+    display:none;
+}
+.dropdown:hover .dropdown-content{
+    visibility:visible !important;
+    display:block !important;
+}
+
+.dropdown .dropper{
+    transform:rotate(0deg);
+}
+
+.dropdown:hover .dropper{
+    transform:rotate(180deg) !important;
+}
