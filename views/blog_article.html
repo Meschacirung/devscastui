@@ -19,9 +19,9 @@
 
 <body class="overflow-x-hidden selection:bg-green-300 relative">
 
-    <header class="relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
+    <header class="bg-gray-100 bg-opacity-0 relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
         <nav role="navigation" id="navbar" class="w-full flex lg:flex-nowrap flex-wrap lg:items-center lg:justify-end justify-between items-start lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-0 py-3">
-            <div class="flex justify-between w-full px-4 lg:px-0 z-10">
+            <div class="flex justify-between w-full px-4 lg:px-0 z-40">
                 <div class="flex-shrink-0">
                     <a href="index.html" class="flex items-center  mt-0 space-x-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
@@ -31,14 +31,12 @@
                     </a>
                 </div>
                 
-                <div class="block lg:hidden -mt-1">
+                <div id="hamburger" class="block lg:hidden -mt-1">
                     
-                    <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
-                        
-    
+                    <button class="lg:hidden transition-all focus:outline-none">
                         <div style="width:25px;" class="flex flex-wrap justify-end">
-                            <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
-                            <div class="line-2 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                            <div class="line-1 transition-all duration-300 transform transform-top-left" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                            <div class="line-2 transition-all duration-300 transform mt-2" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
                         </div>
     
                     </button>
@@ -46,35 +44,45 @@
                 </div>
             </div>
 
-            <div style="margin-left:-.5px;" class="lg:bg-transparent text-md bg-white w-full lg:ml-auto m-auto hidden lg:flex lg:py-0 py-6 lg:justify-between items-center lg:mt-0 -mt-12 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500" id="navlinks">
+            <div style="margin-left:-.5px;" class="z-10 lg:h-auto h-0 mt-3 lg:bg-transparent bg-white w-full lg:ml-auto m-auto lg:flex lg:py-0 py-0 lg:justify-between items-center lg:mt-0 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500 ease-in-out" id="navlinks">
 
-                <div class="lg:flex">
+                <div class="lg:flex lg:visible invisible lg:mt-0 -mt-32 transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="links">
                     <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
                                                 text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
                         Portfolio
                     </a>
                 
-                    <a href="contents.html" class="relative group block lg:my-0 md:py-5 py-3 px-4 
-                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
-                        Nos contenus
-                        <div class="absolute w-min top-8 z-50 opacity-0 group-hover:opacity-100">
-                            <div class="rounded-lg shadow-md bg-white flex p-2">
-                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                    <a href="" class="px-6 py-3 block">
-                                        <img src="../public/images/icons/check.svg" class="w-12 m-auto" alt="">
-                                        <h3 class="text-gray-600 text-xl mt-3">Podcasts</h3>
-                                    </a>
-                                </div>
-                                <div class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
-                                    <a href="" class="px-6 py-3 block">
-                                        <img src="../public/images/icons/play.svg" class="w-12 m-auto" alt="">
-                                        <h3 class="text-gray-600 text-xl mt-3">Tutoriels</h3>
-                                    </a>
-                                </div>
-                    
+                    <div class="lg:relative lg:my-0 group dropdown cursor-pointer">
+                        
+                        <div class="text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100 md:py-5 py-3 px-4 flex w-full items-center justify-between group bg-gray-100 bg-opacity-0 lg:hover:bg-opacity-0 hover:bg-opacity-50">
+                            Nos contenus
+
+                            <div class="dropper transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lg:hidden w-4 stroke-current text-gray-500 group-hover:text-gray-600" viewBox="0 0 20.828 11.414">
+                                    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l9,9,9-9" transform="translate(-7.586 -12.086)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
                             </div>
+
+                        </div>                        
+
+                        <div class="lg:absolute w-min lg:top-16  z-50 lg:-ml-16 dropdown-content transition-all duration-300">
+                            <ul class="rounded-lg lg:shadow-lg lg:bg-white lg:flex p-2">
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/check.svg" class="lg:w-12 w-5 m-auto" alt="icône podcasts">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Podcasts</h3>
+                                    </a>
+                                </li>
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/play.svg" class="lg:w-12 w-5 m-auto" alt="icône tutoriels video">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Tutoriels</h3>
+                                    </a>
+                                </li>
+                    
+                            </ul>
                         </div>
-                    </a>
+                    </div>
                     
                     <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
                                             text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
@@ -91,7 +99,7 @@
                     </a>
                 </div>
 
-                <div class="w-max lg:ml-auto lg:px-0 px-4">
+                <div class="w-max lg:ml-auto lg:px-0 px-4 lg:visible invisible transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="navactions">
                     <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
                                                   hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
                                                     lg:inline block lg:my-0 md:mt-8 mt-6 
@@ -103,7 +111,6 @@
             </div> 
         </nav>
     </header>
-
     
     <section>
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-11 md:px-16 px-4">
@@ -193,7 +200,7 @@
           
     </section>
 
-    <footer class="">
+    <footer class="bg-gray-100 bg-opacity-50">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 py-16">
 
             <div class="mb-8 lg:pl-0 pl-4">
@@ -206,21 +213,21 @@
             </div>
             
 
-            <div class="lg:-mx-4 px-4 py-8 grid md:grid-cols-2 pb-16">
+            <div class="lg:-mx-4 px-4 py-8 grid md:grid-cols-2 lg:gap-56 md:gap-16 pb-16">
 
-                <div class="grid grid-cols-2">
+                <div class="flex justify-between">
                     <div>
-                        <h4 class="text-lg text-gray-700">Produits</h4>
+                        <h4 class="text-lg text-gray-700 md:border-none border-l-2 border-green-500 -ml-4 pl-4">Produits</h4>
                         <ul class="text-gray-500 space-y-3 mt-6">
                             <li><a href="" class="hover:text-blue-500 transition-all">Djia</a></li>
                             <li><a href="" class="hover:text-blue-500 transition-all">Dpay</a></li>
                             <li><a href="" class="hover:text-blue-500 transition-all">DLearn</a></li>
                             <li><a href="" class="hover:text-blue-500 transition-all">Coinze</a></li>
-                            <li><a href="" class="hover:text-blue-500 transition-all">COVID-19 en RDC</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Covid-19 RDC</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 class="text-lg text-gray-700">Entreprise</h4>
+                        <h4 class="text-lg text-gray-700 md:border-none border-r-2 border-green-500 -mr-4 pr-4">Entreprise</h4>
                         <ul class="text-gray-500 space-y-3 mt-6">
                             <li><a href="" class="hover:text-blue-500 transition-all">Apropos</a></li>
                             <li><a href="" class="hover:text-blue-500 transition-all">Blog</a></li>
@@ -231,9 +238,9 @@
                 </div>
                 
                 <div class="md:mt-0 mt-6">
-                    <h4 class="text-lg text-gray-700">Ressources</h4>
+                    <h4 class="text-lg text-gray-700 md:border-none border-l-2 border-green-500 -ml-4 pl-4">Ressources</h4>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="flex justify-between gap-4">
                         <ul class="text-gray-500 space-y-3 mt-6">
                             <li><a href="" class="hover:text-blue-500 transition-all">Devscast Design</a></li>
                             <li><a href="" class="hover:text-blue-500 transition-all">Contact</a></li>

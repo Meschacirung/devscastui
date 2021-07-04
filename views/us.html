@@ -16,132 +16,110 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <link rel="stylesheet" href="../public/css/splide/splide.min.css">
     <link rel="stylesheet" href="../public/css/splide/splide-core.min.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden" style="font-family:'Rubik', sans-serif;">
+<body class="overflow-x-hidden relative">
 
-    <header>
-        <nav class="fixed bg-white bg-opacity-75 border-b border-gray-100
-                    w-full lg:h-auto h-16 lg:px-24 md:px-16 px-6 lg:py-0 py-3 
-                    flex flex-wrap lg:items-center items-start justify-between 
-                    transition-all duration-500" id="navbar" 
-
-             style="z-index:1000; -webkit-backdrop-filter:blur(12px); 
-                    backdrop-filter: blur(12px);">
-
-            <div class="flex-shrink-0">
-                <a href="index.html" class="flex items-center  mt-0">
-                    <img src="../public/images/icon.png" class="w-12" alt="">
-                    <span class="text-2xl text-gray-800">Devscast</span>
-                </a>
-            </div>
-            
-            <div class="block lg:hidden -mt-1">
+    <header class="bg-gray-100 bg-opacity-50 relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
+        <nav role="navigation" id="navbar" class="w-full flex lg:flex-nowrap flex-wrap lg:items-center lg:justify-end justify-between items-start lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-0 py-3">
+            <div class="flex justify-between w-full px-4 lg:px-0 z-40">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center  mt-0 space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
+                            <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                        </svg>
+                        <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
+                    </a>
+                </div>
                 
-                <button id="hamburger" class="lg:hidden transition-all focus:outline-none">
+                <div id="hamburger" class="block lg:hidden -mt-1">
                     
+                    <button class="lg:hidden transition-all focus:outline-none">
+                        <div style="width:25px;" class="flex flex-wrap justify-end">
+                            <div class="line-1 transition-all duration-300 transform transform-top-left" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                            <div class="line-2 transition-all duration-300 transform mt-2" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                        </div>
+    
+                    </button>
+    
+                </div>
+            </div>
 
-                    <div style="width:25px;" class="flex flex-wrap justify-end">
+            <div style="margin-left:-.5px;" class="z-10 lg:h-auto h-0 mt-3 lg:bg-transparent bg-white w-full lg:ml-auto m-auto lg:flex lg:py-0 py-0 lg:justify-between items-center lg:mt-0 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500 ease-in-out" id="navlinks">
 
-                        <style>
-                            .rotate-1{
+                <div class="lg:flex lg:visible invisible lg:mt-0 -mt-32 transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="links">
+                    <a href="index.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                                text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Portfolio
+                    </a>
+                
+                    <div class="lg:relative lg:my-0 group dropdown cursor-pointer">
+                        
+                        <div class="text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100 md:py-5 py-3 px-4 flex w-full items-center justify-between group bg-gray-100 bg-opacity-0 lg:hover:bg-opacity-0 hover:bg-opacity-50">
+                            Nos contenus
 
-                                transform: rotate(134deg);
-                                margin-top:24px !important;
+                            <div class="dropper transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lg:hidden w-4 stroke-current text-gray-500 group-hover:text-gray-600" viewBox="0 0 20.828 11.414">
+                                    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l9,9,9-9" transform="translate(-7.586 -12.086)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                            </div>
 
-                            }
+                        </div>                        
 
-                            .rotate-2{
-
-                                transform: rotate(-134deg);
-                                margin-top:-1px !important;
-
-                            }
-                        </style>
-
-                        <div class="line-1 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
-                        <div class="line-2 transition-all duration-500" style="height:2px; width:20px; border-radius:100px; background:#636363; margin-top:7px;"></div>
-                        <div class="line-3 transition-all duration-500" style="height:2px; width:30px; border-radius:100px; background:#636363; margin-top:7px;"></div>
+                        <div class="lg:absolute w-min lg:top-16  z-50 lg:-ml-16 dropdown-content transition-all duration-300">
+                            <ul class="rounded-lg lg:shadow-lg lg:bg-white lg:flex p-2">
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/check.svg" class="lg:w-12 w-5 m-auto" alt="icône podcasts">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Podcasts</h3>
+                                    </a>
+                                </li>
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/play.svg" class="lg:w-12 w-5 m-auto" alt="icône tutoriels video">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Tutoriels</h3>
+                                    </a>
+                                </li>
+                    
+                            </ul>
+                        </div>
                     </div>
-
-                </button>
-
-            </div>
-
-            <div class="w-full lg:hidden hidden justify-center z-50" id="navuser">
-                
-                <div class="flex gap-6">
-
-                    <a href="login.html" class="bg-white border border-indigo-400 py-3 px-6 
-                                                rounded-md text-indigo-500 font-semibold">
-                        Se connecter
-                    </a>
                     
-                    <a href="register.html" class="bg-indigo-500 py-3 px-6 rounded-md text-white 
-                                                    hover:bg-indigo-600  font-semibold">
-                        S'inscrire
+                    <a href="us.html" class="lg:inline block lg:my-0 md:py-5 py-3 px-4 
+                                            text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100">
+                        Nous
                     </a>
-                
+
+                    <a href="blog.html" class="lg:inline block lg:my-0   px-4
+                                                    text-gray-600 hover:text-gray-900 lg:mr-4
+                                                    group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full active">
+                            Blog
+                        </div>
+                        
+                    </a>
                 </div>
-                
-                <img src="../public/images/user.png" class="hidden rounded-full w-20 h-20 border-8 border-gray-50" alt="user avatar">
-            </div>
 
-            <div class="lg:text-lg text-xl lg:w-auto w-full lg:flex items-center lg:gap-8 
-                        gap-24 lg:bg-transparent bg-white lg:shadow-none 
-                        shadow-md lg:p-0 md:p-16 p-10 rounded-3xl  lg:mt-0 hidden 
-                        z-50 transition-all duration-900" id="navlinks">
-
-                <a href="index.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
-                    Portfolio
-                </a>
-
-                <a href="contents.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-500 hover:text-green-500">
-                    Nos contenus
-                </a>
-                
-                <a href="us.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                        text-gray-500 hover:text-green-500
-                                        border-b-2 border-green-700">
-                    Nous
-                </a>
-
-                <a href="blog.html" class="lg:inline block lg:my-0 md:py-4 py-3 
-                                                text-gray-600 hover:text-green-500 ">
-                    Blog
-                </a>
-                
-                <a href="contact.html" class="w-max bg-green-500 text-sm text-white 
-                                              hover:bg-green-600
-                                                lg:inline block lg:my-0 md:mt-8 mt-6 
-                                                lg:py-3 py-3 px-6 rounded-md">
-
-                    Prendre contact
-                </a>
-                
-                <div class="w-8 lg:block hidden">
-                    <img src="../public/images/user.png" class="rounded-full" alt="user avatar">
+                <div class="w-max lg:ml-auto lg:px-0 px-4 lg:visible invisible transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="navactions">
+                    <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
+                                                  hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
+                                                    lg:inline block lg:my-0 md:mt-8 mt-6 
+                                                    py-4 px-6 rounded">
+    
+                        Prendre contact
+                    </a>
                 </div>
-            </div>
-
-            <div class="lg:hidden hidden transition-all duration-700" id="navfooter">
-                <p class="text-center text-sm">@2019 – 2021 Devscast. Tous droits réservés. <a href="" class="hover:text-blue-500 text-blue-500">Politique de confidentialité </a> | <a href="" class="hover:text-blue-500 text-blue-500"> Licence</a>  </p>
-            </div>
+            </div> 
         </nav>
     </header>
 
-    <section id="hero" class="h-screen">
-        <div class="lg:px-0 md:px-16 px-6 lg:pt-0 md:pt-40 pt-40 
+    <section id="hero" class="h-screen bg-gray-100">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 -mt-8 lg:pt-0 md:pt-40 pt-40 
                     lg:flex justify-between items-end relative">
 
             <div class="lg:w-5/12 lg:px-0 lg:absolute flex items-center top-0 bottom-0 lg:h-screen">
                 
-                <div class="lg:pl-24 lg:-mr-20">
+                <div class="">
                     <h1 class="text-gray-700 font-semibold md:text-5xl text-3xl  
                                md:leading-snug leading-snug">
                         La solution qui vous démarque de toute concurrence <span class="text-pink-400 font-thin">°</span>
