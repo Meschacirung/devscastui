@@ -32472,10 +32472,6 @@ html::before {
   border-radius:30px !important;
 }
 
-.-gap-6 {
-  gap: -2.75rem;
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
