@@ -117,7 +117,7 @@
         </nav>
     </header>
 
-    <div id="hero" class="bg-white ">
+    <div id="hero" class="bg-white">
         
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 md:pt-20 pt-10 z-50">
              
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="lg:w-5/12 lg:absolute top-0 right-0 lg:h-screen flex items-center">
+                <div class="lg:block hidden lg:w-5/12 lg:absolute top-0 right-0 lg:h-screen flex items-center">
                     <div class="lg:w-7/12 md:w-6/12 w-10/12 lg:-ml-20 left-0 md:mr-auto m-auto right-0 rounded-lg flex gap-4 bg-white md:p-6 p-4 shadow-xl bg-opacity-75 backdrop-filter backdrop-blur-md z-40 absolute">
                         <img src="../public/images/user 2.jpg" class="w-12 h-12 object-cover rounded-full" alt="">
 
@@ -173,9 +173,12 @@
     </div>
 
     <div class="bg-gray-100 bg-opacity-50">
-        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-16 md:py-8 py-4">
-            <div class="md:mt-8 w-full mt-4 py-6 lg:px-0 px-4 lg:overflow-x-hidden overflow-x-auto">
-
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-16 md:py-8 py-4 pt-1">
+            <div class="lg:hidden md:mb-0 mb-8 mt-16 lg:w-7/12 w-10/12 m-auto text-center">
+                <h2 class="md:text-4xl text-3xl text-gray-700 leading-noraml">Qui sont nos clients</h2>
+                <p class="mt-6 -mx-4 text-gray-500">Au cours de nos 3 ans d'existence, nous avons travaillé avec plusieurs entreprises et startups de différents domaines d'activités. </p>
+            </div>
+            <div class="w-full mt-4 py-6 lg:px-0 px-4 lg:overflow-x-hidden overflow-x-auto">
                 <div class="scroll lg:grid lg:grid-cols-4 flex lg:gap-8 gap-4">
                     <img src="../public/images/clients/airbnb.svg" alt="">
                     <img src="../public/images/clients/automatic.svg" alt="">
@@ -192,6 +195,10 @@
 
     <div class="mt-16" id="main">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:space-y-28 md:space-y-24 space-y-20">
+            <div class="border-l-2 pl-4 border-green-500 lg:hidden">
+                <span class="text-green-500 font-thin tracking-wider text-sm">PORTFOLIO</span>
+            </div>
+            
             <div class="lg:flex grid items-center md:gap-16 gap-8">
                 <div class="lg:w-4/12 lg:order-firt order-last">
                     <div class="lg:px-0 px-4 mb-4 lg:space-y-8 space-y-4 lg:block md:flex gap-8 justify-between">
@@ -443,7 +450,7 @@
                         </div>
             
                         <div class="splide__slide">
-                            <div class="relative project -ml-12 pl-4">
+                            <div class="relative project -ml-12 px-4 pr-8">
                                 <div class="project-img group h-auto absolute lg:w-full w-10/12 h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
                                     <a href="" class="h-full lg:w-full w-10/12 relative md:p-8 p-5">
                                         <div class="absolute h-full project grid grid-cols-1 items-center">
