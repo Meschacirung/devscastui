@@ -4,15 +4,15 @@ document.addEventListener( 'DOMContentLoaded', function () {
         perPage : 1,
         perMove : 1,
         autoHeight : true,
-        pagination:false,
-        arrows : false ,    
+        pagination:true,
+        arrows : true ,    
         breakpoints: {
             640: {
                 perPage: 2,
                 autoplay : false,
             },
             768: {
-                perPage: 4,
+                perPage: 3,
                 autoplay : false,
             },
             1024: {
@@ -23,7 +23,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     } ).mount();
 } );
 
-
+/*
 if (window.screen.width > 1024){
     document.querySelector(".splide").classList.remove("splide")
     document.querySelector(".splide__track").classList.remove("splide__track")
@@ -35,3 +35,4 @@ if (window.screen.width > 1024){
     document.querySelector(".splide__list").classList.add("splide__list")
     document.querySelector(".splide__slide").classList.add("splide__slide")
 }
+*/

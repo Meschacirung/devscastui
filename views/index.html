@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="../public/css/splide/splide.min.css">
+    <link rel="stylesheet" href="../public/css/splide/splide-core.min.css">
 </head>
 
 <body class="overflow-x-hidden relative">
@@ -139,7 +141,7 @@
                         </div>  
                     </h1>
 
-                    <div class="md:mt-8 w-full mt-4 py-6 lg:px-0 md:overflow-x-hidden overflow-x-auto">
+                    <div class="border-t lg:mt-10 md:mt-8 w-full mt-4 py-6 pt-8 lg:px-0 md:overflow-x-hidden overflow-x-auto">
 
                         <div class="scroll flex lg:flex-wrap md:gap-8 gap-4 md:text-xl text-lg text-gray-500">
                             <div class="pb-8 border-b border-dashed">
@@ -189,8 +191,8 @@
     </div>
 
     <div class="mt-16" id="main">
-        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4">
-            <div class="lg:flex grid items-center gap-16">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:space-y-28 md:space-y-24 space-y-20">
+            <div class="lg:flex grid items-center md:gap-16 gap-8">
                 <div class="lg:w-4/12 lg:order-firt order-last">
                     <div class="lg:px-0 px-4 mb-4 lg:space-y-8 space-y-4 lg:block md:flex gap-8 justify-between">
                         <div>
@@ -226,24 +228,245 @@
                         
                     </div>
                 </div>
-                <div class="lg:w-9/12 lg:order-last relative lg:-mx-4">
-                    
-                    <div class="group w-full h-full bg-blue-900 bg-opacity-50 rounded-xl md:p-10 p-4 my-auto absolute">
-                        <div class="h-auto">
-                            <div class="">
-                                <img src="../public/images/icon.png" class="w-10" alt="">
+                <div class="lg:w-9/12 lg:order-last relative lg:-mx-4 project">
+                    <div class="project-img group h-auto absolute w-full h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
+                        <a href="" class="h-full w-full relative lg:p-10 md:p-8 p-5">
+                            <div class="absolute h-full project grid grid-cols-1 items-center">
+                                <div class="-mt-6">
+                                    <img src="../public/images/icon.png" class="w-10" alt="">
+                                </div>
+    
+                                <div class="project-desc transition-all duration-300">
+                                    <div class="lg:w-7/12 md:w-8/12 w-10/12">
+                                        <p class="lg:text-3xl md:text-2xl text-xl text-white mb-6 lg:ml-10 md:ml-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                        <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="md:w-7/12 w-8/12 absolute bottom-6 bg-transparent">
-                                <p class="lg:text-3xl md:text-2xl text-lg text-white mb-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
-                                <a href="" class="text-white hover:text-blue-200 transition opacity-0 group-hover:opacity-100">Etude de cas </a>    
-                            </div>
-                        </div>
-                    </div>
-                    <img src="../public/images/blog/library.png" class="rounded-xl shadow-2xl md:h-auto h-96 object-cover object-left" alt="">
+                        </a>
+                    </div>  
+                    <img src="../public/images/blog/library.png" class="project-img rounded-xl shadow-2xl md:h-auto h-96 object-cover object-left transition-all duration-500" alt="">
                 
                 </div>
+            </div>
+
+            <div class="lg:flex grid items-center md:gap-16 gap-8">
+                <div class="lg:w-4/12 lg:order-firt order-last">
+                    <div class="lg:px-0 px-4 mb-4 lg:space-y-8 space-y-4 lg:block md:flex gap-8 justify-between">
+                        <div>
+                            <div class="indicate">
+                                <h5 class="text-gray-700 tracking-normal">Accompagnement</h5>
+                            </div> 
+
+                            <div class="space-y-4 mt-4">
+                                <div class="flex gap-4">
+                                    <img src="../public/images/icons/web-backend.svg" class="w-6" alt="icône interface utilisateur">
+                                    <h2 class="text-gray-600">UX / UI Design</h2>
+                                </div>
+                                <div class="flex gap-4">
+                                    <img src="../public/images/icons/ux.svg" class="w-6" alt="icône interface utilisateur">
+                                    <h2 class="text-gray-600">Dév... Backend</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="lg:space-y-8 space-y-4">
+                            <div>
+                                <div class="indicate">
+                                    <h2 class="text-gray-700 text-2xl tracking-normal font-semibold">564 Visites en moyenne par semaine.</h2>
+                                </div>
+                                <p class="mt-3 text-gray-500">Nombre (en million) d'impression</p>
+                            </div>
+
+                            <div class="indicate">
+                                <h5 class="text-gray-700 tracking-normal">En production</h5>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="lg:w-9/12 lg:order-last relative lg:-mx-4 project">
+                    <div class="project-img group h-auto absolute w-full h-full bg-gray-900 bg-opacity-50 rounded-xl transition-all duration-500">
+                        <a href="" class="h-full w-full relative lg:p-10 md:p-8 p-5">
+                            <div class="absolute h-full project grid grid-cols-1 items-center">
+                                <div class="-mt-6">
+                                    <img src="../public/images/icon.png" class="w-10" alt="">
+                                </div>
+    
+                                <div class="project-desc transition-all duration-300">
+                                    <div class="lg:w-7/12 md:w-8/12 w-10/12">
+                                        <p class="lg:text-3xl md:text-2xl text-xl text-white mb-6 lg:ml-10 md:ml-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                        <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+                    <img src="../public/images/blog/devs.png" class="project-img rounded-xl shadow-2xl md:h-auto h-96 object-cover object-left transition-all duration-500" alt="">
                 
+                </div>
+            </div>
+
+            <div class="lg:flex grid items-center md:gap-16 gap-8">
+                <div class="lg:w-4/12 lg:order-firt order-last">
+                    <div class="lg:px-0 px-4 mb-4 lg:space-y-8 space-y-4 lg:block md:flex gap-8 justify-between">
+                        <div>
+                            <div class="indicate">
+                                <h5 class="text-gray-700 tracking-normal">Accompagnement</h5>
+                            </div> 
+
+                            <div class="space-y-4 mt-4">
+                                <div class="flex gap-4">
+                                    <img src="../public/images/icons/web-backend.svg" class="w-6" alt="icône interface utilisateur">
+                                    <h2 class="text-gray-600">UX / UI Design</h2>
+                                </div>
+                                <div class="flex gap-4">
+                                    <img src="../public/images/icons/ux.svg" class="w-6" alt="icône interface utilisateur">
+                                    <h2 class="text-gray-600">Dév... Backend</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="lg:space-y-8 space-y-4">
+                            <div>
+                                <div class="indicate">
+                                    <h2 class="text-gray-700 text-2xl tracking-normal font-semibold">564 Visites en moyenne par semaine.</h2>
+                                </div>
+                                <p class="mt-3 text-gray-500">Nombre (en million) d'impression</p>
+                            </div>
+
+                            <div class="indicate">
+                                <h5 class="text-gray-700 tracking-normal">En production</h5>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="lg:w-9/12 lg:order-last relative lg:-mx-4 project">
+                    <div class="project-img group h-auto absolute w-full h-full bg-blue-900 bg-opacity-50 rounded-xl transition-all duration-500">
+                        <a href="" class="h-full w-full relative lg:p-10 md:p-8 p-5">
+                            <div class="absolute h-full project grid grid-cols-1 items-center">
+                                <div class="-mt-6">
+                                    <img src="../public/images/icon.png" class="w-10" alt="">
+                                </div>
+    
+                                <div class="project-desc transition-all duration-300">
+                                    <div class="lg:w-7/12 md:w-8/12 w-10/12">
+                                        <p class="lg:text-3xl md:text-2xl text-xl text-white mb-6 lg:ml-10 md:ml-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                        <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+                    <img src="../public/images/blog/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png" class="project-img rounded-xl shadow-2xl md:h-auto h-96 object-cover object-left transition-all duration-500" alt="">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-32 bg-gray-200 bg-opacity-50 py-16">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4">
+            <div class="grid lg:grid-cols-4 gap-4 -mx-4 hidden">
+
+                <div class="relative project">
+                    <div class="project-img group h-auto absolute w-full h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
+                        <a href="" class="h-full w-full relative md:p-8 p-5">
+                            <div class="absolute h-full project grid grid-cols-1 items-center">
+                                <div class="-mt-6">
+                                    <img src="../public/images/icon.png" class="w-10" alt="">
+                                </div>
+    
+                                <div class="project-desc transition-all duration-300">
+                                    <div>
+                                        <p class="text-xl text-white mb-6 md:mx-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                        <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+                    <img src="../public/images/projects/alex-starnes-PK_t0Lrh7MM-unsplash.png" class="project-img rounded-xl md:h-auto h-96 object-cover object-left transition-all duration-500" alt="">
+                
+                </div>
+
+                <div class="relative project">
+                    <div class="project-img group h-auto absolute w-full h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
+                        <a href="" class="h-full w-full relative md:p-8 p-5">
+                            <div class="absolute h-full project grid grid-cols-1 items-center">
+                                <div class="-mt-6">
+                                    <img src="../public/images/icon.png" class="w-10" alt="">
+                                </div>
+    
+                                <div class="project-desc transition-all duration-300">
+                                    <div>
+                                        <p class="text-xl text-white mb-6 md:mx-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                        <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+                    <img src="../public/images/projects/alex-starnes.png" class="project-img rounded-xl md:h-auto h-96 object-cover object-left transition-all duration-500" alt="">
+                
+                </div>
+
+            </div>
+
+            <div class="splide" id="projects">
+                <div class="splide__track py-4 lg:px-0 md:px-16 -mx-4 px-4">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="relative project">
+                                <div class="project-img group h-auto absolute lg:w-full w-10/12 h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
+                                    <a href="" class="h-full lg:w-full w-10/12 relative md:p-8 p-5">
+                                        <div class="absolute h-full project grid grid-cols-1 items-center">
+                                            <div class="-mt-6">
+                                                <img src="../public/images/icon.png" class="w-10" alt="">
+                                            </div>
+                
+                                            <div class="project-desc transition-all duration-300">
+                                                <div>
+                                                    <p class="text-xl text-white mb-6 md:mx-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                                    <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                                <img src="../public/images/projects/alex-starnes-PK_t0Lrh7MM-unsplash.png" class="project-img rounded-xl md:h-auto lg:w-full w-10/12 h-96 object-cover object-left transition-all duration-500" alt="">
+                            
+                            </div>
+                        </div>
+            
+                        <div class="splide__slide">
+                            <div class="relative project -ml-12 pl-4">
+                                <div class="project-img group h-auto absolute lg:w-full w-10/12 h-full bg-blue-900 bg-opacity-20 rounded-xl transition-all duration-500">
+                                    <a href="" class="h-full lg:w-full w-10/12 relative md:p-8 p-5">
+                                        <div class="absolute h-full project grid grid-cols-1 items-center">
+                                            <div class="-mt-6">
+                                                <img src="../public/images/icon.png" class="w-10" alt="">
+                                            </div>
+                
+                                            <div class="project-desc transition-all duration-300">
+                                                <div>
+                                                    <p class="text-xl text-white mb-6 md:mx-8 ml-6">Plateforme congolaise de sauvegarde des données bibliothèques.</p>
+                                                    <a href="" class="text-white hover:text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">Etude de cas </a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                                <img src="../public/images/projects/alex-starnes-PK_t0Lrh7MM-unsplash.png" class="project-img rounded-xl md:h-auto lg:w-full w-10/12 h-96 object-cover object-left transition-all duration-500" alt="">
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -378,6 +601,35 @@
     </footer>
 
     <script src="../public/js/script.js"></script>
-
+    <script src="../public/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#projects', {
+                autoplay : false,
+                perPage : 1,
+                perMove : 1,
+                autoHeight : true,
+                pagination:false,
+                arrows : true ,
+                responsive:true,    
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                        autoplay : false,
+                        arrows : false,
+                        gap:-32,
+                    },
+                    768: {
+                        perPage: 4,
+                        autoplay : false,
+                    },
+                    1024: {
+                        perPage: 4,
+                        autoplay : false,
+                    },
+                }
+            } ).mount();
+        } );
+    </script>
 </body>
 </html>
