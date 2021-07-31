@@ -159,3 +159,38 @@ html::before{
 .project:hover .project-img{
     border-radius:30px !important;
 }
+
+.start::before{
+    content:"-";
+    @apply absolute font-mono opacity-0 -right-0.5 text-purple-300 text-xl transition-all duration-300;
+    bottom:-12.50px;
+}
+
+.start::after{
+    content:"";
+    @apply absolute w-16 bottom-0 left-0 h-0.5 bg-gradient-to-r rounded-full from-green-400 to-indigo-500 transition-all duration-300;
+}
+
+.start-link:hover .start::after{
+    @apply bg-gradient-to-r w-full from-green-500 to-purple-300;
+}
+
+.start-link:hover .start::before{
+    content:">";
+    @apply opacity-100;
+}
+
+.ux-step::before{
+    content:"--------->";
+    @apply absolute w-2/12 font-mono right-0 text-gray-400 transition-all duration-300;
+}
+
+.second-line::before{
+    content:"";
+    @apply absolute w-9/12 h-48 top-0 border-l-2 border-t-2 border-dashed right-16 rounded-tl-3xl transition-all duration-300;
+}
+
+.second-line::after{
+    content:"";
+    @apply absolute w-16 h-56 -top-56 border-r-2 border-t-2 rounded-r-3xl border-dashed right-8 transition-all duration-300;
+}
