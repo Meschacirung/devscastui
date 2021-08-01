@@ -52,10 +52,12 @@ html::before{
 }
 
 .indicate{
-    margin-left: -18.1px;
-    letter-spacing:2px;
-    font-weight: 100 !important;
-    @apply border-l-2 border-green-500 pl-4;
+    @apply relative;
+}
+
+.indicate::before{
+    content:"";
+    @apply absolute top-1 -left-4 h-5 w-0.5 bg-green-400 -ml-0.5;
 }
 
 .indicate-r{
@@ -160,12 +162,6 @@ html::before{
     border-radius:30px !important;
 }
 
-.start::before{
-    content:"-";
-    @apply absolute font-mono opacity-0 -right-0.5 text-purple-300 text-xl transition-all duration-300;
-    bottom:-12.50px;
-}
-
 .start::after{
     content:"";
     @apply absolute w-16 bottom-0 left-0 h-0.5 bg-gradient-to-r rounded-full from-green-400 to-indigo-500 transition-all duration-300;
@@ -175,22 +171,37 @@ html::before{
     @apply bg-gradient-to-r w-full from-green-500 to-purple-300;
 }
 
-.start-link:hover .start::before{
-    content:">";
-    @apply opacity-100;
+.ux-step::before{
+    content:"";
+    @apply absolute w-1/12 h-20 border-b-2 border-r-2 border-dashed right-12 rounded-br-2xl;
 }
 
-.ux-step::before{
-    content:"--------->";
-    @apply absolute w-2/12 font-mono right-0 text-gray-400 transition-all duration-300;
+.ux-step::after{
+    content:"";
+    @apply absolute w-1/12 h-28 border-t-2 border-dashed right-0 rounded-tl-2xl;
+}
+
+.ux-last-step::before{
+    content: "";
+    @apply absolute w-6/12 h-16 -bottom-32 border-l-2 border-t-2 border-dashed -left-0.5 rounded-tl-3xl ;
+}
+
+.ux-last-step::after{
+    content: "";
+    @apply absolute w-8 h-16 -bottom-16 border-r-2 border-b-2 border-dashed left-0 right-0 m-auto rounded-br-3xl ;
 }
 
 .second-line::before{
     content:"";
-    @apply absolute w-9/12 h-48 top-0 border-l-2 border-t-2 border-dashed right-16 rounded-tl-3xl transition-all duration-300;
+    @apply absolute w-9/12 h-48 top-0 border-l-2 border-t-2 border-dashed right-16 rounded-tl-3xl;
 }
 
 .second-line::after{
     content:"";
-    @apply absolute w-16 h-56 -top-56 border-r-2 border-t-2 rounded-r-3xl border-dashed right-8 transition-all duration-300;
+    @apply absolute w-16 h-80 -top-80 border-r-2 border-t-2 rounded-r-3xl border-dashed right-8 transition-all duration-300;
+}
+
+.dev::before{
+    content:"";
+    @apply absolute h-full w-max left-0 right-0 m-auto border-l border-dashed;
 }

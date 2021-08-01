@@ -32346,13 +32346,19 @@ html::before {
 }
 
 .indicate{
-  margin-left: -18.1px;
-  letter-spacing:2px;
-  font-weight: 100 !important;
-  border-left-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgba(5, 255, 187, var(--tw-border-opacity));
-  padding-left: 1rem;
+  position: relative;
+}
+
+.indicate::before{
+  content:"";
+  position: absolute;
+  top: 0.25rem;
+  left: -1rem;
+  margin-left: -0.125rem;
+  height: 1.25rem;
+  width: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(74, 255, 191, var(--tw-bg-opacity));
 }
 
 .indicate-r{
@@ -32472,23 +32478,6 @@ html::before {
   border-radius:30px !important;
 }
 
-.start::before{
-  content:"-";
-  position: absolute;
-  right: -0.125rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgba(196, 181, 253, var(--tw-text-opacity));
-  opacity: 0;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
-  bottom:-12.50px;
-}
-
 .start::after{
   content:"";
   position: absolute;
@@ -32515,23 +32504,55 @@ html::before {
   --tw-gradient-to: #c4b5fd;
 }
 
-.start-link:hover .start::before{
-  content:">";
-  opacity: 1;
+.ux-step::before{
+  content:"";
+  position: absolute;
+  right: 3rem;
+  height: 5rem;
+  width: 8.333333%;
+  border-bottom-right-radius: 1rem;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-style: dashed;
 }
 
-.ux-step::before{
-  content:"--------->";
+.ux-step::after{
+  content:"";
   position: absolute;
   right: 0px;
-  width: 16.666667%;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
+  height: 7rem;
+  width: 8.333333%;
+  border-top-left-radius: 1rem;
+  border-top-width: 2px;
+  border-style: dashed;
+}
+
+.ux-last-step::before{
+  content: "";
+  position: absolute;
+  bottom: -8rem;
+  left: -0.125rem;
+  height: 4rem;
+  width: 50%;
+  border-top-left-radius: 1.5rem;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-style: dashed;
+}
+
+.ux-last-step::after{
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -4rem;
+  left: 0px;
+  margin: auto;
+  height: 4rem;
+  width: 2rem;
+  border-bottom-right-radius: 1.5rem;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-style: dashed;
 }
 
 .second-line::before{
@@ -32545,18 +32566,14 @@ html::before {
   border-top-width: 2px;
   border-left-width: 2px;
   border-style: dashed;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
 }
 
 .second-line::after{
   content:"";
   position: absolute;
-  top: -14rem;
+  top: -20rem;
   right: 2rem;
-  height: 14rem;
+  height: 20rem;
   width: 4rem;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
@@ -32567,6 +32584,20 @@ html::before {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-duration: 300ms;
+}
+
+.dev::before{
+  content:"";
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-left-width: 1px;
+  border-style: dashed;
 }
 
 @media (min-width: 640px) {
