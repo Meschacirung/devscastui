@@ -47,7 +47,7 @@ html::before{
     content:'';
     z-index:1;
     @apply lg:max-w-screen-xl max-w-screen-lg m-auto ;
-    @apply fixed 2xl:left-44 lg:left-20 md:left-16 left-4 2xl:right-44;
+    @apply fixed 2xl:left-44 lg:left-20 md:left-16 left-4 2xl:right-96;
     @apply lg:right-20 md:right-16 right-4 h-screen border-r border-l border-gray-200;
 }
 
@@ -204,4 +204,15 @@ html::before{
 .dev::before{
     content:"";
     @apply absolute h-full w-max left-0 right-0 m-auto border-l border-dashed;
+}
+
+
+.tasks::before{
+    content: "";
+    @apply absolute h-full w-5/12 mr-auto bg-transparent top-0 left-32 border-l border-dashed border-r
+}
+
+.tasks::after{
+    content: "";
+    @apply absolute h-full w-5/12 ml-auto bg-transparent top-0 right-32 border-l border-r
 }

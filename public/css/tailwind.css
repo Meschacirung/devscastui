@@ -32319,7 +32319,7 @@ html::before {
 
 @media (min-width: 1536px) {
   html::before {
-    right: 11rem;
+    right: 24rem;
     left: 11rem;
   }
 }
@@ -32598,6 +32598,33 @@ html::before {
   width: max-content;
   border-left-width: 1px;
   border-style: dashed;
+}
+
+.tasks::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 8rem;
+  margin-right: auto;
+  height: 100%;
+  width: 41.666667%;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-style: dashed;
+  background-color: transparent
+}
+
+.tasks::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 8rem;
+  margin-left: auto;
+  height: 100%;
+  width: 41.666667%;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  background-color: transparent
 }
 
 @media (min-width: 640px) {
