@@ -32507,24 +32507,64 @@ html::before {
 .ux-step::before{
   content:"";
   position: absolute;
-  right: 3rem;
-  height: 5rem;
-  width: 8.333333%;
-  border-bottom-right-radius: 1rem;
+  top: 50%;
+  right: 1.25rem;
+  z-index: 0;
+  height: 83.333333%;
+  width: 2rem;
+  border-top-right-radius: 1rem;
+  border-top-width: 2px;
   border-right-width: 2px;
-  border-bottom-width: 2px;
   border-style: dashed;
+}
+
+@media (min-width: 768px) {
+  .ux-step::before {
+    top: auto;
+    right: 2rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ux-step::before {
+    right: 3rem;
+    width: 8.333333%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 1rem;
+    border-top-width: 0px;
+    border-bottom-width: 2px;
+  }
 }
 
 .ux-step::after{
   content:"";
   position: absolute;
-  right: 0px;
+  right: 1rem;
+  z-index: 0;
+  display: none;
   height: 7rem;
-  width: 8.333333%;
-  border-top-left-radius: 1rem;
-  border-top-width: 2px;
+  width: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-width: 2px;
   border-style: dashed;
+}
+
+@media (min-width: 768px) {
+  .ux-step::after {
+    right: 0px;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ux-step::after {
+    width: 8.333333%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0px;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+  }
 }
 
 .ux-last-step::before{
@@ -32532,6 +32572,7 @@ html::before {
   position: absolute;
   bottom: -8rem;
   left: -0.125rem;
+  z-index: 0;
   height: 4rem;
   width: 50%;
   border-top-left-radius: 1.5rem;
@@ -32546,6 +32587,7 @@ html::before {
   right: 0px;
   bottom: -4rem;
   left: 0px;
+  z-index: 0;
   margin: auto;
   height: 4rem;
   width: 2rem;
@@ -32558,23 +32600,33 @@ html::before {
 .second-line::before{
   content:"";
   position: absolute;
-  top: 0px;
-  right: 4rem;
+  top: -7rem;
+  left: 1.25rem;
+  z-index: 0;
   height: 12rem;
-  width: 75%;
+  width: 2rem;
   border-top-left-radius: 1.5rem;
   border-top-width: 2px;
   border-left-width: 2px;
   border-style: dashed;
 }
 
+@media (min-width: 768px) {
+  .second-line::before {
+    top: 0px;
+    right: 4rem;
+    left: auto;
+    width: 75%;
+  }
+}
+
 .second-line::after{
   content:"";
   position: absolute;
-  top: -20rem;
-  right: 2rem;
-  height: 20rem;
-  width: 4rem;
+  right: 1.5rem;
+  z-index: 0;
+  display: none;
+  width: 3rem;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-top-width: 2px;
@@ -32586,18 +32638,42 @@ html::before {
   transition-duration: 300ms;
 }
 
+@media (min-width: 768px) {
+  .second-line::after {
+    top: -10rem;
+    display: block;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .second-line::after {
+    top: -20rem;
+    right: 2rem;
+    height: 20rem;
+    width: 4rem;
+  }
+}
+
 .dev::before{
   content:"";
   position: absolute;
   right: 0px;
   left: 0px;
   margin: auto;
+  display: none;
   height: 100%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   border-left-width: 1px;
   border-style: dashed;
+}
+
+@media (min-width: 1024px) {
+  .dev::before {
+    display: block;
+  }
 }
 
 .tasks::before{
@@ -32611,7 +32687,7 @@ html::before {
   border-right-width: 1px;
   border-left-width: 1px;
   border-style: dashed;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .tasks::after{

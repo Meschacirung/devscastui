@@ -173,43 +173,43 @@ html::before{
 
 .ux-step::before{
     content:"";
-    @apply absolute w-1/12 h-20 border-b-2 border-r-2 border-dashed right-12 rounded-br-2xl;
+    @apply z-0 absolute lg:w-1/12 md:h-20 w-8 h-5/6 md:top-auto top-1/2 lg:right-12 md:right-8 right-5 lg:border-b-2 lg:border-t-0 border-t-2 border-r-2 border-dashed  lg:rounded-br-2xl lg:rounded-tr-none rounded-tr-2xl;
 }
 
 .ux-step::after{
     content:"";
-    @apply absolute w-1/12 h-28 border-t-2 border-dashed right-0 rounded-tl-2xl;
+    @apply z-0 md:block hidden absolute lg:w-1/12 w-8 h-28 md:right-0 right-4 lg:border-t-2 lg:border-b-0 border-b-2 border-dashed  lg:rounded-tl-2xl lg:rounded-bl-none rounded-bl-2xl;
 }
 
 .ux-last-step::before{
     content: "";
-    @apply absolute w-6/12 h-16 -bottom-32 border-l-2 border-t-2 border-dashed -left-0.5 rounded-tl-3xl ;
+    @apply z-0 absolute w-6/12 h-16 -bottom-32 border-l-2 border-t-2 border-dashed -left-0.5 rounded-tl-3xl ;
 }
 
 .ux-last-step::after{
     content: "";
-    @apply absolute w-8 h-16 -bottom-16 border-r-2 border-b-2 border-dashed left-0 right-0 m-auto rounded-br-3xl ;
+    @apply z-0 absolute w-8 h-16 -bottom-16 border-r-2 border-b-2 border-dashed left-0 right-0 m-auto rounded-br-3xl ;
 }
 
 .second-line::before{
     content:"";
-    @apply absolute w-9/12 h-48 top-0 border-l-2 border-t-2 border-dashed right-16 rounded-tl-3xl;
+    @apply z-0 absolute md:w-9/12 w-8 h-48 md:top-0 -top-28 border-l-2 border-t-2 border-dashed md:left-auto left-5 md:right-16 rounded-tl-3xl;
 }
 
 .second-line::after{
     content:"";
-    @apply absolute w-16 h-80 -top-80 border-r-2 border-t-2 rounded-r-3xl border-dashed right-8 transition-all duration-300;
+    @apply z-0 md:block hidden absolute lg:w-16 w-12 lg:h-80 md:h-40 lg:-top-80 md:-top-40 border-r-2 border-t-2 rounded-r-3xl border-dashed lg:right-8 right-6 transition-all duration-300;
 }
 
 .dev::before{
     content:"";
-    @apply absolute h-full w-max left-0 right-0 m-auto border-l border-dashed;
+    @apply lg:block hidden absolute h-full w-max left-0 right-0 m-auto border-l border-dashed;
 }
 
 
 .tasks::before{
     content: "";
-    @apply absolute h-full w-5/12 mr-auto bg-transparent top-0 left-32 border-l border-dashed border-r
+    @apply absolute h-full w-5/12 mr-auto bg-transparent top-0 left-32 border-l border-dashed border-r;
 }
 
 .tasks::after{
