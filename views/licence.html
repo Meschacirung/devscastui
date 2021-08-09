@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr" style="scroll-behavior: smooth;">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="language" content="fr">
+    <meta name="author" content="méschac-irung, meschacirung@gmail.com">
+
+    <title>Devscast - Digital builders</title>
+
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="../public/css/splide/splide.min.css">
+    <link rel="stylesheet" href="../public/css/splide/splide-core.min.css">
+</head>
+
+<body class="overflow-x-hidden relative">
+
+    <header class="relative lg:h-auto h-14 lg:py-0 transition-all duration-500 z-10 flex items-center">
+        <nav role="navigation" id="navbar" class="w-full flex lg:flex-nowrap flex-wrap lg:items-center lg:justify-end justify-between items-start lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 lg:py-0 py-3">
+            <div class="flex justify-between w-full px-4 lg:px-0 z-40">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center  mt-0 space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10" viewBox="0 0 1748.626 1032.584">
+                            <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                        </svg>
+                        <span class="text-2xl font-medium text-gray-600 tracking-tight">Devscast</span>
+                    </a>
+                </div>
+                
+                <div id="hamburger" class="block lg:hidden -mt-1">
+                    
+                    <button class="lg:hidden transition-all focus:outline-none">
+                        <div style="width:25px;" class="flex flex-wrap justify-end">
+                            <div class="line-1 transition-all duration-300 transform transform-top-left" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                            <div class="line-2 transition-all duration-300 transform mt-2" style="height:2px; width:30px; border-radius:100px; background:#636363"></div>
+                        </div>
+    
+                    </button>
+    
+                </div>
+            </div>
+
+            <div style="margin-left:-.5px;" class="z-10 lg:h-auto h-0 mt-3 lg:bg-transparent bg-white w-full lg:ml-auto m-auto lg:flex lg:py-0 py-0 lg:justify-between items-center lg:mt-0 lg:shadow-none shadow-xl group relative lg:-mx-0 -mx-4 transition-all duration-500 ease-in-out" id="navlinks">
+
+                <div class="lg:flex lg:visible invisible lg:mt-0 -mt-32 transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="links">
+                    <a href="index.html" class="lg:inline block lg:my-0   px-4
+                                                text-gray-600 hover:text-gray-900 lg:mr-4
+                                                group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full">
+                            Portfolio
+                        </div>
+                        
+                    </a>
+                    
+                    <a href="us.html" class="lg:inline block lg:my-0   px-4
+                                                text-gray-600 hover:text-gray-900 lg:mr-4
+                                                group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full">
+                            Nous
+                        </div>
+                        
+                    </a>
+
+                    <div class="lg:relative lg:my-0 group dropdown cursor-pointer">
+                        
+                        <div class="text-gray-600 hover:text-gray-900 group-hover:opacity-75 hover:opacity-100 md:py-5 py-3 px-4 flex w-full items-center justify-between group bg-gray-100 bg-opacity-0 lg:hover:bg-opacity-0 hover:bg-opacity-50">
+                            <div class="relative">
+                                Nos contenus
+                            </div>
+
+                            <div class="dropper transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lg:hidden w-4 stroke-current text-gray-500 group-hover:text-gray-600" viewBox="0 0 20.828 11.414">
+                                    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l9,9,9-9" transform="translate(-7.586 -12.086)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                            </div>
+
+                        </div>                        
+
+                        <div class="lg:absolute w-min lg:top-16  z-50 lg:-ml-16 dropdown-content transition-all duration-300">
+                            <ul class="rounded-lg lg:shadow-lg lg:bg-white lg:flex p-2">
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/check.svg" class="lg:w-12 w-5 m-auto" alt="icône podcasts">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Podcasts</h3>
+                                    </a>
+                                </li>
+                                <li class="bg-gray-50 bg-opacity-0 hover:bg-opacity-100 transition-all rounded-lg">
+                                    <a href="" class="lg:px-6 px-3 lg:py-3 py-2 lg:block lg:w-auto w-full flex gap-4 items-center">
+                                        <img src="../public/images/icons/play.svg" class="lg:w-12 w-5 m-auto" alt="icône tutoriels video">
+                                        <h3 class="text-gray-600 lg:text-xl lg:mt-3">Tutoriels</h3>
+                                    </a>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="lg:inline block lg:my-0   px-4
+                                                    text-gray-600 hover:text-gray-900 lg:mr-4
+                                                    group-hover:opacity-75 hover:opacity-100">
+                        <div class="relative md:py-5 py-3 h-full active">
+                            Blog
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="w-max lg:ml-auto lg:px-0 px-4 lg:visible invisible transition-all duration-500 lg:opacity-100 opacity-0 ease-in-out" id="navactions">
+                    <a href="contact.html" class="md:w-max w-full bg-green-500 text-sm text-gray-800 font-semibold px-4 
+                                                  hover:bg-green-600 focus:bg-green-700 transition-all duration-100 lg:shadow-xl
+                                                    lg:inline block lg:my-0 md:mt-8 mt-6 
+                                                    py-4 px-6 rounded">
+    
+                        Prendre contact
+                    </a>
+                </div>
+            </div> 
+        </nav>
+    </header>
+
+    <section class="pb-56 bg-white">
+        <div class="md:bg-gray-100 md:pt-16">
+            <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 relative z-10">
+                <div class="lg:p-16 md:p-12 py-8 p-6 rounded-2xl md:shadow-lg bg-white">
+                    <nav class="p-2 bg-gray-200 rounded mb-6 text-gray-500  lg:overflow-x-hidden overflow-x-scroll">
+    
+                        <ul class="flex gap-2">
+                            <li class="bg-white w-max rounded shadow py-2 px-4">
+                                <a href="" class="text-blue-500 block">Licence</a>
+                            </li>
+    
+                            <li class="rounded py-2 px-4 hover:bg-gray-100 transition hover:text-blue-400">
+                                <a href="" class="block">Confidentialité</a>
+                            </li>
+    
+                            <li class="w-min rounded py-2 px-4 hover:bg-gray-100 transition hover:text-blue-400">
+                                <a href="" class="w-max block">Code de conduite</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex gap-16 ">
+                
+                        <div class="lg:w-7/12">       
+                            <div class="article">
+                                
+                                <h1 class="lg:text-5xl md:text-4xl text-3xl text-gray-700 leading-tight font-semibold mb-4">Développement d'applications web sur mesure.</h1>
+            
+                                <p class="text-gray-500 my-6">Temporibus cumque nam architecto praesentium incidunt. Repellendus cum eius magnam natus explicabo vel, quibusdam ducimus placeat.</p>
+                                
+                                <p class="text-gray-500">Elit. Commodi harum tenetur mollitia iste voluptate eos, consequatur est? Quam modi quibusdam error sequi tempore! Qui laborum odio, culpa accusantium sunt eum.</p>
+        
+        
+                                <div class="flex flex-wrap gap-4 my-8">
+                                    <div>
+                                        <h4 class="font-serif text-blue-400 text-xl">5 ans d'expérience</h4>
+                                        <p class="text-sm mt-6 text-gray-500">Depuis 2017</p>
+                                    </div>
+        
+                                    <div>
+                                        <h4 class="font-serif text-blue-400 text-xl">8 Clients satisfaits</h4>
+                                        <p class="text-sm mt-6 text-gray-500">Depuis 2017</p>
+                                    </div>
+        
+                                    <div>
+                                        <h4 class="font-serif text-blue-400 text-xl">7 App developpées</h4>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+        
+                        <div class="w-5/12 -mb-32 rounded-2xl shadow-2xl bg-white lg:block hidden">
+                            <img src="../public/images/blog/iPhone-12-Clay-Mockup-Free.jpg" class="rounded-t-2xl" style="clip-path: polygon(0 0%, 100% 0, 100% 60%, 0 100%);" alt="">
+                            <div class="p-8">
+                                <p class="font-serif text-lg text-gray-600">" Velit illo consequuntur fugiat saepe quisquam. Hic nemo recusandae obcaecati molestiae debitis eaque perferendis unde, mollitia libero consequatur quisquam dicta, autem facere. "</p>
+        
+                                <div class="mt-6 flex items-center gap-4">
+        
+                                    <img src="../public/images/user 2.jpg" class="h-14 w-14 object-cover rounded-full" alt="">
+        
+                                    <div>
+                                        <h6 class="text-lg text-gray-600">Méschac Irung</h6>
+                                        <span class="text-sm text-gray-400">Sub title</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="-mt-64 -ml-1 bg-gray-100 pt-32">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-full" viewBox="0 0 1367.743 181.155">
+                    <path class="fill-current text-white" id="Tracé_1" data-name="Tracé 1" d="M0,0S166.91-56.211,405.877-49.5,715.838,14.48,955.869,26.854,1366,0,1366,0V115H0Z" transform="translate(1.743 66.155)"/>
+                </svg>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-100 bg-opacity-50">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto md:px-16 px-4 py-16">
+
+            <div class="mb-8 lg:pl-0 pl-4">
+                <a href="index.html" class="flex items-center  space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 1748.626 1032.584">
+                        <path id="Path_134" data-name="Path 134" d="M2874.31,2094.42c0-284.95-231.343-516.292-516.292-516.292H1641.976c-284.949,0-516.292,231.342-516.292,516.292s231.343,516.292,516.292,516.292h716.042C2642.967,2610.712,2874.31,2379.369,2874.31,2094.42Zm-272.115,0c0-134.765-109.412-244.177-244.177-244.177H1641.976c-134.765,0-244.177,109.412-244.177,244.177S1507.211,2338.6,1641.976,2338.6h716.042C2492.783,2338.6,2602.2,2229.185,2602.2,2094.42Z" transform="translate(-1125.684 -1578.128)" fill="#05ffbb" fill-rule="evenodd"/>
+                    </svg>
+                    <span class="text-3xl font-medium text-gray-600 tracking-tight">Devscast</span>
+                </a>
+            </div>
+            
+
+            <div class="lg:-mx-4 px-4 py-8 grid md:grid-cols-2 lg:gap-56 md:gap-16 pb-16">
+
+                <div class="flex justify-between">
+                    <div>
+                        <h4 class="text-lg text-gray-700 md:border-none border-l-2 border-green-500 -ml-4 pl-4">Produits</h4>
+                        <ul class="text-gray-500 space-y-3 mt-6">
+                            <li><a href="" class="hover:text-blue-500 transition-all">Djia</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Dpay</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">DLearn</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Coinze</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Covid-19 RDC</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-gray-700 md:border-none border-r-2 border-green-500 -mr-4 pr-4">Entreprise</h4>
+                        <ul class="text-gray-500 space-y-3 mt-6">
+                            <li><a href="" class="hover:text-blue-500 transition-all">Apropos</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Blog</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Portfolio</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Equipe</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:mt-0 mt-6">
+                    <h4 class="text-lg text-gray-700 md:border-none border-l-2 border-green-500 -ml-4 pl-4">Ressources</h4>
+
+                    <div class="flex justify-between gap-4">
+                        <ul class="text-gray-500 space-y-3 mt-6">
+                            <li><a href="" class="hover:text-blue-500 transition-all">Devscast Design</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Contact</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Confidentialité</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Licence</a></li>
+                        </ul>
+
+                        <ul class="text-gray-500 space-y-3 mt-6">
+                            <li><a href="" class="hover:text-blue-500 transition-all">Mentorat</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Podcasts</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Tutoriels</a></li>
+                            <li><a href="" class="hover:text-blue-500 transition-all">Communauté</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="-mb-11 flex flex-wrap justify-between items-center gap-4 w-full lg:px-0 px-4">
+
+                <div class="flex gap-4">
+                    <a href="" target="_blank" class="h-10 w-10 rounded-md flex justify-center items-center text-pink-500 hover:bg-pink-50 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+    
+                    <a href="" target="_blank" class="h-10 w-10 rounded-md flex justify-center items-center hover:bg-blue-50 focus:bg-blue-100 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+    
+                    <a href="" target="_blank" class="h-10 w-10 rounded-md flex justify-center items-center hover:bg-sky-50 focus:bg-sky-100 text-sky-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <span class="text-gray-500"> &copy; Devscast 2019 - 2021. Tous droits réservés</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/js/script.js"></script>
+
+</body>
+</html>
