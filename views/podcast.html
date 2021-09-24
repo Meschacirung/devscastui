@@ -14,8 +14,6 @@
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../public/css/tailwind.css">
-    <link rel="stylesheet" href="../public/css/splide/splide.min.css">
-    <link rel="stylesheet" href="../public/css/splide/splide-core.min.css">
 </head>
 
 <body class="overflow-x-hidden relative z-40 text-gray-500 
@@ -68,6 +66,139 @@
 
     <main class="z-30 relative pt-20 pb-24">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+            <!--- Podcast series ---> 
+            <div hidden class="lg:w-7/12 m-auto py-6 space-y-6">
+                <div class="flex gap-6 pb-2">
+                    <div class="w-3/12 h-auto relative">
+                        <div class="absolute top-5 h-40 w-full bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg scale-90"></div>
+                        <img src="../public/images/user 2.jpg" class="relative h-40 object-cover rounded-lg" alt="">
+                    </div>
+
+                    <div class="w-9/12 space-y-4">
+                        <h2 class="text-3xl font-medium text-gray-700 leading-8">Tous sur le développement d'applications web modernes</h2>
+                        <p>Corporis molestiae, non quia eaque sint hic accusantium consequatur, harum asperiores molestias amet ducimus quae porro quam. Quam necessitatibus placeat blanditiis quibusdam.</p>
+                        <p>Corporis molestiae, non quia eaque sint hic accusantium consequatur, harum asperiores molestias amet ducimus quae porro quam. Quam necessitatibus placeat blanditiis quibusdam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium porro labore sapiente laborum beatae vero id similique voluptates eum, esse nostrum omnis consequuntur odio modi, aspernatur quaerat soluta enim necessitatibus!</p>
+                        <div class="flex gap-6 pt-4">
+                            <button class="flex items-center gap-2.5 pr-4 pl-2 py-2 bg-green-500 text-green-900 rounded-full hover:bg-green-600 focus:bg-green-600 active:bg-green-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                </svg>
+                                <span>Ecouter</span>
+                            </button>
+                            <button class="h-10 w-10 rounded-full text-green-600 border border-gray-300 bg-green-500 bg-opacity-0 focus:text-green-500 focus:bg-opacity-10 active:bg-opacity-20">
+                                <svg class="w-5 m-auto fill-current" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2931 4.17519V0L16.1255 4.54081L20 8.18156L16.0567 11.2695L11.2931 15V10.9145C2.93003 10.3222 5.27032e-07 14.8698 5.27032e-07 14.8698C5.27032e-07 12.0365 0.248446 9.09608 2.61896 6.86957C5.37447 4.27937 9.36502 4.09608 11.2931 4.17519Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t divide-y border-dashed pt-6">
+                    <div class="py-1">
+                        <a href="#" class="flex justify-between items-center px-4 py-2 h-12 bg-gray-100 rounded-lg bg-opacity-0 hover:bg-opacity-100 transition">
+                            <div class="flex items-center">
+                                <span class="w-12 text-sm tracking-wider text-green-500">
+                                    Ep99
+                                </span>
+                                <h6 class="text-gray-700">Podcast ep title here, i'm not inspired</h6>    
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <span class="block text-sm tracking-wider text-gray-700 rounded-full px-2 py-0.5 bg-gray-200">
+                                    12:54
+                                </span>
+                                <span class="pl-2 border-l border-gray-300 text-xs tracking-wider text-green-500">
+                                    Aujourd'hui
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="py-1">
+                        <a href="#" class="flex justify-between items-center px-4 py-2 h-12 bg-gray-100 rounded-lg bg-opacity-0 hover:bg-opacity-100 transition">
+                            <div class="flex items-center">
+                                <span class="w-12 text-sm tracking-wider text-green-500">
+                                    Ep99
+                                </span>
+                                <h6 class="text-gray-700">Podcast ep title here, i'm not inspired</h6>    
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <span class="block text-sm tracking-wider text-gray-700 rounded-full px-2 py-0.5 bg-gray-200">
+                                    12:54
+                                </span>
+                                <span class="pl-2 border-l border-gray-300 text-xs tracking-wider text-green-500">
+                                    Aujourd'hui
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="py-1">
+                        <a href="#" class="flex justify-between items-center px-4 py-2 h-12 bg-green-100 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="w-12 text-sm tracking-wider text-green-500">
+                                    Ep99
+                                </span>
+                                <h6 class="text-green-700">Podcast ep title here, i'm not inspired</h6>    
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <span class="block text-sm tracking-wider text-green-700 rounded-full px-2 py-0.5 bg-green-200">
+                                    12:54
+                                </span>
+                                <span class="pl-2 border-l border-green-300 text-xs tracking-wider text-green-500">
+                                    Aujourd'hui
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="py-1">
+                        <a href="#" class="flex justify-between items-center px-4 py-2 h-12 bg-gray-100 rounded-lg bg-opacity-0 hover:bg-opacity-100 transition">
+                            <div class="flex items-center">
+                                <span class="w-12 text-sm tracking-wider text-green-500">
+                                    Ep99
+                                </span>
+                                <h6 class="text-gray-700">Podcast ep title here, i'm not inspired</h6>    
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <span class="block text-sm tracking-wider text-gray-700 rounded-full px-2 py-0.5 bg-gray-200">
+                                    12:54
+                                </span>
+                                <span class="pl-2 border-l border-gray-300 text-xs tracking-wider text-green-500">
+                                    Aujourd'hui
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="py-1">
+                        <a href="#" class="flex justify-between items-center px-4 py-2 h-12 bg-gray-100 rounded-lg bg-opacity-0 hover:bg-opacity-100 transition">
+                            <div class="flex items-center">
+                                <span class="w-12 text-sm tracking-wider text-green-500">
+                                    Ep99
+                                </span>
+                                <h6 class="text-gray-700">Podcast ep title here, i'm not inspired</h6>    
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <span class="block text-sm tracking-wider text-gray-700 rounded-full px-2 py-0.5 bg-gray-200">
+                                    12:54
+                                </span>
+                                <span class="pl-2 border-l border-gray-300 text-xs tracking-wider text-green-500">
+                                    Aujourd'hui
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--- / Podcast series ---> 
+
             <div class="lg:w-7/12 m-auto py-6 space-y-12">
                 <div>
                     <h3 class="text-xl text-gray-700">Podcast les plus suivis</h3>
