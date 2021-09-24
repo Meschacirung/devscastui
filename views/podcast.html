@@ -66,6 +66,271 @@
 
     <main class="z-30 relative pt-20 pb-24">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+            <!--- Podcast search no result state ---> 
+            <div hidden class="lg:w-7/12 m-auto py-6 space-y-6">
+                <div class="lg:w-4/12 m-auto pb-16 text-center">
+                    <img src="../public/images/icons/search.svg" class="md:w-32 sm:w-28 w-20 m-auto" alt="">
+                    <h3 class="text-xl text-center mt-6 mb-8">Aucun resultat trouvé</h3>
+                    <button class="py-2 px-6 border rounded-full text-blue-500 text-sm tracking-wider">Découvrir des podcasts</button>
+                </div>
+
+                <div>
+                    <h3 class="text-xl text-gray-700">Suggestions</h3>
+                    <div class="scroll grid lg:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-x-4 gap-y-6 mt-4 pb-1">
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/devs.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/projects/5.jpeg" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/projects/3.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/library.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/devs.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/projects/5.jpeg" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/projects/3.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/library.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative mb-3">
+                                <img src="../public/images/blog/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png" class="h-32 w-full rounded-lg object-cover group-hover:shadow-xl group:transition" alt="">
+                                <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-0 group-hover:w-full group-hover:opacity-80 bg-gradient-to-br from-indigo-600 to-green-500 rounded-lg group:transition duration-500">
+                                    <div class="-mb-1 h-full w-full flex flex-col gap-2 items-center text-white justify-center">
+                                        <div class="opacity-0 -translate-y-5 group-hover:translate-y-0 group-hover:opacity-100 group:transition delay-75 duration-500">
+                                            <button class="flex items-center gap-1 pr-2 pl-1 py-1 border rounded-full text-sm hover:border-transparent hover:shadow-xl hover:bg-white hover:text-blue-500 focus:bg-white focus:text-blue-500 active:bg-indigo-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                                <span>12 min</span>
+                                            </button>
+                                        </div>
+                                        <div class="opacity-0 -translate-x-5 group-hover:translate-x-0 group-hover:opacity-100 group:transition delay-150 duration-500">
+                                            <button class="rounded-full px-2 py-0.5 bg-opacity-0 text-sm hover:bg-opacity-20 bg-gray-900 focus:bg-opacity-30 active:bg-opacity-40">
+                                                Partager
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block leading-5 text-gray-600">Podcast title can take two lines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- / Podcast search no result state ---> 
+
+            <!--- Podcast empty state ---> 
+            <div class="lg:w-7/12 m-auto py-6 space-y-6">
+                <div class="lg:w-4/12 m-auto py-16 text-center">
+                    <img src="../public/images/icons/box.svg" class="md:w-32 sm:w-28 w-20 m-auto" alt="">
+                    <h3 class="text-xl text-center mt-6 mb-8">Aucun podcast disponible</h3>
+                    <button class="py-2 px-6 border rounded-full text-blue-500 text-sm tracking-wider">Découvrir des podcasts</button>
+                </div>
+            </div>
+            <!--- / Podcast empty state ---> 
+            
             <!--- Podcast series ---> 
             <div hidden class="lg:w-7/12 m-auto py-6 space-y-6">
                 <div class="flex gap-6 pb-2">
@@ -199,7 +464,7 @@
             </div>
             <!--- / Podcast series ---> 
 
-            <div class="lg:w-7/12 m-auto py-6 space-y-12">
+            <div hidden class="lg:w-7/12 m-auto py-6 space-y-12">
                 <div>
                     <h3 class="text-xl text-gray-700">Podcast les plus suivis</h3>
                     <div class="grid grid-cols-3 space-x-4 mt-4">

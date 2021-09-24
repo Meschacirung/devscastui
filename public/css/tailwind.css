@@ -1422,6 +1422,10 @@ video {
   width: 75%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -4012,6 +4016,10 @@ body{
 }
 
 @media (min-width: 640px) {
+  .sm\:w-28 {
+    width: 7rem;
+  }
+
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
