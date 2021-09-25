@@ -35,3 +35,15 @@ body{
         box-shadow : 0 0 12px rgba(0, 0, 0, 0.2)
     }
 }
+
+.scrollbar-tranparent::-webkit-scrollbar-track {
+    @apply rounded-full bg-transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar {
+    @apply w-0 bg-transparent
+}
+
+.scrollbar-tranparent::-webkit-scrollbar-thumb {
+    @apply bg-transparent
+}
